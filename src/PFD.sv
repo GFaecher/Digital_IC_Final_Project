@@ -8,7 +8,7 @@
 module PFD (
     input logic     VDD,
     input logic     FREF,
-    input logic     FVCO,
+    input logic     FDCO,
     input logic     RSTN,
     input logic     EN,
     
@@ -19,8 +19,8 @@ module PFD (
     logic Q_DOWN;
     logic AND_RESET;
 
-`FF(VDD, Q_UP, FREF, EN, AND_RESET, 1'b0)
-`FF(VDD, Q_DOWN, FVCO, EN, AND_RESET, 1'b0)
+`FF(VDD, Q_UP, FREF, EN, AND_RESET, 1'b0) // If Up is active for a long time, slow down feedback clock
+`FF(VDD, Q_DOWN, FDCO, EN, AND_RESET, 1'b0) // If Down is active for a long time, speed up feedback clock
 
 assign AND_RESET = Q_UP && Q_DOWN;
 assign UP = Q_UP;
