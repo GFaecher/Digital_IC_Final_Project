@@ -1,0 +1,8 @@
+// Paths are relative to the work folder
++libext+.v+.sv+.vlib
++incdir+/ee/166/CHIPKIT/ip/rtl_inc
++incdir+/usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/VERILOG/
+/usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/VERILOG/N16ADFP_StdCell.v
+-y ../rtl/
+../rtl/ro.sv
+../rtl/tb.sv
