@@ -6,7 +6,8 @@ module accumulator (
     output logic [5:0] controlWord
 );
 
-
+// need to incorperate another output for the nand4 or somehow run the nand4 off
+// same controlWord
 always_ff @(posedge clk or negedge reset) begin
     if (!reset) begin
         // lowest possible value means fastest possible clock for fastest 
