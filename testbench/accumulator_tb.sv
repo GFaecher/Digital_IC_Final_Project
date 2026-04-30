@@ -1,12 +1,10 @@
-`timescale 1ns/1ps
-
 module accumulator_tb();
 
     logic up_tb;
     logic down_tb;
     logic clk_tb;
     logic rstn_tb;
-    logic controlWord_tb;
+  	logic [4:0] controlWord_tb;
     logic nand1_tb;
     logic nand2_tb;
     logic nand3_tb;
@@ -23,7 +21,7 @@ module accumulator_tb();
     );
 
     initial clk_tb = 0;
-    always #1 clk_tb = ~clk_tb
+    always #1 clk_tb = ~clk_tb;
     initial begin
         $dumpfile("accumulator_tb.vcd");
         $dumpvars;
@@ -32,10 +30,13 @@ module accumulator_tb();
         down_tb = 1'b0;
         #5;
         rstn_tb = 1'b1;
-        #1
-        for (int i = 0; i < 100; i++) begin
-            #8
-        end
+        #1;
+      	down_tb = 1'b1;
+        #300;
+      	down_tb = 1'b0;
+      	up_tb = 1'b1;
+      	#300;
+      	$finish;
     end
 
 endmodule
