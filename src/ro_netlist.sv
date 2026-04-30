@@ -31,14 +31,15 @@ ND4D4BWP16P90(A1, A2, A3, A4, ZN);
 */
 
 module ro_netlist (
-    input   logic           EN,
     input   logic [3:0]     CTRL,
-    input   logic [3:0]     NAND_CTRL,
+    input   logic           NAND_CTRL1,
+    input   logic           NAND_CTRL2,
+    input   logic           NAND_CTRL3,
     output  logic           CLK
 
 );
 
-ND4D4BWP16P90 nand_gate_capacitor(.A1(mux_out), .A2(NAND_CTRL[1]), .A3(NAND_CTRL[2]), .A4(NAND_CTRL[3]), .ZN(1'b0));
+ND4D4BWP16P90 nand_gate_capacitor(.A1(mux_out), .A2(NAND_CTRL1), .A3(NAND_CTRL2), .A4(NAND_CTRL2), .ZN(1'b0));
 
 INVD2BWP16P90 start_inv(.I(mux_out), .ZN(start_inv_out));
 
@@ -60,6 +61,8 @@ CKBD16BWP16P90 delay_element15(.I(delay_out_14), .Z(delay_out_15));
 CKBD16BWP16P90 delay_element16(.I(delay_out_15), .Z(delay_out_16));
 CKBD16BWP16P90 delay_element17(.I(delay_out_16), .Z(delay_out_17));
 CKBD16BWP16P90 delay_element18(.I(delay_out_17), .Z(delay_out_18));
+
+// Code for an 18 input mux
 
 MUX3ND4BWP16P90 mux_1_1(.I0(delay_out_1), .I1(delay_out_2), .I2(delay_out_3), .S0(CTRL[0]), .S1(CTRL[1]), .ZN(mux_1_1out));
 MUX3ND4BWP16P90 mux_1_2(.I0(delay_out_4), .I1(delay_out_5), .I2(delay_out_6), .S0(CTRL[0]), .S1(CTRL[1]), .ZN(mux_1_2out));

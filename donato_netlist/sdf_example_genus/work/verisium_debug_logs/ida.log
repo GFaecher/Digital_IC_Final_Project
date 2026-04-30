@@ -1,0 +1,55 @@
+14:36:34:3634 [important] [FelixStartLevel] WARN  - InfoSource version is empty in getMajorMinorVersion()
+14:36:34:3634 [important] [FelixStartLevel] WARN  - InfoSource version not found!! skipping relevant version checks
+14:36:35:3635 [important] [FelixStartLevel] INFO  - xmsim gcc version is 9.3.0
+14:36:35:3635 [important] [FelixStartLevel] INFO  - indago gcc version is 9.3.0
+14:36:35:3635 [important] [TangoTaskManager-4] WARN  - An Indago Snapshot/LWD was not loaded. Scripting API functionality may be impacted.
+14:36:36:3636 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-5] INFO  - query: 
+14:36:41:3641 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
+
+14:36:42:3642 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+14:36:42:3642 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+14:36:42:3642 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+14:36:42:3642 [important] [TangoTaskManager-4] INFO  - ScriptingActivator while loop has finished
+14:36:50:3650 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
+
+14:36:55:3655 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
+
+14:36:55:3655 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+14:36:56:3656 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+14:37:22:3722 [user_actions] [AWT-EventQueue-0] DEBUG - hide (GUFIDockingManager$2$1)
+
+14:37:29:3729 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
+
+14:37:29:3729 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+14:37:29:3729 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+14:37:34:3734 [user_actions] [AWT-EventQueue-0] DEBUG - RESET (GSLDebugStepAction)
+
+14:37:35:3735 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
+
+14:37:35:3735 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+14:37:36:3736 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+14:37:41:3741 [user_actions] [AWT-EventQueue-0] DEBUG - fileOpener (GSLDatabaseSelector$1)
+
+14:38:34:3834 [user_actions] [AWT-EventQueue-0] DEBUG - recordLogs (GSLRecordLogsAction)
+
+14:38:35:3835 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-4] INFO  - query: 
+14:38:35:3835 [com.cadence.smartlog.bl.common.SLUtils] [Thread-9] INFO  - query: 
+14:38:35:3835 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-9] INFO  - query: 
+14:38:35:3835 [user_actions] [AWT-EventQueue-0] DEBUG - recordLogs (GSLRecordLogsAction)
+
+14:38:35:3835 [com.cadence.smartlog.bl.common.SLUtils] [Thread-12] INFO  - query: 
+14:38:35:3835 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-2] INFO  - query: 
+14:38:48:3848 [user_actions] [AWT-EventQueue-0] DEBUG - fileOpener (GSLDatabaseSelector$1)
+
+14:48:11:4811 [user_actions] [AWT-EventQueue-0] DEBUG - OK (GUFIQuestionDialog$1)
+	dialog = confirmExitDlg (GUFIQuestionDialog)
+

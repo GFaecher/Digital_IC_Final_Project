@@ -15,7 +15,7 @@ module dco #(
     generate
         for (k = 0; k < N_INV; k = k + 1) begin : inv_chain
             (* keep = "true" *)
-            assign #INV_DELAY node[k+1] = ~node[k];  // <-- delay added here
+            assign #INV_DELAY node[k+1] = ~node[k]; // TODO: When ready, take out the delay
         end
     endgenerate
 
