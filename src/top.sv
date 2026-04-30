@@ -9,7 +9,7 @@ logic divider_out;
 logic up_out;
 logic down_out;
 logic dco_out;
-logic [3:0] cWord;
+logic [4:0] cWord;
 logic nand1_out;
 logic nand2_out;
 logic nand3_out;
@@ -42,3 +42,8 @@ ro_netlist dco_uut (
     .CLK (dco_out)
 );
 
+freq_divider divide_uut (
+    .DCO_output (dco_out),
+    .rstn (rstn),
+    .PFD_input (divider_out)
+);
