@@ -3,13 +3,13 @@ module accumulator (
     input logic down,
     input logic clk,
     input logic rstn, // active low
-    output logic [3:0] controlWord,
+    output logic [4:0] controlWord,
     output logic nand1,
     output logic nand2,
     output logic nand3
 );
 
-logic [6:0] sum;
+logic [7:0] sum;
 
 // need to incorperate another output for the nand4 or somehow run the nand4 off
 // same controlWord
@@ -17,16 +17,16 @@ always_ff @(posedge clk or negedge rstn) begin
     if (!rstn) begin
         // lowest possible value means fastest possible clock for fastest 
         // sampling for quickest convergence to locked loop 
-        controlWord <= 4'b0;
+        controlWord <= 5'b0;
         nand1 <= 1'b0;
         nand2 <= 1'b0;
         nand3 <= 1'b0;
-        sum <= 7'b0;
+        sum <= 8'b0;
     end else begin 
-        if (up && !down && sum != 6'b0) begin
+        if (up && !down && sum != 8'd0) begin
             // feedback is behind reference, speed up (subtract transistors)
             sum <= sum - 1;
-        end else if (down && !up && sum != 6'b63) begin
+        end else if (down && !up && sum != 8'd255) begin
             // feedback is ahead of reference, slow down (add transistors)
             sum <= sum + 1;
         end 
@@ -60,7 +60,7 @@ always_ff @(posedge clk or negedge rstn) begin
     end 
 end
 
-// course adjustsments (# of inverters) get the 4 MSBs
-assign control = sum[3:6];
+// course adjustsments (# of inverters) get the 5 MSBs
+assign control = sum[3:7];
 
 endmodule
