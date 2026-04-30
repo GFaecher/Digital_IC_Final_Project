@@ -1,22 +1,21 @@
-TMPDIR is being set to /tmp/genus_temp_53756_lab120h_gfaech01_nseImX
 Cadence Genus(TM) Synthesis Solution.
 Copyright 2023 Cadence Design Systems, Inc. All rights reserved worldwide.
 Cadence and the Cadence logo are registered trademarks and Genus is a trademark
 of Cadence Design Systems, Inc. in the United States and other countries.
 
-[15:37:32.306090] Configured Lic search path (21.01-s002): 5280@vm-license1:27000@vm-license1
+[14:57:26.306122] Configured Lic search path (21.01-s002): 5280@vm-license1:27000@vm-license1
 
 Version: 21.18-s082_1, built Tue Jul 18 10:08:41 PDT 2023
 Options: -files /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/scripts/compile.tcl -log compile 
-Date:    Thu Apr 30 15:37:32 2026
+Date:    Thu Apr 30 14:57:26 2026
 Host:    lab120h (x86_64 w/Linux 4.18.0-553.92.1.el8_10.x86_64) (4cores*8cpus*1physical cpu*Intel(R) Core(TM) i7-7700T CPU @ 2.90GHz 8192KB) (16023788KB)
-PID:     53756
+PID:     50662
 OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
 
 
-[15:37:32.407939] Periodic Lic check successful
-[15:37:32.407946] Feature usage summary:
-[15:37:32.407946] Genus_Synthesis
+[14:57:26.424571] Periodic Lic check successful
+[14:57:26.424578] Feature usage summary:
+[14:57:26.424578] Genus_Synthesis
 Checking out license: Genus_Synthesis
 
 
@@ -26,7 +25,7 @@ Checking out license: Genus_Synthesis
 
 
 Loading tool scripts...
-Finished loading tool scripts (13 seconds elapsed).
+Finished loading tool scripts (10 seconds elapsed).
 
 #@ Processing -files option
 @genus 1> source /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/scripts/compile.tcl
@@ -34,11 +33,11 @@ Finished loading tool scripts (13 seconds elapsed).
 @file(compile.tcl) 5: sh hostname
 lab120h
 @file(compile.tcl) 6: date
-Thu Apr 30 15:37:45 EDT 2026
+Thu Apr 30 14:57:36 EDT 2026
 @file(compile.tcl) 8: set start_time [clock seconds]
 @file(compile.tcl) 10: set rm_task synthesis
 @file(compile.tcl) 16: source -echo -verbose ../scripts/core_config.tcl
-Sourcing '../scripts/core_config.tcl' (Thu Apr 30 15:37:45 EDT 2026)...
+Sourcing '../scripts/core_config.tcl' (Thu Apr 30 14:57:36 EDT 2026)...
 #@ Begin verbose source ../scripts/core_config.tcl
 @file(core_config.tcl) 4: if {${rm_task} == "synthesis"} {
    suppress_message CMD-041
@@ -64,7 +63,7 @@ set rm_virtual_clocks [list VCLK]
 set host_numcores 4
 #@ End verbose source ../scripts/core_config.tcl
 @file(compile.tcl) 21: source -echo -verbose ../scripts/tech.tcl
-Sourcing '../scripts/tech.tcl' (Thu Apr 30 15:37:45 EDT 2026)...
+Sourcing '../scripts/tech.tcl' (Thu Apr 30 14:57:36 EDT 2026)...
 #@ Begin verbose source ../scripts/tech.tcl
 @file(tech.tcl) 7: set rm_multi_core 1
 set rm_multi_core 1
@@ -554,11 +553,11 @@ Warning : Maximum message print count reached. [MESG-11]
   set_dont_use [get_lib_cells */${dont_use} ]
 }
 @file(compile.tcl) 49: source -verbose ../scripts/init_genus.tcl
-Sourcing '../scripts/init_genus.tcl' (Thu Apr 30 15:38:21 EDT 2026)...
+Sourcing '../scripts/init_genus.tcl' (Thu Apr 30 14:57:56 EDT 2026)...
 #@ Begin verbose source ../scripts/init_genus.tcl
 @file(init_genus.tcl) 5: read_mmmc ../scripts/viewDefinitions.tcl
   Setting attribute of root '/': 'is_read_mmmc_flow' = true
-Sourcing '../scripts/viewDefinitions.tcl' (Thu Apr 30 15:38:21 EDT 2026)...
+Sourcing '../scripts/viewDefinitions.tcl' (Thu Apr 30 14:57:56 EDT 2026)...
 #@ Begin verbose source ../scripts/viewDefinitions.tcl
 @file(viewDefinitions.tcl) 3: create_library_set -name tt_0p8v_25c_lib_set \
    -timing $tt_0p8v_25c_libs 
@@ -797,4 +796,80 @@ Info    : Detected an unsupported timing arc type. [LBR-72]
 Info    : Detected an unsupported timing arc type. [LBR-72]
         : Timing arc 'max_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA16X88M2SWSHOD' is ignored. Hold timing analysis and optimization are not supported.
 Info    : Detected an unsupported timing arc type. [LBR-72]
-        : Timing arc 'min_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA16X88
+        : Timing arc 'min_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA16X88M2SWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA16X96M2SWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA16X96M2SWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA512X45M4SWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA512X45M4SWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLKW' and 'CLKW' on libcell 'TS6N16ADFPCLLLVTA128X32M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLKW' and 'CLKW' on libcell 'TS6N16ADFPCLLLVTA128X32M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLKR' and 'CLKR' on libcell 'TS6N16ADFPCLLLVTA128X32M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLKR' and 'CLKR' on libcell 'TS6N16ADFPCLLLVTA128X32M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLKW' and 'CLKW' on libcell 'TS6N16ADFPCLLLVTA128X64M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLKW' and 'CLKW' on libcell 'TS6N16ADFPCLLLVTA128X64M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLKR' and 'CLKR' on libcell 'TS6N16ADFPCLLLVTA128X64M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLKR' and 'CLKR' on libcell 'TS6N16ADFPCLLLVTA128X64M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLKW' and 'CLKW' on libcell 'TS6N16ADFPCLLLVTA16X120M2FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLKW' and 'CLKW' on libcell 'TS6N16ADFPCLLLVTA16X120M2FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLKR' and 'CLKR' on libcell 'TS6N16ADFPCLLLVTA16X120M2FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLKR' and 'CLKR' on libcell 'TS6N16ADFPCLLLVTA16X120M2FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-72'.
+  Libraries have 271 usable logic and 24 usable sequential lib-cells.
+Warning : Message truncated because it exceeds the maximum length of 4096 characters. [MESG-6]
+        : Info portion of message 'LBR-415' truncated to length 4096 from 21628
+        : By default messages are limited to 4096 characters. All characters after the 4096 character limit are truncated. To remove this limit, set the message attribute 'truncate' to 'false'. However, this may dramatically increase the size of the log file.
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'N16ADFP_StdCellss0p72vm40c_ccs.lib', Total cells: 1480, Unusable cells: 1178.
+	List of unusable cells: 'AN2D12BWP16P90LVT AN2D12BWP20P90 AN2D12BWP20P90LVT AN2D16BWP16P90LVT AN2D16BWP20P90 AN2D16BWP20P90LVT AN2D1BWP16P90LVT AN2D1BWP20P90 AN2D1BWP20P90LVT AN2D2BWP16P90LVT AN2D2BWP20P90 AN2D2BWP20P90LVT AN2D4BWP16P90LVT AN2D4BWP20P90 AN2D4BWP20P90LVT AN2D8BWP16P90LVT AN2D8BWP20P90 AN2D8BWP20P90LVT AN3D1BWP16P90LVT AN3D1BWP20P90 AN3D1BWP20P90LVT AN3D2BWP16P90LVT AN3D2BWP20P90 AN3D2BWP20P90LVT AN3D4BWP16P90LVT AN3D4BWP20P90 AN3D4BWP20P90LVT AN3D8BWP16P90LVT AN3D8BWP20P90 AN3D8BWP20P90LVT AN4D1BWP16P90LVT AN4D1BWP20P90 AN4D1BWP20P90LVT AN4D2BWP16P90LVT AN4D2BWP20P90 AN4D2BWP20P90LVT AN4D4BWP16P90LVT AN4D4BWP20P90 AN4D4BWP20P90LVT AN4D8BWP16P90LVT AN4D8BWP20P90 AN4D8BWP20P90LVT AO21D1BWP16P90LVT AO21D1BWP20P90 AO21D1BWP20P90LVT AO21D2BWP16P90LVT AO21D2BWP20P90 AO21D2BWP20P90LVT AO21D4BWP16P90LVT AO21D4BWP20P90 AO21D4BWP20P90LVT AO22D1BWP16P90LVT AO22D1BWP20P90 AO22D1BWP20P90LVT AO22D2BWP16P90LVT AO22D2BWP20P90 AO22D2BWP20P90LVT AO22D4BWP16P90LVT AO22D4BWP20P90 AO22D4BWP20P90LVT AOAI211D1BWP16P90LVT AOAI211D1BWP20P90 AOAI211D1BWP20P90LVT AOAI211D2BWP16P90LVT AOAI211D2BWP20P90 AOAI211D2BWP20P90LVT AOAI211D4BWP16P90LVT AOAI211D4BWP20P90 AOAI211D4BWP20P90LVT AOI211D1BWP16P90LVT AOI211D1BWP20P90 AOI211D1BWP20P90LVT AOI211D2BWP16P90LVT AOI211D2BWP20P90 AOI211D2BWP20P90LVT AOI211D4BWP16P90LVT AOI211D4BWP20P90 AOI211D4BWP20P90LVT AOI211D8BWP16P90LVT AOI211D8BWP20P90 AOI211D8BWP20P90LVT AOI21D1BWP16P90LVT AOI21D1BWP20P90 AOI21D1BWP20P90LVT AOI21D2BWP16P90LVT AOI21D2BWP20P90 AOI21D2BWP20P90LVT AOI21D4BWP16P90LVT AOI21D4BWP20P90 AOI21D4BWP20P90LVT AOI21D8BWP16P90LVT AOI21D8BWP20P90 AOI21D8BWP20P90LVT AOI221D1BWP16P90LVT AOI221D1BWP20P90 AOI221D1BWP20P90LVT AOI221D2BWP16P90LVT AOI221D2BWP20P90 AOI221D2BWP20P90LVT AOI221D4BWP16P90LVT AOI221D4BWP20P90 AOI221D4BWP20P90LVT AOI222D1BWP16P90LVT AOI222D1BWP20P90 AOI222D1BWP20P90LVT AOI222D2BWP16P90LVT AOI222D2BWP20P90 AOI222D2BWP20P90LVT AOI222D4BWP16P90LVT AOI222D4BWP20P90 AOI222D4BWP20P90LVT AOI22D1BWP16P90LVT AOI22D1BWP20P90 AOI22D1BWP20P90LVT AOI22D2BWP16P90LVT AOI22D2BWP20P90 AOI22D2BWP20P90LVT AOI22D4BWP16P90LVT AOI22D4BWP20P90 AOI22D4BWP20P90LVT AOI22D8BWP16P90LVT AOI22D8BWP20P90 AOI22D8BWP20P90LVT AOI31D1BWP16P90LVT AOI31D1BWP20P90 AOI31D1BWP20P90LVT AOI31D2BWP16P90LVT AOI31D2BWP20P90 AOI31D2BWP20P90LVT AOI31D4BWP16P90LVT AOI31D4BWP20P90 AOI31D4BWP20P90LVT AOI32D1BWP16P90LVT AOI32D1BWP20P90 AOI32D1BWP20P90LVT AOI32D2BWP16P90LVT AOI32D2BWP20P90 AOI32D2BWP20P90LVT AOI32D4BWP16P90LVT AOI32D4BWP20P90 AOI32D4BWP20P90LVT AOI33D1BWP16P90LVT AOI33D1BWP20P90 AOI33D1BWP20P90LVT AOI33D2BWP16P90LVT AOI33D2BWP20P90 AOI33D2BWP20P90LVT AOI33D4BWP16P90LVT AOI33D4BWP20P90 AOI33D4BWP20P90LVT BOUNDARY_LEFTBWP16P90 BOUNDARY_LEFTBWP16P90LVT BOUNDARY_LEFTBWP20P90 BOUNDARY_LEFTBWP20P90LVT BOUNDARY_NCORNERBWP16P90 BOUNDARY_NCORNERBWP16P90LVT BOUNDARY_NCORNERBWP20P90 BOUNDARY_NCORNERBWP20P90LVT BOUNDARY_NROW1BWP16P90 BOUNDARY_NROW1BWP16P90LVT BOUNDARY_NROW1BWP20P90 BOUNDARY_NROW1BWP20P90LVT BOUNDARY_NROW2BWP16P90 BOUNDARY_NROW2BWP16P90LVT BOUNDARY_NROW2BWP20P90 BOUNDARY_NROW2BWP20P90LVT BOUNDARY_NROW3BWP16P90 BOUNDARY_NROW3BWP16P90LVT BOUNDARY_NROW3BWP20P90 BOUNDARY_NROW3BWP20P90LVT BOUNDARY_NROW4BWP16P90 BOUNDARY_NROW4BWP16P90LVT BOUNDARY_NROW4BWP20P90 BOUNDARY_NROW4BWP20P90LVT BOUNDARY_NTAPBWP16P90 BOUNDARY_NTAPBWP16P90LVT BOUNDARY_NTAPBWP16P90LVT_VPP_VBB BOUNDARY_NTAPBWP16P90LVT_VPP_VSS BOUNDARY_NTAPBWP16P90_VPP_VBB BOUNDARY_NTAPBWP16P90_VPP_VSS BOUNDARY_NTAPBWP20P90 BOUNDARY_NTAPBWP20P90LVT BOUNDARY_NTAPBWP20P90LVT_VPP_VBB BOUNDARY_NTAPBWP20P90LVT_VPP_VSS BOUNDARY_NTAPBWP20P90_VPP_VBB BOUNDARY_NTAPBWP20P90_VPP_VSS BOUNDARY_PCORNERBWP16P90 BOUNDARY_PCORNERBWP16P90LVT BOUNDARY_PCORNERBWP20P90 BOUNDARY_PCORNERBWP20P90LVT BOUNDARY_PROW1BWP16P90 BOUNDARY_PROW1BWP16P90LVT BOUNDARY_PROW1BWP20P90 BOUNDARY_PROW1BWP20P90LVT BOUNDARY_PROW2BWP16P90 BOUNDARY_PROW2BWP16P90LVT BOUNDARY_PROW2BWP20P90 BOUNDARY_PROW2BWP20P90LVT BOUNDARY_PROW3BWP16P90 BOUNDARY_PROW3BWP16P90LVT BOUNDARY_PROW3BWP20P90 BOUNDARY_PROW3BWP
+        : For  more  information, refer to 'Cells Identified as Unusable' in the 'User Guide'. To know the reason why a cell is considered as unusable, check 'unusable_reason' libcell attribute.
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib', Total cells: 10, Unusable cells: 10.
+	List of unusable cells: 'TS1N16ADFPCLLLVTA128X64M4SWSHOD TS1N16ADFPCLLLVTA16X88M2SWSHOD TS1N16ADFPCLLLVTA16X96M2SWSHOD TS1N16ADFPCLLLVTA512X45M4SWSHOD TS6N16ADFPCLLLVTA128X32M4FWSHOD TS6N16ADFPCLLLVTA128X64M4FWSHOD TS6N16ADFPCLLLVTA16X120M2FWSHOD TS6N16ADFPCLLLVTA16X32M2FWSHOD TS6N16ADFPCLLLVTA16X72M2FWSHOD TS6N16ADFPCLLLVTA32X32M2FWSHOD .'
+@file(init_genus.tcl) 8: read_hdl -f ../scripts/rtl_src/macro.vc -language sv
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/ro.sv'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+@file(init_genus.tcl) 9: elaborate ${rm_core_top}
+Warning : Message truncated because it exceeds the maximum length of 4096 characters. [MESG-6]
+        : Info portion of message 'LBR-415' truncated to length 4096 from 21628
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'N16ADFP_StdCellss0p72vm40c_ccs.lib', Total cells: 1480, Unusable cells: 1178.
+	List of unusable cells: 'AN2D12BWP16P90LVT AN2D12BWP20P90 AN2D12BWP20P90LVT AN2D16BWP16P90LVT AN2D16BWP20P90 AN2D16BWP20P90LVT AN2D1BWP16P90LVT AN2D1BWP20P90 AN2D1BWP20P90LVT AN2D2BWP16P90LVT AN2D2BWP20P90 AN2D2BWP20P90LVT AN2D4BWP16P90LVT AN2D4BWP20P90 AN2D4BWP20P90LVT AN2D8BWP16P90LVT AN2D8BWP20P90 AN2D8BWP20P90LVT AN3D1BWP16P90LVT AN3D1BWP20P90 AN3D1BWP20P90LVT AN3D2BWP16P90LVT AN3D2BWP20P90 AN3D2BWP20P90LVT AN3D4BWP16P90LVT AN3D4BWP20P90 AN3D4BWP20P90LVT AN3D8BWP16P90LVT AN3D8BWP20P90 AN3D8BWP20P90LVT AN4D1BWP16P90LVT AN4D1BWP20P90 AN4D1BWP20P90LVT AN4D2BWP16P90LVT AN4D2BWP20P90 AN4D2BWP20P90LVT AN4D4BWP16P90LVT AN4D4BWP20P90 AN4D4BWP20P90LVT AN4D8BWP16P90LVT AN4D8BWP20P90 AN4D8BWP20P90LVT AO21D1BWP16P90LVT AO21D1BWP20P90 AO21D1BWP20P90LVT AO21D2BWP16P90LVT AO21D2BWP20P90 AO21D2BWP20P90LVT AO21D4BWP16P90LVT AO21D4BWP20P90 AO21D4BWP20P90LVT AO22D1BWP16P90LVT AO22D1BWP20P90 AO22D1BWP20P90LVT AO22D2BWP16P90LVT AO22D2BWP20P90 AO22D2BWP20P90LVT AO22D4BWP16P90LVT AO22D4BWP20P90 AO22D4BWP20P90LVT AOAI211D1BWP16P90LVT AOAI211D1BWP20P90 AOAI211D1BWP20P90LVT AOAI211D2BWP16P90LVT AOAI211D2BWP20P90 AOAI211D2BWP20P90LVT AOAI211D4BWP16P90LVT AOAI211D4BWP20P90 AOAI211D4BWP20P90LVT AOI211D1BWP16P90LVT AOI211D1BWP20P90 AOI211D1BWP20P90LVT AOI211D2BWP16P90LVT AOI211D2BWP20P90 AOI211D2BWP20P90LVT AOI211D4BWP16P90LVT AOI211D4BWP20P90 AOI211D4BWP20P90LVT AOI211D8BWP16P90LVT AOI211D8BWP20P90 AOI211D8BWP20P90LVT AOI21D1BWP16P90LVT AOI21D1BWP20P90 AOI21D1BWP20P90LVT AOI21D2BWP16P90LVT AOI21D2BWP20P90 AOI21D2BWP20P90LVT AOI21D4BWP16P90LVT AOI21D4BWP20P90 AOI21D4BWP20P90LVT AOI21D8BWP16P90LVT AOI21D8BWP20P90 AOI21D8BWP20P90LVT AOI221D1BWP16P90LVT AOI221D1BWP20P90 AOI221D1BWP20P90LVT AOI221D2BWP16P90LVT AOI221D2BWP20P90 AOI221D2BWP20P90LVT AOI221D4BWP16P90LVT AOI221D4BWP20P90 AOI221D4BWP20P90LVT AOI222D1BWP16P90LVT AOI222D1BWP20P90 AOI222D1BWP20P90LVT AOI222D2BWP16P90LVT AOI222D2BWP20P90 AOI222D2BWP20P90LVT AOI222D4BWP16P90LVT AOI222D4BWP20P90 AOI222D4BWP20P90LVT AOI22D1BWP16P90LVT AOI22D1BWP20P90 AOI22D1BWP20P90LVT AOI22D2BWP16P90LVT AOI22D2BWP20P90 AOI22D2BWP20P90LVT AOI22D4BWP16P90LVT AOI22D4BWP20P90 AOI22D4BWP20P90LVT AOI22D8BWP16P90LVT AOI22D8BWP20P90 AOI22D8BWP20P90LVT AOI31D1BWP16P90LVT AOI31D1BWP20P90 AOI31D1BWP20P90LVT AOI31D2BWP16P90LVT AOI31D2BWP20P90 AOI31D2BWP20P90LVT AOI31D4BWP16P90LVT AOI31D4BWP20P90 AOI31D4BWP20P90LVT AOI32D1BWP16P90LVT AOI32D1BWP20P90 AOI32D1BWP20P90LVT AOI32D2BWP16P90LVT AOI32D2BWP20P90 AOI32D2BWP20P90LVT AOI32D4BWP16P90LVT AOI32D4BWP20P90 AOI32D4BWP20P90LVT AOI33D1BWP16P90LVT AOI33D1BWP20P90 AOI33D1BWP20P90LVT AOI33D2BWP16P90LVT AOI33D2BWP20P90 AOI33D2BWP20P90LVT AOI33D4BWP16P90LVT AOI33D4BWP20P90 AOI33D4BWP20P90LVT BOUNDARY_LEFTBWP16P90 BOUNDARY_LEFTBWP16P90LVT BOUNDARY_LEFTBWP20P90 BOUNDARY_LEFTBWP20P90LVT BOUNDARY_NCORNERBWP16P90 BOUNDARY_NCORNERBWP16P90LVT BOUNDARY_NCORNERBWP20P90 BOUNDARY_NCORNERBWP20P90LVT BOUNDARY_NROW1BWP16P90 BOUNDARY_NROW1BWP16P90LVT BOUNDARY_NROW1BWP20P90 BOUNDARY_NROW1BWP20P90LVT BOUNDARY_NROW2BWP16P90 BOUNDARY_NROW2BWP16P90LVT BOUNDARY_NROW2BWP20P90 BOUNDARY_NROW2BWP20P90LVT BOUNDARY_NROW3BWP16P90 BOUNDARY_NROW3BWP16P90LVT BOUNDARY_NROW3BWP20P90 BOUNDARY_NROW3BWP20P90LVT BOUNDARY_NROW4BWP16P90 BOUNDARY_NROW4BWP16P90LVT BOUNDARY_NROW4BWP20P90 BOUNDARY_NROW4BWP20P90LVT BOUNDARY_NTAPBWP16P90 BOUNDARY_NTAPBWP16P90LVT BOUNDARY_NTAPBWP16P90LVT_VPP_VBB BOUNDARY_NTAPBWP16P90LVT_VPP_VSS BOUNDARY_NTAPBWP16P90_VPP_VBB BOUNDARY_NTAPBWP16P90_VPP_VSS BOUNDARY_NTAPBWP20P90 BOUNDARY_NTAPBWP20P90LVT BOUNDARY_NTAPBWP20P90LVT_VPP_VBB BOUNDARY_NTAPBWP20P90LVT_VPP_VSS BOUNDARY_NTAPBWP20P90_VPP_VBB BOUNDARY_NTAPBWP20P90_VPP_VSS BOUNDARY_PCORNERBWP16P90 BOUNDARY_PCORNERBWP16P90LVT BOUNDARY_PCORNERBWP20P90 BOUNDARY_PCORNERBWP20P90LVT BOUNDARY_PROW1BWP16P90 BOUNDARY_PROW1BWP16P90LVT BOUNDARY_PROW1BWP20P90 BOUNDARY_PROW1BWP20P90LVT BOUNDARY_PROW2BWP16P90 BOUNDARY_PROW2BWP16P90LVT BOUNDARY_PROW2BWP20P90 BOUNDARY_PROW2BWP20P90LVT BOUNDARY_PROW3BWP16P90 BOUNDARY_PROW3BWP16P90LVT BOUNDARY_PROW3BWP20P90 BOUNDARY_PROW3BWP
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib', Total cells: 10, Unusable cells: 10.
+	List of unusable cells: 'TS1N16ADFPCLLLVTA128X64M4SWSHOD TS1N16ADFPCLLLVTA16X88M2SWSHOD TS1N16ADFPCLLLVTA16X96M2SWSHOD TS1N16ADFPCLLLVTA512X45M4SWSHOD TS6N16ADFPCLLLVTA128X32M4FWSHOD TS6N16ADFPCLLLVTA128X64M4FWSHOD TS6N16ADFPCLLLVTA16X120M2FWSHOD TS6N16ADFPCLLLVTA16X32M2FWSHOD TS6N16ADFPCLLLVTA16X72M2FWSHOD TS6N16ADFPCLLLVTA32X32M2FWSHOD .'
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'ro_netlist'.
+        : This error may happen if you read a set of files, and you try to elaborate a design which description is not part of the files read. To fix this, check the name of the design you want to elaborate, or check if you have read all the expected RTL files.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+#@ End verbose source ../scripts/init_genus.tcl
+#@ End verbose source /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/scripts/compile.tcl
+1
+Encountered problems processing file: /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/scripts/compile.tcl
+WARNING: This version of the tool is 1017 days old.
+@genus:root: 2> exi
+
+Lic Summary:
+[15:04:57.286000] Cdslmd servers: vm-license1
+[15:04:57.286009] Feature usage summary:
+[15:04:57.286010] Genus_Synthesis
+
+Normal exit.

@@ -1,22 +1,21 @@
-TMPDIR is being set to /tmp/genus_temp_53756_lab120h_gfaech01_nseImX
 Cadence Genus(TM) Synthesis Solution.
 Copyright 2023 Cadence Design Systems, Inc. All rights reserved worldwide.
 Cadence and the Cadence logo are registered trademarks and Genus is a trademark
 of Cadence Design Systems, Inc. in the United States and other countries.
 
-[15:37:32.306090] Configured Lic search path (21.01-s002): 5280@vm-license1:27000@vm-license1
+[15:13:41.306042] Configured Lic search path (21.01-s002): 5280@vm-license1:27000@vm-license1
 
 Version: 21.18-s082_1, built Tue Jul 18 10:08:41 PDT 2023
 Options: -files /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/scripts/compile.tcl -log compile 
-Date:    Thu Apr 30 15:37:32 2026
+Date:    Thu Apr 30 15:13:41 2026
 Host:    lab120h (x86_64 w/Linux 4.18.0-553.92.1.el8_10.x86_64) (4cores*8cpus*1physical cpu*Intel(R) Core(TM) i7-7700T CPU @ 2.90GHz 8192KB) (16023788KB)
-PID:     53756
+PID:     52539
 OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
 
 
-[15:37:32.407939] Periodic Lic check successful
-[15:37:32.407946] Feature usage summary:
-[15:37:32.407946] Genus_Synthesis
+[15:13:41.283377] Periodic Lic check successful
+[15:13:41.283385] Feature usage summary:
+[15:13:41.283385] Genus_Synthesis
 Checking out license: Genus_Synthesis
 
 
@@ -26,7 +25,7 @@ Checking out license: Genus_Synthesis
 
 
 Loading tool scripts...
-Finished loading tool scripts (13 seconds elapsed).
+Finished loading tool scripts (10 seconds elapsed).
 
 #@ Processing -files option
 @genus 1> source /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/scripts/compile.tcl
@@ -34,11 +33,11 @@ Finished loading tool scripts (13 seconds elapsed).
 @file(compile.tcl) 5: sh hostname
 lab120h
 @file(compile.tcl) 6: date
-Thu Apr 30 15:37:45 EDT 2026
+Thu Apr 30 15:13:51 EDT 2026
 @file(compile.tcl) 8: set start_time [clock seconds]
 @file(compile.tcl) 10: set rm_task synthesis
 @file(compile.tcl) 16: source -echo -verbose ../scripts/core_config.tcl
-Sourcing '../scripts/core_config.tcl' (Thu Apr 30 15:37:45 EDT 2026)...
+Sourcing '../scripts/core_config.tcl' (Thu Apr 30 15:13:51 EDT 2026)...
 #@ Begin verbose source ../scripts/core_config.tcl
 @file(core_config.tcl) 4: if {${rm_task} == "synthesis"} {
    suppress_message CMD-041
@@ -64,7 +63,7 @@ set rm_virtual_clocks [list VCLK]
 set host_numcores 4
 #@ End verbose source ../scripts/core_config.tcl
 @file(compile.tcl) 21: source -echo -verbose ../scripts/tech.tcl
-Sourcing '../scripts/tech.tcl' (Thu Apr 30 15:37:45 EDT 2026)...
+Sourcing '../scripts/tech.tcl' (Thu Apr 30 15:13:51 EDT 2026)...
 #@ Begin verbose source ../scripts/tech.tcl
 @file(tech.tcl) 7: set rm_multi_core 1
 set rm_multi_core 1
@@ -554,11 +553,11 @@ Warning : Maximum message print count reached. [MESG-11]
   set_dont_use [get_lib_cells */${dont_use} ]
 }
 @file(compile.tcl) 49: source -verbose ../scripts/init_genus.tcl
-Sourcing '../scripts/init_genus.tcl' (Thu Apr 30 15:38:21 EDT 2026)...
+Sourcing '../scripts/init_genus.tcl' (Thu Apr 30 15:14:11 EDT 2026)...
 #@ Begin verbose source ../scripts/init_genus.tcl
 @file(init_genus.tcl) 5: read_mmmc ../scripts/viewDefinitions.tcl
   Setting attribute of root '/': 'is_read_mmmc_flow' = true
-Sourcing '../scripts/viewDefinitions.tcl' (Thu Apr 30 15:38:21 EDT 2026)...
+Sourcing '../scripts/viewDefinitions.tcl' (Thu Apr 30 15:14:11 EDT 2026)...
 #@ Begin verbose source ../scripts/viewDefinitions.tcl
 @file(viewDefinitions.tcl) 3: create_library_set -name tt_0p8v_25c_lib_set \
    -timing $tt_0p8v_25c_libs 
@@ -797,4 +796,775 @@ Info    : Detected an unsupported timing arc type. [LBR-72]
 Info    : Detected an unsupported timing arc type. [LBR-72]
         : Timing arc 'max_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA16X88M2SWSHOD' is ignored. Hold timing analysis and optimization are not supported.
 Info    : Detected an unsupported timing arc type. [LBR-72]
-        : Timing arc 'min_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA16X88
+        : Timing arc 'min_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA16X88M2SWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA16X96M2SWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA16X96M2SWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA512X45M4SWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLK' and 'CLK' on libcell 'TS1N16ADFPCLLLVTA512X45M4SWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLKW' and 'CLKW' on libcell 'TS6N16ADFPCLLLVTA128X32M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLKW' and 'CLKW' on libcell 'TS6N16ADFPCLLLVTA128X32M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLKR' and 'CLKR' on libcell 'TS6N16ADFPCLLLVTA128X32M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLKR' and 'CLKR' on libcell 'TS6N16ADFPCLLLVTA128X32M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLKW' and 'CLKW' on libcell 'TS6N16ADFPCLLLVTA128X64M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLKW' and 'CLKW' on libcell 'TS6N16ADFPCLLLVTA128X64M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLKR' and 'CLKR' on libcell 'TS6N16ADFPCLLLVTA128X64M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLKR' and 'CLKR' on libcell 'TS6N16ADFPCLLLVTA128X64M4FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLKW' and 'CLKW' on libcell 'TS6N16ADFPCLLLVTA16X120M2FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLKW' and 'CLKW' on libcell 'TS6N16ADFPCLLLVTA16X120M2FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'CLKR' and 'CLKR' on libcell 'TS6N16ADFPCLLLVTA16X120M2FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'CLKR' and 'CLKR' on libcell 'TS6N16ADFPCLLLVTA16X120M2FWSHOD' is ignored. Hold timing analysis and optimization are not supported.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-72'.
+  Libraries have 271 usable logic and 24 usable sequential lib-cells.
+Warning : Message truncated because it exceeds the maximum length of 4096 characters. [MESG-6]
+        : Info portion of message 'LBR-415' truncated to length 4096 from 21628
+        : By default messages are limited to 4096 characters. All characters after the 4096 character limit are truncated. To remove this limit, set the message attribute 'truncate' to 'false'. However, this may dramatically increase the size of the log file.
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'N16ADFP_StdCellss0p72vm40c_ccs.lib', Total cells: 1480, Unusable cells: 1178.
+	List of unusable cells: 'AN2D12BWP16P90LVT AN2D12BWP20P90 AN2D12BWP20P90LVT AN2D16BWP16P90LVT AN2D16BWP20P90 AN2D16BWP20P90LVT AN2D1BWP16P90LVT AN2D1BWP20P90 AN2D1BWP20P90LVT AN2D2BWP16P90LVT AN2D2BWP20P90 AN2D2BWP20P90LVT AN2D4BWP16P90LVT AN2D4BWP20P90 AN2D4BWP20P90LVT AN2D8BWP16P90LVT AN2D8BWP20P90 AN2D8BWP20P90LVT AN3D1BWP16P90LVT AN3D1BWP20P90 AN3D1BWP20P90LVT AN3D2BWP16P90LVT AN3D2BWP20P90 AN3D2BWP20P90LVT AN3D4BWP16P90LVT AN3D4BWP20P90 AN3D4BWP20P90LVT AN3D8BWP16P90LVT AN3D8BWP20P90 AN3D8BWP20P90LVT AN4D1BWP16P90LVT AN4D1BWP20P90 AN4D1BWP20P90LVT AN4D2BWP16P90LVT AN4D2BWP20P90 AN4D2BWP20P90LVT AN4D4BWP16P90LVT AN4D4BWP20P90 AN4D4BWP20P90LVT AN4D8BWP16P90LVT AN4D8BWP20P90 AN4D8BWP20P90LVT AO21D1BWP16P90LVT AO21D1BWP20P90 AO21D1BWP20P90LVT AO21D2BWP16P90LVT AO21D2BWP20P90 AO21D2BWP20P90LVT AO21D4BWP16P90LVT AO21D4BWP20P90 AO21D4BWP20P90LVT AO22D1BWP16P90LVT AO22D1BWP20P90 AO22D1BWP20P90LVT AO22D2BWP16P90LVT AO22D2BWP20P90 AO22D2BWP20P90LVT AO22D4BWP16P90LVT AO22D4BWP20P90 AO22D4BWP20P90LVT AOAI211D1BWP16P90LVT AOAI211D1BWP20P90 AOAI211D1BWP20P90LVT AOAI211D2BWP16P90LVT AOAI211D2BWP20P90 AOAI211D2BWP20P90LVT AOAI211D4BWP16P90LVT AOAI211D4BWP20P90 AOAI211D4BWP20P90LVT AOI211D1BWP16P90LVT AOI211D1BWP20P90 AOI211D1BWP20P90LVT AOI211D2BWP16P90LVT AOI211D2BWP20P90 AOI211D2BWP20P90LVT AOI211D4BWP16P90LVT AOI211D4BWP20P90 AOI211D4BWP20P90LVT AOI211D8BWP16P90LVT AOI211D8BWP20P90 AOI211D8BWP20P90LVT AOI21D1BWP16P90LVT AOI21D1BWP20P90 AOI21D1BWP20P90LVT AOI21D2BWP16P90LVT AOI21D2BWP20P90 AOI21D2BWP20P90LVT AOI21D4BWP16P90LVT AOI21D4BWP20P90 AOI21D4BWP20P90LVT AOI21D8BWP16P90LVT AOI21D8BWP20P90 AOI21D8BWP20P90LVT AOI221D1BWP16P90LVT AOI221D1BWP20P90 AOI221D1BWP20P90LVT AOI221D2BWP16P90LVT AOI221D2BWP20P90 AOI221D2BWP20P90LVT AOI221D4BWP16P90LVT AOI221D4BWP20P90 AOI221D4BWP20P90LVT AOI222D1BWP16P90LVT AOI222D1BWP20P90 AOI222D1BWP20P90LVT AOI222D2BWP16P90LVT AOI222D2BWP20P90 AOI222D2BWP20P90LVT AOI222D4BWP16P90LVT AOI222D4BWP20P90 AOI222D4BWP20P90LVT AOI22D1BWP16P90LVT AOI22D1BWP20P90 AOI22D1BWP20P90LVT AOI22D2BWP16P90LVT AOI22D2BWP20P90 AOI22D2BWP20P90LVT AOI22D4BWP16P90LVT AOI22D4BWP20P90 AOI22D4BWP20P90LVT AOI22D8BWP16P90LVT AOI22D8BWP20P90 AOI22D8BWP20P90LVT AOI31D1BWP16P90LVT AOI31D1BWP20P90 AOI31D1BWP20P90LVT AOI31D2BWP16P90LVT AOI31D2BWP20P90 AOI31D2BWP20P90LVT AOI31D4BWP16P90LVT AOI31D4BWP20P90 AOI31D4BWP20P90LVT AOI32D1BWP16P90LVT AOI32D1BWP20P90 AOI32D1BWP20P90LVT AOI32D2BWP16P90LVT AOI32D2BWP20P90 AOI32D2BWP20P90LVT AOI32D4BWP16P90LVT AOI32D4BWP20P90 AOI32D4BWP20P90LVT AOI33D1BWP16P90LVT AOI33D1BWP20P90 AOI33D1BWP20P90LVT AOI33D2BWP16P90LVT AOI33D2BWP20P90 AOI33D2BWP20P90LVT AOI33D4BWP16P90LVT AOI33D4BWP20P90 AOI33D4BWP20P90LVT BOUNDARY_LEFTBWP16P90 BOUNDARY_LEFTBWP16P90LVT BOUNDARY_LEFTBWP20P90 BOUNDARY_LEFTBWP20P90LVT BOUNDARY_NCORNERBWP16P90 BOUNDARY_NCORNERBWP16P90LVT BOUNDARY_NCORNERBWP20P90 BOUNDARY_NCORNERBWP20P90LVT BOUNDARY_NROW1BWP16P90 BOUNDARY_NROW1BWP16P90LVT BOUNDARY_NROW1BWP20P90 BOUNDARY_NROW1BWP20P90LVT BOUNDARY_NROW2BWP16P90 BOUNDARY_NROW2BWP16P90LVT BOUNDARY_NROW2BWP20P90 BOUNDARY_NROW2BWP20P90LVT BOUNDARY_NROW3BWP16P90 BOUNDARY_NROW3BWP16P90LVT BOUNDARY_NROW3BWP20P90 BOUNDARY_NROW3BWP20P90LVT BOUNDARY_NROW4BWP16P90 BOUNDARY_NROW4BWP16P90LVT BOUNDARY_NROW4BWP20P90 BOUNDARY_NROW4BWP20P90LVT BOUNDARY_NTAPBWP16P90 BOUNDARY_NTAPBWP16P90LVT BOUNDARY_NTAPBWP16P90LVT_VPP_VBB BOUNDARY_NTAPBWP16P90LVT_VPP_VSS BOUNDARY_NTAPBWP16P90_VPP_VBB BOUNDARY_NTAPBWP16P90_VPP_VSS BOUNDARY_NTAPBWP20P90 BOUNDARY_NTAPBWP20P90LVT BOUNDARY_NTAPBWP20P90LVT_VPP_VBB BOUNDARY_NTAPBWP20P90LVT_VPP_VSS BOUNDARY_NTAPBWP20P90_VPP_VBB BOUNDARY_NTAPBWP20P90_VPP_VSS BOUNDARY_PCORNERBWP16P90 BOUNDARY_PCORNERBWP16P90LVT BOUNDARY_PCORNERBWP20P90 BOUNDARY_PCORNERBWP20P90LVT BOUNDARY_PROW1BWP16P90 BOUNDARY_PROW1BWP16P90LVT BOUNDARY_PROW1BWP20P90 BOUNDARY_PROW1BWP20P90LVT BOUNDARY_PROW2BWP16P90 BOUNDARY_PROW2BWP16P90LVT BOUNDARY_PROW2BWP20P90 BOUNDARY_PROW2BWP20P90LVT BOUNDARY_PROW3BWP16P90 BOUNDARY_PROW3BWP16P90LVT BOUNDARY_PROW3BWP20P90 BOUNDARY_PROW3BWP
+        : For  more  information, refer to 'Cells Identified as Unusable' in the 'User Guide'. To know the reason why a cell is considered as unusable, check 'unusable_reason' libcell attribute.
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib', Total cells: 10, Unusable cells: 10.
+	List of unusable cells: 'TS1N16ADFPCLLLVTA128X64M4SWSHOD TS1N16ADFPCLLLVTA16X88M2SWSHOD TS1N16ADFPCLLLVTA16X96M2SWSHOD TS1N16ADFPCLLLVTA512X45M4SWSHOD TS6N16ADFPCLLLVTA128X32M4FWSHOD TS6N16ADFPCLLLVTA128X64M4FWSHOD TS6N16ADFPCLLLVTA16X120M2FWSHOD TS6N16ADFPCLLLVTA16X32M2FWSHOD TS6N16ADFPCLLLVTA16X72M2FWSHOD TS6N16ADFPCLLLVTA32X32M2FWSHOD .'
+@file(init_genus.tcl) 8: read_hdl -f ../scripts/rtl_src/macro.vc -language sv
+            Reading Verilog file '../rtl/ro_netlist.sv'
+@file(init_genus.tcl) 9: elaborate ${rm_core_top}
+Warning : Message truncated because it exceeds the maximum length of 4096 characters. [MESG-6]
+        : Info portion of message 'LBR-415' truncated to length 4096 from 21628
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'N16ADFP_StdCellss0p72vm40c_ccs.lib', Total cells: 1480, Unusable cells: 1178.
+	List of unusable cells: 'AN2D12BWP16P90LVT AN2D12BWP20P90 AN2D12BWP20P90LVT AN2D16BWP16P90LVT AN2D16BWP20P90 AN2D16BWP20P90LVT AN2D1BWP16P90LVT AN2D1BWP20P90 AN2D1BWP20P90LVT AN2D2BWP16P90LVT AN2D2BWP20P90 AN2D2BWP20P90LVT AN2D4BWP16P90LVT AN2D4BWP20P90 AN2D4BWP20P90LVT AN2D8BWP16P90LVT AN2D8BWP20P90 AN2D8BWP20P90LVT AN3D1BWP16P90LVT AN3D1BWP20P90 AN3D1BWP20P90LVT AN3D2BWP16P90LVT AN3D2BWP20P90 AN3D2BWP20P90LVT AN3D4BWP16P90LVT AN3D4BWP20P90 AN3D4BWP20P90LVT AN3D8BWP16P90LVT AN3D8BWP20P90 AN3D8BWP20P90LVT AN4D1BWP16P90LVT AN4D1BWP20P90 AN4D1BWP20P90LVT AN4D2BWP16P90LVT AN4D2BWP20P90 AN4D2BWP20P90LVT AN4D4BWP16P90LVT AN4D4BWP20P90 AN4D4BWP20P90LVT AN4D8BWP16P90LVT AN4D8BWP20P90 AN4D8BWP20P90LVT AO21D1BWP16P90LVT AO21D1BWP20P90 AO21D1BWP20P90LVT AO21D2BWP16P90LVT AO21D2BWP20P90 AO21D2BWP20P90LVT AO21D4BWP16P90LVT AO21D4BWP20P90 AO21D4BWP20P90LVT AO22D1BWP16P90LVT AO22D1BWP20P90 AO22D1BWP20P90LVT AO22D2BWP16P90LVT AO22D2BWP20P90 AO22D2BWP20P90LVT AO22D4BWP16P90LVT AO22D4BWP20P90 AO22D4BWP20P90LVT AOAI211D1BWP16P90LVT AOAI211D1BWP20P90 AOAI211D1BWP20P90LVT AOAI211D2BWP16P90LVT AOAI211D2BWP20P90 AOAI211D2BWP20P90LVT AOAI211D4BWP16P90LVT AOAI211D4BWP20P90 AOAI211D4BWP20P90LVT AOI211D1BWP16P90LVT AOI211D1BWP20P90 AOI211D1BWP20P90LVT AOI211D2BWP16P90LVT AOI211D2BWP20P90 AOI211D2BWP20P90LVT AOI211D4BWP16P90LVT AOI211D4BWP20P90 AOI211D4BWP20P90LVT AOI211D8BWP16P90LVT AOI211D8BWP20P90 AOI211D8BWP20P90LVT AOI21D1BWP16P90LVT AOI21D1BWP20P90 AOI21D1BWP20P90LVT AOI21D2BWP16P90LVT AOI21D2BWP20P90 AOI21D2BWP20P90LVT AOI21D4BWP16P90LVT AOI21D4BWP20P90 AOI21D4BWP20P90LVT AOI21D8BWP16P90LVT AOI21D8BWP20P90 AOI21D8BWP20P90LVT AOI221D1BWP16P90LVT AOI221D1BWP20P90 AOI221D1BWP20P90LVT AOI221D2BWP16P90LVT AOI221D2BWP20P90 AOI221D2BWP20P90LVT AOI221D4BWP16P90LVT AOI221D4BWP20P90 AOI221D4BWP20P90LVT AOI222D1BWP16P90LVT AOI222D1BWP20P90 AOI222D1BWP20P90LVT AOI222D2BWP16P90LVT AOI222D2BWP20P90 AOI222D2BWP20P90LVT AOI222D4BWP16P90LVT AOI222D4BWP20P90 AOI222D4BWP20P90LVT AOI22D1BWP16P90LVT AOI22D1BWP20P90 AOI22D1BWP20P90LVT AOI22D2BWP16P90LVT AOI22D2BWP20P90 AOI22D2BWP20P90LVT AOI22D4BWP16P90LVT AOI22D4BWP20P90 AOI22D4BWP20P90LVT AOI22D8BWP16P90LVT AOI22D8BWP20P90 AOI22D8BWP20P90LVT AOI31D1BWP16P90LVT AOI31D1BWP20P90 AOI31D1BWP20P90LVT AOI31D2BWP16P90LVT AOI31D2BWP20P90 AOI31D2BWP20P90LVT AOI31D4BWP16P90LVT AOI31D4BWP20P90 AOI31D4BWP20P90LVT AOI32D1BWP16P90LVT AOI32D1BWP20P90 AOI32D1BWP20P90LVT AOI32D2BWP16P90LVT AOI32D2BWP20P90 AOI32D2BWP20P90LVT AOI32D4BWP16P90LVT AOI32D4BWP20P90 AOI32D4BWP20P90LVT AOI33D1BWP16P90LVT AOI33D1BWP20P90 AOI33D1BWP20P90LVT AOI33D2BWP16P90LVT AOI33D2BWP20P90 AOI33D2BWP20P90LVT AOI33D4BWP16P90LVT AOI33D4BWP20P90 AOI33D4BWP20P90LVT BOUNDARY_LEFTBWP16P90 BOUNDARY_LEFTBWP16P90LVT BOUNDARY_LEFTBWP20P90 BOUNDARY_LEFTBWP20P90LVT BOUNDARY_NCORNERBWP16P90 BOUNDARY_NCORNERBWP16P90LVT BOUNDARY_NCORNERBWP20P90 BOUNDARY_NCORNERBWP20P90LVT BOUNDARY_NROW1BWP16P90 BOUNDARY_NROW1BWP16P90LVT BOUNDARY_NROW1BWP20P90 BOUNDARY_NROW1BWP20P90LVT BOUNDARY_NROW2BWP16P90 BOUNDARY_NROW2BWP16P90LVT BOUNDARY_NROW2BWP20P90 BOUNDARY_NROW2BWP20P90LVT BOUNDARY_NROW3BWP16P90 BOUNDARY_NROW3BWP16P90LVT BOUNDARY_NROW3BWP20P90 BOUNDARY_NROW3BWP20P90LVT BOUNDARY_NROW4BWP16P90 BOUNDARY_NROW4BWP16P90LVT BOUNDARY_NROW4BWP20P90 BOUNDARY_NROW4BWP20P90LVT BOUNDARY_NTAPBWP16P90 BOUNDARY_NTAPBWP16P90LVT BOUNDARY_NTAPBWP16P90LVT_VPP_VBB BOUNDARY_NTAPBWP16P90LVT_VPP_VSS BOUNDARY_NTAPBWP16P90_VPP_VBB BOUNDARY_NTAPBWP16P90_VPP_VSS BOUNDARY_NTAPBWP20P90 BOUNDARY_NTAPBWP20P90LVT BOUNDARY_NTAPBWP20P90LVT_VPP_VBB BOUNDARY_NTAPBWP20P90LVT_VPP_VSS BOUNDARY_NTAPBWP20P90_VPP_VBB BOUNDARY_NTAPBWP20P90_VPP_VSS BOUNDARY_PCORNERBWP16P90 BOUNDARY_PCORNERBWP16P90LVT BOUNDARY_PCORNERBWP20P90 BOUNDARY_PCORNERBWP20P90LVT BOUNDARY_PROW1BWP16P90 BOUNDARY_PROW1BWP16P90LVT BOUNDARY_PROW1BWP20P90 BOUNDARY_PROW1BWP20P90LVT BOUNDARY_PROW2BWP16P90 BOUNDARY_PROW2BWP16P90LVT BOUNDARY_PROW2BWP20P90 BOUNDARY_PROW2BWP20P90LVT BOUNDARY_PROW3BWP16P90 BOUNDARY_PROW3BWP16P90LVT BOUNDARY_PROW3BWP20P90 BOUNDARY_PROW3BWP
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib', Total cells: 10, Unusable cells: 10.
+	List of unusable cells: 'TS1N16ADFPCLLLVTA128X64M4SWSHOD TS1N16ADFPCLLLVTA16X88M2SWSHOD TS1N16ADFPCLLLVTA16X96M2SWSHOD TS1N16ADFPCLLLVTA512X45M4SWSHOD TS6N16ADFPCLLLVTA128X32M4FWSHOD TS6N16ADFPCLLLVTA128X64M4FWSHOD TS6N16ADFPCLLLVTA16X120M2FWSHOD TS6N16ADFPCLLLVTA16X32M2FWSHOD TS6N16ADFPCLLLVTA16X72M2FWSHOD TS6N16ADFPCLLLVTA32X32M2FWSHOD .'
+                  INLINE_INFO: Skipping marking small hierarchies inline as the variable 'hdl_dissolve_primitive_instance_hierarchy_threshold' has not been set to a positive value.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'ro_netlist' from file '../rtl/ro_netlist.sv'.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'ZN' of instance 'nand_gate_capacitor' of module 'ND4D4BWP16P90' inside module 'ro_netlist' in file '../rtl/ro_netlist.sv' on line 42.
+        : Please check the reported scenario of unconnected instance port to ensure that it matches the design intent.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'NAND_CTRL3' is not used in module 'ro_netlist' in file '../rtl/ro_netlist.sv' on line 37.
+        : (In port definition within the module, the input port is not used in any assignment statements or conditional expressions for decision statements.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'CLK' in module 'ro_netlist' in file '../rtl/ro_netlist.sv' on line 40, column 1, hid = 0.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'ro_netlist'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: ro_netlist, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: ro_netlist, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+---------------------------------------------------------
+| Transform          | Accepts | Rejects | Runtime (ms) | 
+---------------------------------------------------------
+| hlo_clip_mux_input |       0 |       0 |         0.00 | 
+| hlo_clip           |       0 |       0 |         0.00 | 
+---------------------------------------------------------
+Info    : To insure proper verification, preserved netlist point(s) because they are involved in combinational loop(s). To disable this, set the 'cb_preserve_ports_nets' root attribute to 'false'. [ELABUTL-133]
+        : Preserved 1 user net(s)  Set the 'print_ports_nets_preserved_for_cb' root attribute to 'true' to print out the affected nets and hierarchical instances.
+
+        Computing net loads.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(init_genus.tcl) 11: init_design
+Started checking and loading power intent for design ro_netlist...
+==================================================================
+No power intent for design 'ro_netlist'.
+Completed checking and loading power intent for design ro_netlist (runtime:0.00s memory_usage:0.00M peak_memory:0.00M).
+=======================================================================================================================
+#
+# Reading SDC ../scripts/constraints.tcl for view:normWC (constraint_mode:ss0p72vm40c_mode)
+#
+Info    : An external clock is being defined. [TIM-167]
+        : The clock is named 'VCLK'.
+        : An external clock does not directly drive any points within the design, but is only used as a reference for external delays.
+Statistics for commands executed by read_sdc:
+ "all_inputs"               - successful      1 , failed      0 (runtime  0.00)
+ "all_outputs"              - successful      1 , failed      0 (runtime  0.00)
+ "create_clock"             - successful      2 , failed      0 (runtime  0.00)
+ "get_clocks"               - successful      4 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      2 , failed      0 (runtime  0.00)
+ "remove_from_collection"   - successful      1 , failed      0 (runtime  0.00)
+ "set_clock_transition"     - successful      4 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      1 , failed      0 (runtime  0.00)
+ "set_input_delay"          - successful      2 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      2 , failed      0 (runtime  0.00)
+read_sdc completed in 00:00:00 (hh:mm:ss)
+#
+# Reading SDC ../scripts/constraints.tcl for inactive constraint_mode tt0p8v25c_mode
+#
+Info    : An external clock is being defined. [TIM-167]
+        : The clock is named 'VCLK'.
+Statistics for commands executed by read_sdc:
+ "all_inputs"               - successful      1 , failed      0 (runtime  0.00)
+ "all_outputs"              - successful      1 , failed      0 (runtime  0.00)
+ "create_clock"             - successful      2 , failed      0 (runtime  0.00)
+ "get_clocks"               - successful      4 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      2 , failed      0 (runtime  0.00)
+ "remove_from_collection"   - successful      1 , failed      0 (runtime  0.00)
+ "set_clock_transition"     - successful      4 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      1 , failed      0 (runtime  0.00)
+ "set_input_delay"          - successful      2 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      2 , failed      0 (runtime  0.00)
+read_sdc completed in 00:00:00 (hh:mm:ss)
+#
+# Reading SDC ../scripts/constraints.tcl for inactive constraint_mode ff0p88v125c_mode
+#
+Info    : An external clock is being defined. [TIM-167]
+        : The clock is named 'VCLK'.
+Statistics for commands executed by read_sdc:
+ "all_inputs"               - successful      1 , failed      0 (runtime  0.00)
+ "all_outputs"              - successful      1 , failed      0 (runtime  0.00)
+ "create_clock"             - successful      2 , failed      0 (runtime  0.00)
+ "get_clocks"               - successful      4 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      2 , failed      0 (runtime  0.00)
+ "remove_from_collection"   - successful      1 , failed      0 (runtime  0.00)
+ "set_clock_transition"     - successful      4 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      1 , failed      0 (runtime  0.00)
+ "set_input_delay"          - successful      2 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      2 , failed      0 (runtime  0.00)
+read_sdc completed in 00:00:00 (hh:mm:ss)
+  Setting attribute of root '/': 'read_qrc_tech_file_rc_corner' = true
+#@ End verbose source ../scripts/init_genus.tcl
+@file(compile.tcl) 55: check_design -unresolved > ../reports/compile/${rm_core_top}.check_design 
+
+@file(compile.tcl) 57: write_sdf -version 3.0  -precision 4 > ../data/${rm_core_top}.sdf
+Warning : Default value for an option has changed in this release. [WSDF-104]
+        : Default value for -setuphold has changed from split to merge_always. Specify '-setuphold split' to preserve the behavior of the previous release.
+        : Specify the option explicitly.
+Warning : Default value for an option has changed in this release. [WSDF-104]
+        : Default value for -recrem has changed from split to merge_always. Specify '-recrem split' to preserve the behavior of the previous release.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          delay_element7/I
+          delay_element7/Z
+          delay_element8/I
+          delay_element8/Z
+          delay_element9/I
+          delay_element9/Z
+          delay_element10/I
+          delay_element10/Z
+          delay_element11/I
+          delay_element11/Z
+          delay_element12/I
+          delay_element12/Z
+          delay_element13/I
+          delay_element13/Z
+          delay_element14/I
+          delay_element14/Z
+          delay_element15/I
+          delay_element15/Z
+          delay_element16/I
+          delay_element16/Z
+          delay_element17/I
+          delay_element17/Z
+          delay_element18/I
+          delay_element18/Z
+          mux_1_6/I2
+          mux_1_6/ZN
+          mux_2_2/I2
+          mux_2_2/ZN
+          mux_3/I1
+          mux_3/ZN
+The combinational loop has been disabled.
+        : Run 'check_timing_intent' to get the detailed information By default Genus inserts cdn_loop_breaker instances to break combinational feedback loops during timing analysis. You can use command 'report cdn_loop_breaker' to report all the loop breakers in the design. You can use command 'remove_cdn_loop_breaker' to remove the loop breakers. Once the loop breaker instances inserted by Genus are removed, the user can break the loops manually using command set_disable_timing.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          delay_element7/I
+          delay_element7/Z
+          delay_element8/I
+          delay_element8/Z
+          delay_element9/I
+          delay_element9/Z
+          delay_element10/I
+          delay_element10/Z
+          delay_element11/I
+          delay_element11/Z
+          delay_element12/I
+          delay_element12/Z
+          delay_element13/I
+          delay_element13/Z
+          delay_element14/I
+          delay_element14/Z
+          delay_element15/I
+          delay_element15/Z
+          delay_element16/I
+          delay_element16/Z
+          delay_element17/I
+          delay_element17/Z
+          mux_1_6/I1
+          mux_1_6/ZN
+          mux_2_2/I2
+          mux_2_2/ZN
+          mux_3/I1
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          delay_element7/I
+          delay_element7/Z
+          delay_element8/I
+          delay_element8/Z
+          delay_element9/I
+          delay_element9/Z
+          delay_element10/I
+          delay_element10/Z
+          delay_element11/I
+          delay_element11/Z
+          delay_element12/I
+          delay_element12/Z
+          delay_element13/I
+          delay_element13/Z
+          delay_element14/I
+          delay_element14/Z
+          delay_element15/I
+          delay_element15/Z
+          delay_element16/I
+          delay_element16/Z
+          mux_1_6/I0
+          mux_1_6/ZN
+          mux_2_2/I2
+          mux_2_2/ZN
+          mux_3/I1
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          delay_element7/I
+          delay_element7/Z
+          delay_element8/I
+          delay_element8/Z
+          delay_element9/I
+          delay_element9/Z
+          delay_element10/I
+          delay_element10/Z
+          delay_element11/I
+          delay_element11/Z
+          delay_element12/I
+          delay_element12/Z
+          delay_element13/I
+          delay_element13/Z
+          delay_element14/I
+          delay_element14/Z
+          delay_element15/I
+          delay_element15/Z
+          mux_1_5/I2
+          mux_1_5/ZN
+          mux_2_2/I1
+          mux_2_2/ZN
+          mux_3/I1
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          delay_element7/I
+          delay_element7/Z
+          delay_element8/I
+          delay_element8/Z
+          delay_element9/I
+          delay_element9/Z
+          delay_element10/I
+          delay_element10/Z
+          delay_element11/I
+          delay_element11/Z
+          delay_element12/I
+          delay_element12/Z
+          delay_element13/I
+          delay_element13/Z
+          delay_element14/I
+          delay_element14/Z
+          mux_1_5/I1
+          mux_1_5/ZN
+          mux_2_2/I1
+          mux_2_2/ZN
+          mux_3/I1
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          delay_element7/I
+          delay_element7/Z
+          delay_element8/I
+          delay_element8/Z
+          delay_element9/I
+          delay_element9/Z
+          delay_element10/I
+          delay_element10/Z
+          delay_element11/I
+          delay_element11/Z
+          delay_element12/I
+          delay_element12/Z
+          delay_element13/I
+          delay_element13/Z
+          mux_1_5/I0
+          mux_1_5/ZN
+          mux_2_2/I1
+          mux_2_2/ZN
+          mux_3/I1
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          delay_element7/I
+          delay_element7/Z
+          delay_element8/I
+          delay_element8/Z
+          delay_element9/I
+          delay_element9/Z
+          delay_element10/I
+          delay_element10/Z
+          delay_element11/I
+          delay_element11/Z
+          delay_element12/I
+          delay_element12/Z
+          mux_1_4/I2
+          mux_1_4/ZN
+          mux_2_2/I0
+          mux_2_2/ZN
+          mux_3/I1
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          delay_element7/I
+          delay_element7/Z
+          delay_element8/I
+          delay_element8/Z
+          delay_element9/I
+          delay_element9/Z
+          delay_element10/I
+          delay_element10/Z
+          delay_element11/I
+          delay_element11/Z
+          mux_1_4/I1
+          mux_1_4/ZN
+          mux_2_2/I0
+          mux_2_2/ZN
+          mux_3/I1
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          delay_element7/I
+          delay_element7/Z
+          delay_element8/I
+          delay_element8/Z
+          delay_element9/I
+          delay_element9/Z
+          delay_element10/I
+          delay_element10/Z
+          mux_1_4/I0
+          mux_1_4/ZN
+          mux_2_2/I0
+          mux_2_2/ZN
+          mux_3/I1
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          delay_element7/I
+          delay_element7/Z
+          delay_element8/I
+          delay_element8/Z
+          delay_element9/I
+          delay_element9/Z
+          mux_1_3/I2
+          mux_1_3/ZN
+          mux_2_1/I2
+          mux_2_1/ZN
+          mux_3/I0
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          delay_element7/I
+          delay_element7/Z
+          delay_element8/I
+          delay_element8/Z
+          mux_1_3/I1
+          mux_1_3/ZN
+          mux_2_1/I2
+          mux_2_1/ZN
+          mux_3/I0
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          delay_element7/I
+          delay_element7/Z
+          mux_1_3/I0
+          mux_1_3/ZN
+          mux_2_1/I2
+          mux_2_1/ZN
+          mux_3/I0
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          delay_element6/I
+          delay_element6/Z
+          mux_1_2/I2
+          mux_1_2/ZN
+          mux_2_1/I1
+          mux_2_1/ZN
+          mux_3/I0
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          delay_element5/I
+          delay_element5/Z
+          mux_1_2/I1
+          mux_1_2/ZN
+          mux_2_1/I1
+          mux_2_1/ZN
+          mux_3/I0
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          delay_element4/I
+          delay_element4/Z
+          mux_1_2/I0
+          mux_1_2/ZN
+          mux_2_1/I1
+          mux_2_1/ZN
+          mux_3/I0
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          delay_element3/I
+          delay_element3/Z
+          mux_1_1/I2
+          mux_1_1/ZN
+          mux_2_1/I0
+          mux_2_1/ZN
+          mux_3/I0
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          delay_element2/I
+          delay_element2/Z
+          mux_1_1/I1
+          mux_1_1/ZN
+          mux_2_1/I0
+          mux_2_1/ZN
+          mux_3/I0
+          mux_3/ZN
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'ro_netlist' contains the following combinational loop:
+          mux_3/ZN
+          start_inv/I
+          start_inv/ZN
+          delay_element1/I
+          delay_element1/Z
+          mux_1_1/I0
+          mux_1_1/ZN
+          mux_2_1/I0
+          mux_2_1/ZN
+          mux_3/I0
+          mux_3/ZN
+The combinational loop has been disabled.
+@file(compile.tcl) 60: report_timing > ../reports/compile/${rm_core_top}.timing
+@file(compile.tcl) 61: report_area > ../reports/compile/${rm_core_top}.area 
+@file(compile.tcl) 62: report_power > ../reports/compile/${rm_core_top}.power
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Info   : ACTP-0001 [ACTPInfo] Activity propagation started for stim#0 netlist
+       : ro_netlist
+Info   : ACTP-0009 [ACTPInfo] Activity Propagation Progress Report :   0%   1%   2%   3%   4%   5%   6%   7%   8%   9%  10%  11%  12%  13%  14%  15%  16%  17%  18%  19%  20%  21%  22%  23%  24%  25%  26%  27%  28%  29%  30%  31%  32%  33%  34%  35%  36%  37%  38%  39%  40%  41%  42%  43%  44%  45%  46%  47%  48%  49%  50%  51%  52%  53%  54%  55%  56%  57%  58%  59%  60%  61%  62%  63%  64%  65%  66%  67%  68%  69%  70%  71%  72%  73%  74%  75%  76%  77%  78%  79%  80%  81%  82%  83%  84%  85%  86%  87%  88%  89%  90%  91%  92%  93%  94%  95%  96%  97%  98%  99% 100%
+Info   : ACTP-0001 Activity propagation ended for stim#0
+Info   : PWRA-0001 [PwrInfo] compute_power effective options 
+       : -mode : vectorless
+       : -skip_propagation : 1
+       : -frequency_scaling_factor : 1.0
+       : -use_clock_freq : stim
+       : -stim :/stim#0
+       : -fromGenus : 1
+Info   : ACTP-0001 Timing initialization started
+Info   : ACTP-0001 Timing initialization ended
+Info   : PWRA-0002 [PwrInfo] Skipping activity propagation due to -skip_ap
+       : option....
+Warning: PWRA-0302 [PwrWarn] Frequency scaling is not applicable for vectorless
+       : flow. Ignoring frequency scaling.
+Warning: PWRA-0304 [PwrWarn] -stim option is not applicable with vectorless mode
+       : of power analysis, ignored this option.
+Info   : PWRA-0002 Started 'vectorless' power computation.
+Info   : PWRA-0002 Finished power computation.
+Info   : PWRA-0007 [PwrInfo] Completed successfully.
+       : Info=6, Warn=2, Error=0, Fatal=0
+Output file: ../reports/compile/ro_netlist.power
+@file(compile.tcl) 63: report_clock_gating > ../reports/compile/${rm_core_top}.clock_gating
+Warning : Potential error generating clock gating report. [RPT_CG-12]
+        : 'lp_insert_clock_gating' root attribute is set to 'false'.
+        : The 'report clock_gating' command depends on the 'lp_insert_clock_gating' attribute.  Set it to 'true' before calling this command.
+
+
+@file(compile.tcl) 64: write_hdl > ../data/${rm_core_top}-compile.v 
+@file(compile.tcl) 65: exit
+
+Lic Summary:
+[15:14:15.008754] Cdslmd servers: vm-license1
+[15:14:15.008762] Feature usage summary:
+[15:14:15.008763] Genus_Synthesis
+
+Normal exit.

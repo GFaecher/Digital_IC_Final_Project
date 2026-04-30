@@ -13,7 +13,7 @@ module ro (
 
 /* Decided to use module CKBD16BWP16P90 (I, Z), and here's why:
 CKB (Clock Buffer)
-D16 (Drive Strength 16) Want highest drive strength to ensure the clock signal
+D2 (Drive Strength 2) Want Most even rise and fall delays
 generated is as accurate as possible. Central to our design, so more power use
 is acceptable
 BWP (tapless design) They all have this
@@ -31,8 +31,7 @@ ND4D4BWP16P90(A1, A2, A3, A4, ZN);
 */
 
 module ro_netlist (
-    input   logic           EN,
-    input   logic [3:0]     CTRL,
+    input   logic [4:0]     CTRL,
     input   logic           NAND_CTRL1,
     input   logic           NAND_CTRL2,
     input   logic           NAND_CTRL3,
@@ -40,28 +39,28 @@ module ro_netlist (
 
 );
 
-ND4D4BWP16P90 nand_gate_capacitor(.A1(mux_out), .A2(NAND_CTRL1), .A3(NAND_CTRL2), .A4(NAND_CTRL2), .ZN(1'b0));
+ND4D4BWP16P90 nand_gate_capacitor(.A1(mux_out), .A2(NAND_CTRL1), .A3(NAND_CTRL2), .A4(NAND_CTRL2));
 
 INVD2BWP16P90 start_inv(.I(mux_out), .ZN(start_inv_out));
 
-CKBD16BWP16P90 delay_element1(.I(start_inv_out), .Z(delay_out_1));
-CKBD16BWP16P90 delay_element2(.I(delay_out_1), .Z(delay_out_2));
-CKBD16BWP16P90 delay_element3(.I(delay_out_2), .Z(delay_out_3));
-CKBD16BWP16P90 delay_element4(.I(delay_out_3), .Z(delay_out_4));
-CKBD16BWP16P90 delay_element5(.I(delay_out_4), .Z(delay_out_5));
-CKBD16BWP16P90 delay_element6(.I(delay_out_5), .Z(delay_out_6));
-CKBD16BWP16P90 delay_element7(.I(delay_out_6), .Z(delay_out_7));
-CKBD16BWP16P90 delay_element8(.I(delay_out_7), .Z(delay_out_8));
-CKBD16BWP16P90 delay_element9(.I(delay_out_8), .Z(delay_out_9));
-CKBD16BWP16P90 delay_element10(.I(delay_out_9), .Z(delay_out_10));
-CKBD16BWP16P90 delay_element11(.I(delay_out_10), .Z(delay_out_11));
-CKBD16BWP16P90 delay_element12(.I(delay_out_11), .Z(delay_out_12));
-CKBD16BWP16P90 delay_element13(.I(delay_out_12), .Z(delay_out_13));
-CKBD16BWP16P90 delay_element14(.I(delay_out_13), .Z(delay_out_14));
-CKBD16BWP16P90 delay_element15(.I(delay_out_14), .Z(delay_out_15));
-CKBD16BWP16P90 delay_element16(.I(delay_out_15), .Z(delay_out_16));
-CKBD16BWP16P90 delay_element17(.I(delay_out_16), .Z(delay_out_17));
-CKBD16BWP16P90 delay_element18(.I(delay_out_17), .Z(delay_out_18));
+CKBD2BWP16P90 delay_element1(.I(start_inv_out), .Z(delay_out_1));
+CKBD2BWP16P90 delay_element2(.I(delay_out_1), .Z(delay_out_2));
+CKBD2BWP16P90 delay_element3(.I(delay_out_2), .Z(delay_out_3));
+CKBD2BWP16P90 delay_element4(.I(delay_out_3), .Z(delay_out_4));
+CKBD2BWP16P90 delay_element5(.I(delay_out_4), .Z(delay_out_5));
+CKBD2BWP16P90 delay_element6(.I(delay_out_5), .Z(delay_out_6));
+CKBD2BWP16P90 delay_element7(.I(delay_out_6), .Z(delay_out_7));
+CKBD2BWP16P90 delay_element8(.I(delay_out_7), .Z(delay_out_8));
+CKBD2BWP16P90 delay_element9(.I(delay_out_8), .Z(delay_out_9));
+CKBD2BWP16P90 delay_element10(.I(delay_out_9), .Z(delay_out_10));
+CKBD2BWP16P90 delay_element11(.I(delay_out_10), .Z(delay_out_11));
+CKBD2BWP16P90 delay_element12(.I(delay_out_11), .Z(delay_out_12));
+CKBD2BWP16P90 delay_element13(.I(delay_out_12), .Z(delay_out_13));
+CKBD2BWP16P90 delay_element14(.I(delay_out_13), .Z(delay_out_14));
+CKBD2BWP16P90 delay_element15(.I(delay_out_14), .Z(delay_out_15));
+CKBD2BWP16P90 delay_element16(.I(delay_out_15), .Z(delay_out_16));
+CKBD2BWP16P90 delay_element17(.I(delay_out_16), .Z(delay_out_17));
+CKBD2BWP16P90 delay_element18(.I(delay_out_17), .Z(delay_out_18));
 
 // Code for an 18 input mux
 
