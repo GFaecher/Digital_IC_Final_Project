@@ -1,6 +1,6 @@
 module freq_divider (
     input logic DCO_output,
-    input logic reset; // active low
+    input logic rstn; // active low
     output logic PFD_input
 );
 
@@ -16,23 +16,23 @@ logic quarter_freq;
 logic eighth_freq; // this one should do
 
 
-always_ff @(posedge DCO_output or negedge reset) begin
-    if (!reset) begin
+always_ff @(posedge DCO_output or negedge rstn) begin
+    if (!rstn) begin
         half_freq <= 0;
     end else begin
         half_freq <= !half_freq;
     end
 end
 
-always_ff @(posedge half_freq or negedge reset) begin
-    if (!reset) begin
+always_ff @(posedge half_freq or negedge rstn) begin
+    if (!rstn) begin
         quarter_freq <= 0;
     end else begin
         quarter_freq <= !quarter_freq;
     end 
 end
-always_ff @(posedge quarter_freq or negedge reset) begin
-    if (!reset) begin
+always_ff @(posedge quarter_freq or negedge rstn) begin
+    if (!rstn) begin
         eighth_freq <= 0;
     end else begin
         eighth_freq <= !eighth_freq;
