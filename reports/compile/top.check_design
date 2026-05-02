@@ -1,0 +1,13 @@
+
+ 	 Check Design Report (c)
+	 ------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'top'
+
+design 'top' has the following empty module(s)
+ro_netlist
+Total number of empty modules in design 'top' : 1
+
+  Done Checking the design.
