@@ -41,6 +41,13 @@ module ro_netlist (
 
 );
 
+logic delay_out_1, delay_out_2, delay_out_3, delay_out_4, delay_out_5, delay_out_6, delay_out_7, delay_out_8, delay_out_9, delay_out_10;
+logic delay_out_11, delay_out_12, delay_out_13, delay_out_14, delay_out_15, delay_out_16, delay_out_17, delay_out_18;
+logic mux_1_1out, mux_1_2out, mux_1_3out, mux_1_4out, mux_1_5out, mux_1_6out;
+logic mux_2_1out, mux_2_2out;
+logic mux_out;
+logic start_inv_out;
+
 ND4D4BWP16P90 nand_gate_capacitor(.A1(mux_out), .A2(NAND_CTRL1), .A3(NAND_CTRL2), .A4(NAND_CTRL2));
 
 INVD2BWP16P90 start_inv(.I(mux_out), .ZN(start_inv_out));

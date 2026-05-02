@@ -17,6 +17,7 @@ module PFD (
     logic Q_UP;
     logic Q_DOWN;
     logic AND_RESET;
+    logic FF_RESET;
 
 `FF(1'b1, Q_UP, FREF, EN, FF_RESET, 1'b0) // If Up is active for a long time, slow down feedback clock
 `FF(1'b1, Q_DOWN, FDCO, EN, FF_RESET, 1'b0) // If Down is active for a long time, speed up feedback clock

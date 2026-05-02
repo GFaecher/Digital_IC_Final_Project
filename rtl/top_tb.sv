@@ -29,7 +29,8 @@ module top_tb;
         #10;
         rstn = 1'b1;
         en = 1'b1;
-        #1000;
+        #100;
+        $finish;
     end
 
 endmodule

@@ -30,7 +30,7 @@ tell_date:
 	echo $(DATE)
 
 sim: dirs
-	$(XRUN) -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top tb -f ../rtl/sdf_sim.vc -l ./simulation.log
+	$(XRUN) -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top tb_netlist -f ../rtl/sdf_sim.vc -l ./simulation.log
 
 
 compile: dirs
