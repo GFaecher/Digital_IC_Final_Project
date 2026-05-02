@@ -2,6 +2,7 @@ module accumulator (
     input logic up,
     input logic down,
     input logic clk,
+    input logic en,
     input logic rstn, // active low
     output logic [4:0] controlWord,
     output logic nand1,
@@ -21,7 +22,7 @@ always_ff @(posedge clk or negedge rstn) begin
         nand2 <= 1'b0;
         nand3 <= 1'b0;
         sum <= 8'b0;
-    end else begin 
+    end else if (en) begin 
         if (up && !down && sum != 8'd0) begin
             // feedback is behind reference, speed up (subtract transistors)
             sum <= sum - 1;
