@@ -1,7 +1,7 @@
 module top (
     input logic ref_clk,
-    input logic en,
-    input logic rstn,
+    input logic EN,
+    input logic RSTN,
     output logic out_clk
 );
 
@@ -17,8 +17,8 @@ logic nand3_out;
 PFD pfd_uut (
     .FREF (ref_clk),
     .FDCO (divider_out),
-    .RSTN (rstn),
-    .EN (en),
+    .RSTN (RSTN),
+    .EN (EN),
     .UP (up_out),
     .DOWN (down_out)
 );
@@ -27,7 +27,8 @@ accumulator accum_uut (
     .up (up_out),
     .down (down_out),
     .clk (dco_out),
-    .rstn (rstn),
+    .en (EN)
+    .rstn (RSTN),
     .controlWord (cWord),
     .nand1 (nand1_out),
     .nand2 (nand2_out),
@@ -44,6 +45,7 @@ ro_netlist dco_uut (
 
 freq_divider divide_uut (
     .DCO_output (dco_out),
-    .rstn (rstn),
+    .rstn (RSTN),
+    .en (EN)
     .PFD_input (divider_out)
 );
