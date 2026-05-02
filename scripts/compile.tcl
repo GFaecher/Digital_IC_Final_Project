@@ -48,9 +48,15 @@ foreach dont_use ${rm_dont_use_list} {
 
 source -verbose ../scripts/init_genus.tcl
 
-#syn_generic
+# -------------------------------------------------
+# Protect gate-level netlist block
+# -------------------------------------------------
+set_dont_touch [get_designs ro_netlist]
+set_dont_touch [get_cells -hierarchical *ro_netlist*]
+
+syn_generic
 #write_hdl > ../data/${rm_core_top}-map.v
-#syn_map
+syn_map
 
 check_design -unresolved > ../reports/compile/${rm_core_top}.check_design 
 
