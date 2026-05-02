@@ -1,0 +1,16 @@
++libext+.v+.sv
+
+# ---- Standard cell simulation models (FIRST) ----
+/path/to/N16ADFP_StdCell/Verilog/*.v
+
+# ---- RTL ----
+../rtl/accumulator.sv
+../rtl/freq_divider.sv
+../rtl/PFD.sv
+../rtl/top.sv
+
+# ---- Gate-level netlist ----
+../rtl/ro_netlist.sv
+
+# ---- Testbench ----
+../testbench/top_tb.sv
