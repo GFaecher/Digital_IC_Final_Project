@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION  "OVI 3.0")
   (DESIGN      "top")
-  (DATE        "Sun May 03 12:51:10 EDT 2026")
+  (DATE        "Sun May 03 15:02:16 EDT 2026")
   (VENDOR      "Cadence, Inc.")
   (PROGRAM     "Genus(TM) Synthesis Solution")
   (VERSION     "21.18-s082_1")
@@ -114,7 +114,7 @@
   )
   (CELL
      (CELLTYPE "XOR3D2BWP16P90")
-     (INSTANCE g1125__2398)
+     (INSTANCE g1120__2398)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -188,7 +188,7 @@
   )
   (CELL
      (CELLTYPE "OAI211D1BWP16P90")
-     (INSTANCE g1127__5107)
+     (INSTANCE g1122__5107)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -208,7 +208,7 @@
   )
   (CELL
      (CELLTYPE "XNR2D1BWP16P90")
-     (INSTANCE g1128__6260)
+     (INSTANCE g1123__6260)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -273,7 +273,7 @@
   )
   (CELL
      (CELLTYPE "ND2D1BWP16P90")
-     (INSTANCE g1130__4319)
+     (INSTANCE g1125__4319)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -285,7 +285,7 @@
   )
   (CELL
      (CELLTYPE "XNR2D1BWP16P90")
-     (INSTANCE g1131__8428)
+     (INSTANCE g1126__8428)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -350,7 +350,7 @@
   )
   (CELL
      (CELLTYPE "IND2D1BWP16P90")
-     (INSTANCE g1133__5526)
+     (INSTANCE g1128__5526)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -413,7 +413,7 @@
   )
   (CELL
      (CELLTYPE "OAI211D1BWP16P90")
-     (INSTANCE g1135__6783)
+     (INSTANCE g1130__6783)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -433,7 +433,7 @@
   )
   (CELL
      (CELLTYPE "XNR2D1BWP16P90")
-     (INSTANCE g1136__3680)
+     (INSTANCE g1131__3680)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -498,7 +498,7 @@
   )
   (CELL
      (CELLTYPE "ND2D1BWP16P90")
-     (INSTANCE g1138__1617)
+     (INSTANCE g1133__1617)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -510,7 +510,7 @@
   )
   (CELL
      (CELLTYPE "XNR2D1BWP16P90")
-     (INSTANCE g1139__2802)
+     (INSTANCE g1134__2802)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -524,7 +524,7 @@
   )
   (CELL
      (CELLTYPE "XOR3D2BWP16P90")
-     (INSTANCE g1140__1705)
+     (INSTANCE g1135__1705)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -547,7 +547,7 @@
   )
   (CELL
      (CELLTYPE "IND2D1BWP16P90")
-     (INSTANCE g1141__5122)
+     (INSTANCE g1136__5122)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -559,7 +559,7 @@
   )
   (CELL
      (CELLTYPE "IND2D1BWP16P90")
-     (INSTANCE g1142__8246)
+     (INSTANCE g1137__8246)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -571,7 +571,7 @@
   )
   (CELL
      (CELLTYPE "IND2D1BWP16P90")
-     (INSTANCE g1143__7098)
+     (INSTANCE g1138__7098)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -583,7 +583,7 @@
   )
   (CELL
      (CELLTYPE "IND2D1BWP16P90")
-     (INSTANCE g1144__6131)
+     (INSTANCE g1139__6131)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -595,7 +595,7 @@
   )
   (CELL
      (CELLTYPE "CKND1BWP16P90")
-     (INSTANCE g1145)
+     (INSTANCE g1140)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
@@ -605,7 +605,7 @@
   )
   (CELL
      (CELLTYPE "IND2D1BWP16P90")
-     (INSTANCE g1146__1881)
+     (INSTANCE g1141__1881)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -617,7 +617,7 @@
   )
   (CELL
      (CELLTYPE "OAI21D1BWP16P90")
-     (INSTANCE g1148__5115)
+     (INSTANCE g1143__5115)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -633,7 +633,7 @@
   )
   (CELL
      (CELLTYPE "NR2D1BWP16P90")
-     (INSTANCE g1149__7482)
+     (INSTANCE g1144__7482)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -645,7 +645,7 @@
   )
   (CELL
      (CELLTYPE "ND2D1BWP16P90")
-     (INSTANCE g1150__4733)
+     (INSTANCE g1145__4733)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -657,7 +657,7 @@
   )
   (CELL
      (CELLTYPE "NR2D1BWP16P90")
-     (INSTANCE g1151__6161)
+     (INSTANCE g1146__6161)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -669,7 +669,7 @@
   )
   (CELL
      (CELLTYPE "ND2D1BWP16P90")
-     (INSTANCE g1152__9315)
+     (INSTANCE g1147__9315)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -681,7 +681,7 @@
   )
   (CELL
      (CELLTYPE "NR2D1BWP16P90")
-     (INSTANCE g1153__9945)
+     (INSTANCE g1148__9945)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -693,7 +693,7 @@
   )
   (CELL
      (CELLTYPE "ND2D1BWP16P90")
-     (INSTANCE g1154__2883)
+     (INSTANCE g1149__2883)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -705,7 +705,7 @@
   )
   (CELL
      (CELLTYPE "NR2D1BWP16P90")
-     (INSTANCE g1155__2346)
+     (INSTANCE g1150__2346)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -717,7 +717,7 @@
   )
   (CELL
      (CELLTYPE "ND2D1BWP16P90")
-     (INSTANCE g1156__1666)
+     (INSTANCE g1151__1666)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -729,7 +729,7 @@
   )
   (CELL
      (CELLTYPE "INR3D1BWP16P90")
-     (INSTANCE g1158__7410)
+     (INSTANCE g1153__7410)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -743,7 +743,7 @@
   )
   (CELL
      (CELLTYPE "INR4D1BWP16P90")
-     (INSTANCE g1159__6417)
+     (INSTANCE g1154__6417)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -954,7 +954,7 @@
   )
   (CELL
      (CELLTYPE "NR3D1BWP16P90")
-     (INSTANCE g1165__5477)
+     (INSTANCE g1160__5477)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -1120,24 +1120,24 @@
      )
   )
   (CELL
-     (CELLTYPE "IOA21D1BWP16P90")
-     (INSTANCE g1169__2398)
+     (CELLTYPE "AOI21D1BWP16P90")
+     (INSTANCE g1164__2398)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT A2 (::0.0))
           (PORT B (::0.0))
-          (COND A1==1'b0&&A2==1'b1 (IOPATH B ZN (::3) (::4)))
-          (COND A1==1'b1&&A2==1'b0 (IOPATH B ZN (::3) (::4)))
-          (IOPATH A1 ZN (::20) (::17))
-          (COND A1==1'b0&&A2==1'b0 (IOPATH B ZN (::3) (::4)))
-          (IOPATH A2 ZN (::20) (::18))
+          (COND A1==1'b0&&A2==1'b1 (IOPATH B ZN (::7) (::6)))
+          (COND A1==1'b1&&A2==1'b0 (IOPATH B ZN (::9) (::6)))
+          (IOPATH A1 ZN (::11) (::11))
+          (COND A1==1'b0&&A2==1'b0 (IOPATH B ZN (::6) (::6)))
+          (IOPATH A2 ZN (::13) (::12))
         )
      )
   )
   (CELL
      (CELLTYPE "CKND1BWP16P90")
-     (INSTANCE g1170)
+     (INSTANCE g1165)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
@@ -1147,7 +1147,7 @@
   )
   (CELL
      (CELLTYPE "CKND1BWP16P90")
-     (INSTANCE g1171)
+     (INSTANCE g1166)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
@@ -1157,7 +1157,7 @@
   )
   (CELL
      (CELLTYPE "ND2D1BWP16P90")
-     (INSTANCE g1172__5107)
+     (INSTANCE g1167__5107)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -1169,7 +1169,7 @@
   )
   (CELL
      (CELLTYPE "NR2D1BWP16P90")
-     (INSTANCE g1173__6260)
+     (INSTANCE g1168__6260)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -1181,7 +1181,7 @@
   )
   (CELL
      (CELLTYPE "INR2D1BWP16P90")
-     (INSTANCE g1174__4319)
+     (INSTANCE g1169__4319)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -1193,7 +1193,7 @@
   )
   (CELL
      (CELLTYPE "OR2D1BWP16P90")
-     (INSTANCE g1175__8428)
+     (INSTANCE g1170__8428)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -1205,7 +1205,7 @@
   )
   (CELL
      (CELLTYPE "IND2D1BWP16P90")
-     (INSTANCE g1176__5526)
+     (INSTANCE g1171__5526)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -1217,7 +1217,17 @@
   )
   (CELL
      (CELLTYPE "CKND1BWP16P90")
-     (INSTANCE g1177)
+     (INSTANCE g1172)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I ZN (::6) (::6))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CKND1BWP16P90")
+     (INSTANCE g1173)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))

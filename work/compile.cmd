@@ -1,7 +1,7 @@
 # Cadence Genus(TM) Synthesis Solution, Version 21.18-s082_1, built Jul 18 2023 13:08:41
 
-# Date: Sun May 03 12:50:39 2026
-# Host: dell52 (x86_64 w/Linux 4.18.0-553.71.1.el8_10.x86_64) (32cores*128cpus*2physical cpus*Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz 49152KB)
+# Date: Sun May 03 15:01:53 2026
+# Host: vm-linux01 (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (4cores*8cpus*2physical cpus*INTEL(R) XEON(R) SILVER 4510 30720KB)
 # OS:   Red Hat Enterprise Linux release 8.10 (Ootpa)
 
 source /h/gfaech01/digital/Digital_IC_Final_Project/scripts/compile.tcl
