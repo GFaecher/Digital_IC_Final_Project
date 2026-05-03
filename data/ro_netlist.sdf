@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION  "OVI 3.0")
   (DESIGN      "ro_netlist")
-  (DATE        "Thu Apr 30 15:38:26 EDT 2026")
+  (DATE        "Sun May 03 12:17:19 EDT 2026")
   (VENDOR      "Cadence, Inc.")
   (PROGRAM     "Genus(TM) Synthesis Solution")
   (VERSION     "21.18-s082_1")
@@ -27,12 +27,24 @@
      )
   )
   (CELL
+     (CELLTYPE "ND2D2BWP16P90")
+     (INSTANCE enable_nand)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 ZN (::5) (::8))
+          (IOPATH A2 ZN (::10) (::13))
+        )
+     )
+  )
+  (CELL
      (CELLTYPE "INVD2BWP16P90")
      (INSTANCE start_inv)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::7) (::7))
+          (IOPATH I ZN (::8) (::7))
         )
      )
   )
@@ -42,7 +54,7 @@
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I Z (::16) (::17))
+          (IOPATH I Z (::17) (::17))
         )
      )
   )
@@ -456,12 +468,12 @@
           (PORT I0 (::0.0))
           (PORT I1 (::0.0))
           (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::37) (::36)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::37) (::36)))
+          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::38) (::36)))
+          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::38) (::37)))
           (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::33) (::32)))
           (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::34) (::34)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::37) (::36)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::37) (::36)))
+          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::38) (::36)))
+          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::38) (::37)))
         )
      )
   )

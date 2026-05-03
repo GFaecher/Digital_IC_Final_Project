@@ -1,0 +1,53 @@
+{
+  "extensionVersion": "1.3.2",
+  "fileName": "/h/gfaech01/digital/Digital_IC_Final_Project/work/top_tb.vcd",
+  "markerTime": null,
+  "altMarkerTime": null,
+  "selectedSignal": null,
+  "zoomRatio": 0.2,
+  "scrollLeft": 14480,
+  "displayedSignals": [
+    {
+      "netlistId": 0,
+      "name": "top_tb.CLK",
+      "numberFormat": "binary",
+      "colorIndex": 0,
+      "renderType": "binary"
+    },
+    {
+      "netlistId": 3,
+      "name": "top_tb.out_clk",
+      "numberFormat": "binary",
+      "colorIndex": 0,
+      "renderType": "binary"
+    },
+    {
+      "netlistId": 31,
+      "name": "top_tb.dut.accum_uut.controlWord",
+      "numberFormat": "hexadecimal",
+      "colorIndex": 0,
+      "renderType": "multiBit"
+    },
+    {
+      "netlistId": 20,
+      "name": "top_tb.dut.pfd_uut.UP",
+      "numberFormat": "binary",
+      "colorIndex": 0,
+      "renderType": "binary"
+    },
+    {
+      "netlistId": 21,
+      "name": "top_tb.dut.pfd_uut.DOWN",
+      "numberFormat": "binary",
+      "colorIndex": 0,
+      "renderType": "binary"
+    },
+    {
+      "netlistId": 25,
+      "name": "top_tb.dut.pfd_uut.FF_RESET",
+      "numberFormat": "binary",
+      "colorIndex": 0,
+      "renderType": "binary"
+    }
+  ]
+}

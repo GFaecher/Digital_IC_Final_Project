@@ -22,7 +22,7 @@ module PFD (
 `FF(1'b1, Q_UP, FREF, EN, FF_RESET, 1'b0) // If Up is active for a long time, slow down feedback clock
 `FF(1'b1, Q_DOWN, FDCO, EN, FF_RESET, 1'b0) // If Down is active for a long time, speed up feedback clock
 
-assign FF_RESET = AND_RESET || !RSTN;
+assign FF_RESET = !(AND_RESET || !RSTN);
 assign AND_RESET = Q_UP && Q_DOWN;
 assign UP = Q_UP;
 assign DOWN = Q_DOWN;

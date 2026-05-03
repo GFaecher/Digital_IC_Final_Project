@@ -8,8 +8,8 @@
 ../rtl/accumulator.sv
 ../rtl/freq_divider.sv
 ../rtl/PFD.sv
+../rtl/ro_netlist-compile.v
+../rtl/RTL.svh
 ../rtl/top.sv
 
-../rtl/ro_netlist.sv
-
-../testbench/top_tb.sv
+../rtl/top_tb.sv

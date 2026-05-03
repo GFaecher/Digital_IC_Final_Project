@@ -1,5 +1,5 @@
 xrun(64): 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	23.09-s001: Started on May 02, 2026 at 13:21:30 EDT
+TOOL:	xrun(64)	23.09-s001: Started on May 03, 2026 at 14:29:46 EDT
 xrun
 	-sv
 	-gui
@@ -18,13 +18,89 @@ xrun
 		../rtl/accumulator.sv
 		../rtl/freq_divider.sv
 		../rtl/PFD.sv
+		../rtl/ro_netlist-compile.v
+		../rtl/RTL.svh
 		../rtl/top.sv
-		../rtl/ro_netlist.sv
-		../testbench/top_tb.sv
+		../rtl/top_tb.sv
 	-l ./simulation.log
 SOFTINCLUDE ../../affirma_ams/etc/dms/cds.lib
 |
 xrun: *W,DLCIML (/usr/cots/cadence/XCELIUM2309/tools/inca/files/cds.lib,13): cds.lib CDS.LIB file included multiple times '/usr/cots/cadence/XCELIUM2309/tools.lnx86/affirma_ams/etc/dms/cds.lib' (cds.lib command ignored).
+Recompiling... reason: file '../rtl/top_tb.sv' is newer than expected.
+	expected: Sun May  3 14:16:23 2026
+	actual:   Sun May  3 14:29:26 2026
+SOFTINCLUDE ../../affirma_ams/etc/dms/cds.lib
+|
+xmvlog: *W,DLCIML (/usr/cots/cadence/XCELIUM2309/tools/inca/files/cds.lib,13): cds.lib CDS.LIB file included multiple times '/usr/cots/cadence/XCELIUM2309/tools.lnx86/affirma_ams/etc/dms/cds.lib' (cds.lib command ignored).
+file: ../rtl/top_tb.sv
+	module worklib.top_tb:sv
+		errors: 0, warnings: 0
+xmvlog: *W,LIBNOU: Library "../rtl/" given but not used.
+xmvlog: *W,SPDUSD: Include directory /ee/166/CHIPKIT/ip/rtl_inc given but not used.
+xmvlog: *W,SPDUSD: Include directory /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/VERILOG/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 4
+SOFTINCLUDE ../../affirma_ams/etc/dms/cds.lib
+|
+xmelab: *W,DLCIML (/usr/cots/cadence/XCELIUM2309/tools/inca/files/cds.lib,13): cds.lib CDS.LIB file included multiple times '/usr/cots/cadence/XCELIUM2309/tools.lnx86/affirma_ams/etc/dms/cds.lib' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		top_tb
+SOFTINCLUDE ../../affirma_ams/etc/dms/cds.lib
+|
+xmsdfc: *W,DLCIML (/usr/cots/cadence/XCELIUM2309/tools/inca/files/cds.lib,13): cds.lib CDS.LIB file included multiple times '/usr/cots/cadence/XCELIUM2309/tools.lnx86/affirma_ams/etc/dms/cds.lib' (cds.lib command ignored).
+	Reading SDF file from location "../data/ro_netlist.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     ro_netlist.sdf.X
+		Log file:              
+		Backannotation scope:  top_tb.dut.dco_uut
+		Configuration file:    
+		MTM control:           MAXIMUM
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: 
+		 No. of Pathdelays = 273     	 No. of Disabled Pathdelays = 0        Annotated = 58.24% (159/273) 
+		 No. of Tchecks    = 0       	 No. of Disabled Tchecks    = 0        Annotated = 0.00% (0/0) 
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+SOFTINCLUDE ../../affirma_ams/etc/dms/cds.lib
+|
+xmvlog_cg: *W,DLCIML (/usr/cots/cadence/XCELIUM2309/tools/inca/files/cds.lib,13): cds.lib CDS.LIB file included multiple times '/usr/cots/cadence/XCELIUM2309/tools.lnx86/affirma_ams/etc/dms/cds.lib' (cds.lib command ignored).
+		worklib.top_tb:sv <0x377d6188>
+			streams:   7, words:  6708
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                54      13
+		UDPs:                   17       1
+		Primitives:             50       3
+		Timing outputs:         48       6
+		Registers:              34      34
+		Scalar wires:           80       -
+		Expanded wires:          5       1
+		Vectored wires:          3       -
+		Always blocks:           6       6
+		Initial blocks:          2       2
+		Cont. assignments:       7       7
+		Pseudo assignments:     20       -
+		Interconnect:           68       -
+		Process Clocks:          4       4
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top_tb:sv
+	Parallel LWD Data Generation
+	Generating Debug Data:
+		LWD Database path: (/h/gfaech01/digital/Digital_IC_Final_Project/work/xcelium.d/worklib/top_tb/sv/debug_db/top_tb)
+		Power Aware Instances:                    0
+		Liberty Instances:                        0
+		Out Of Module References:                 1
+		Assertions:                               0
+		Liberty Information:
+			PG Pins:	                  0
+			Liberty Pins:	                  0
 SOFTINCLUDE ../../affirma_ams/etc/dms/cds.lib
 |
 xmsim: *W,DLCIML (/usr/cots/cadence/XCELIUM2309/tools/inca/files/cds.lib,13): cds.lib CDS.LIB file included multiple times '/usr/cots/cadence/XCELIUM2309/tools.lnx86/affirma_ams/etc/dms/cds.lib' (cds.lib command ignored).
@@ -37,8 +113,6 @@ xcelium> source /usr/cots/cadence/XCELIUM2309/tools/xcelium/files/xmsimrc
 xcelium> 
 xcelium> 
 xcelium> run
-Simulation interrupted at 1985203810 NS + 0
-xcelium> ^C
-xcelium> ^C
-xcelium> exit
-TOOL:	xrun(64)	23.09-s001: Exiting on May 02, 2026 at 13:35:25 EDT  (total: 00:13:55)
+Simulation complete via $finish(1) at time 1149975 PS + 0
+../rtl/top_tb.sv:58         $finish;
+xcelium> 

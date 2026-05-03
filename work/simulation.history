@@ -1,2 +1,10 @@
-s1(02May2026:13:10:00):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top top_tb -f ../rtl/sdf_sim.vc -l ./simulation.log 
-s2(02May2026:13:21:31):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top top_tb -f ../rtl/sdf_sim.vc -l ./simulation.log 
+s1(03May2026:13:38:11):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top top_tb -f ../rtl/sdf_sim.vc -l ./simulation.log 
+s2(03May2026:13:39:50):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top top_tb -f ../rtl/sdf_sim.vc -l ./simulation.log 
+s3(03May2026:13:41:46):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top top_tb -f ../rtl/sdf_sim.vc -l ./simulation.log 
+s4(03May2026:13:52:49):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top top_tb -f ../rtl/sdf_sim.vc -l ./simulation.log 
+s5(03May2026:13:55:29):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top top_tb -f ../rtl/sdf_sim.vc -l ./simulation.log 
+s6(03May2026:14:09:36):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top top_tb -f ../rtl/sdf_sim.vc -l ./simulation.log 
+s7(03May2026:14:13:31):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top top_tb -f ../rtl/sdf_sim.vc -l ./simulation.log 
+s8(03May2026:14:16:38):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top top_tb -f ../rtl/sdf_sim.vc -l ./simulation.log 
+s9(03May2026:14:22:43):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top top_tb -f ../rtl/sdf_sim.vc -l ./simulation.log 
+s10(03May2026:14:29:46):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top top_tb -f ../rtl/sdf_sim.vc -l ./simulation.log 
