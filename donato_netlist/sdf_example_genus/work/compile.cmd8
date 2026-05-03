@@ -1,0 +1,8 @@
+# Cadence Genus(TM) Synthesis Solution, Version 21.18-s082_1, built Jul 18 2023 13:08:41
+
+# Date: Thu Apr 30 15:11:44 2026
+# Host: lab120h (x86_64 w/Linux 4.18.0-553.92.1.el8_10.x86_64) (4cores*8cpus*1physical cpu*Intel(R) Core(TM) i7-7700T CPU @ 2.90GHz 8192KB)
+# OS:   Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+source /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/scripts/compile.tcl
+exit
