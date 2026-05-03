@@ -5,9 +5,8 @@
 ../rtl/freq_divider.sv
 ../rtl/PFD.sv
 ../rtl/top.sv
+../rtl/ro_netlist_stub.sv
 
 
-../rtl/ro_netlist.sv
 
 
-../testbench/top_tb.sv

@@ -36,7 +36,6 @@ set_db timing_report_time_unit ps
 set link_library [concat ${ss_0p72v_m40c_libs} ${ff_0p88v_125c_libs} ]
 set_db library ${link_library}
 
-
 # -----------------------------------------------------------------------------------
 # Read in list of dont_use cells
 # -----------------------------------------------------------------------------------
@@ -45,14 +44,7 @@ foreach dont_use ${rm_dont_use_list} {
   set_dont_use [get_lib_cells */${dont_use} ]
 }
 
-
 source -verbose ../scripts/init_genus.tcl
-
-# -------------------------------------------------
-# Protect gate-level netlist block
-# -------------------------------------------------
-set_dont_touch [get_designs ro_netlist]
-set_dont_touch [get_cells -hierarchical *ro_netlist*]
 
 syn_generic
 #write_hdl > ../data/${rm_core_top}-map.v
