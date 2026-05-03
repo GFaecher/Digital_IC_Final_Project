@@ -1,0 +1,151 @@
+============================================================
+  Ring Oscillator Frequency Sweep
+  Measurement window: 20 ns
+============================================================
+------------------------------------------------------------
+CTRL=0000 | NAND[3:1]=000 | Cycles=83 | Period=0.2410 ns | Freq=4.1500 GHz
+CTRL=0000 | NAND[3:1]=001 | Cycles=83 | Period=0.2410 ns | Freq=4.1500 GHz
+CTRL=0000 | NAND[3:1]=010 | Cycles=82 | Period=0.2439 ns | Freq=4.1000 GHz
+CTRL=0000 | NAND[3:1]=011 | Cycles=83 | Period=0.2410 ns | Freq=4.1500 GHz
+CTRL=0000 | NAND[3:1]=100 | Cycles=83 | Period=0.2410 ns | Freq=4.1500 GHz
+CTRL=0000 | NAND[3:1]=101 | Cycles=82 | Period=0.2439 ns | Freq=4.1000 GHz
+CTRL=0000 | NAND[3:1]=110 | Cycles=83 | Period=0.2410 ns | Freq=4.1500 GHz
+CTRL=0000 | NAND[3:1]=111 | Cycles=83 | Period=0.2410 ns | Freq=4.1500 GHz
+------------------------------------------------------------
+CTRL=0001 | NAND[3:1]=000 | Cycles=72 | Period=0.2778 ns | Freq=3.6000 GHz
+CTRL=0001 | NAND[3:1]=001 | Cycles=72 | Period=0.2778 ns | Freq=3.6000 GHz
+CTRL=0001 | NAND[3:1]=010 | Cycles=72 | Period=0.2778 ns | Freq=3.6000 GHz
+CTRL=0001 | NAND[3:1]=011 | Cycles=72 | Period=0.2778 ns | Freq=3.6000 GHz
+CTRL=0001 | NAND[3:1]=100 | Cycles=72 | Period=0.2778 ns | Freq=3.6000 GHz
+CTRL=0001 | NAND[3:1]=101 | Cycles=72 | Period=0.2778 ns | Freq=3.6000 GHz
+CTRL=0001 | NAND[3:1]=110 | Cycles=72 | Period=0.2778 ns | Freq=3.6000 GHz
+CTRL=0001 | NAND[3:1]=111 | Cycles=72 | Period=0.2778 ns | Freq=3.6000 GHz
+------------------------------------------------------------
+CTRL=0010 | NAND[3:1]=000 | Cycles=64 | Period=0.3125 ns | Freq=3.2000 GHz
+CTRL=0010 | NAND[3:1]=001 | Cycles=64 | Period=0.3125 ns | Freq=3.2000 GHz
+CTRL=0010 | NAND[3:1]=010 | Cycles=64 | Period=0.3125 ns | Freq=3.2000 GHz
+CTRL=0010 | NAND[3:1]=011 | Cycles=63 | Period=0.3175 ns | Freq=3.1500 GHz
+CTRL=0010 | NAND[3:1]=100 | Cycles=64 | Period=0.3125 ns | Freq=3.2000 GHz
+CTRL=0010 | NAND[3:1]=101 | Cycles=64 | Period=0.3125 ns | Freq=3.2000 GHz
+CTRL=0010 | NAND[3:1]=110 | Cycles=63 | Period=0.3175 ns | Freq=3.1500 GHz
+CTRL=0010 | NAND[3:1]=111 | Cycles=64 | Period=0.3125 ns | Freq=3.2000 GHz
+------------------------------------------------------------
+CTRL=0011 | NAND[3:1]=000 | Cycles=64 | Period=0.3125 ns | Freq=3.2000 GHz
+CTRL=0011 | NAND[3:1]=001 | Cycles=63 | Period=0.3175 ns | Freq=3.1500 GHz
+CTRL=0011 | NAND[3:1]=010 | Cycles=64 | Period=0.3125 ns | Freq=3.2000 GHz
+CTRL=0011 | NAND[3:1]=011 | Cycles=64 | Period=0.3125 ns | Freq=3.2000 GHz
+CTRL=0011 | NAND[3:1]=100 | Cycles=63 | Period=0.3175 ns | Freq=3.1500 GHz
+CTRL=0011 | NAND[3:1]=101 | Cycles=64 | Period=0.3125 ns | Freq=3.2000 GHz
+CTRL=0011 | NAND[3:1]=110 | Cycles=64 | Period=0.3125 ns | Freq=3.2000 GHz
+CTRL=0011 | NAND[3:1]=111 | Cycles=64 | Period=0.3125 ns | Freq=3.2000 GHz
+------------------------------------------------------------
+CTRL=0100 | NAND[3:1]=000 | Cycles=57 | Period=0.3509 ns | Freq=2.8500 GHz
+CTRL=0100 | NAND[3:1]=001 | Cycles=57 | Period=0.3509 ns | Freq=2.8500 GHz
+CTRL=0100 | NAND[3:1]=010 | Cycles=58 | Period=0.3448 ns | Freq=2.9000 GHz
+CTRL=0100 | NAND[3:1]=011 | Cycles=57 | Period=0.3509 ns | Freq=2.8500 GHz
+CTRL=0100 | NAND[3:1]=100 | Cycles=57 | Period=0.3509 ns | Freq=2.8500 GHz
+CTRL=0100 | NAND[3:1]=101 | Cycles=58 | Period=0.3448 ns | Freq=2.9000 GHz
+CTRL=0100 | NAND[3:1]=110 | Cycles=57 | Period=0.3509 ns | Freq=2.8500 GHz
+CTRL=0100 | NAND[3:1]=111 | Cycles=57 | Period=0.3509 ns | Freq=2.8500 GHz
+------------------------------------------------------------
+CTRL=0101 | NAND[3:1]=000 | Cycles=52 | Period=0.3846 ns | Freq=2.6000 GHz
+CTRL=0101 | NAND[3:1]=001 | Cycles=52 | Period=0.3846 ns | Freq=2.6000 GHz
+CTRL=0101 | NAND[3:1]=010 | Cycles=52 | Period=0.3846 ns | Freq=2.6000 GHz
+CTRL=0101 | NAND[3:1]=011 | Cycles=52 | Period=0.3846 ns | Freq=2.6000 GHz
+CTRL=0101 | NAND[3:1]=100 | Cycles=52 | Period=0.3846 ns | Freq=2.6000 GHz
+CTRL=0101 | NAND[3:1]=101 | Cycles=52 | Period=0.3846 ns | Freq=2.6000 GHz
+CTRL=0101 | NAND[3:1]=110 | Cycles=52 | Period=0.3846 ns | Freq=2.6000 GHz
+CTRL=0101 | NAND[3:1]=111 | Cycles=52 | Period=0.3846 ns | Freq=2.6000 GHz
+------------------------------------------------------------
+CTRL=0110 | NAND[3:1]=000 | Cycles=48 | Period=0.4167 ns | Freq=2.4000 GHz
+CTRL=0110 | NAND[3:1]=001 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=0110 | NAND[3:1]=010 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=0110 | NAND[3:1]=011 | Cycles=48 | Period=0.4167 ns | Freq=2.4000 GHz
+CTRL=0110 | NAND[3:1]=100 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=0110 | NAND[3:1]=101 | Cycles=48 | Period=0.4167 ns | Freq=2.4000 GHz
+CTRL=0110 | NAND[3:1]=110 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=0110 | NAND[3:1]=111 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+------------------------------------------------------------
+CTRL=0111 | NAND[3:1]=000 | Cycles=48 | Period=0.4167 ns | Freq=2.4000 GHz
+CTRL=0111 | NAND[3:1]=001 | Cycles=48 | Period=0.4167 ns | Freq=2.4000 GHz
+CTRL=0111 | NAND[3:1]=010 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=0111 | NAND[3:1]=011 | Cycles=48 | Period=0.4167 ns | Freq=2.4000 GHz
+CTRL=0111 | NAND[3:1]=100 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=0111 | NAND[3:1]=101 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=0111 | NAND[3:1]=110 | Cycles=48 | Period=0.4167 ns | Freq=2.4000 GHz
+CTRL=0111 | NAND[3:1]=111 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+------------------------------------------------------------
+CTRL=1000 | NAND[3:1]=000 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=1000 | NAND[3:1]=001 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=1000 | NAND[3:1]=010 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=1000 | NAND[3:1]=011 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=1000 | NAND[3:1]=100 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=1000 | NAND[3:1]=101 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=1000 | NAND[3:1]=110 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+CTRL=1000 | NAND[3:1]=111 | Cycles=47 | Period=0.4255 ns | Freq=2.3500 GHz
+------------------------------------------------------------
+CTRL=1001 | NAND[3:1]=000 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1001 | NAND[3:1]=001 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1001 | NAND[3:1]=010 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1001 | NAND[3:1]=011 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1001 | NAND[3:1]=100 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1001 | NAND[3:1]=101 | Cycles=42 | Period=0.4762 ns | Freq=2.1000 GHz
+CTRL=1001 | NAND[3:1]=110 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1001 | NAND[3:1]=111 | Cycles=42 | Period=0.4762 ns | Freq=2.1000 GHz
+------------------------------------------------------------
+CTRL=1010 | NAND[3:1]=000 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1010 | NAND[3:1]=001 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1010 | NAND[3:1]=010 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1010 | NAND[3:1]=011 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1010 | NAND[3:1]=100 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1010 | NAND[3:1]=101 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1010 | NAND[3:1]=110 | Cycles=39 | Period=0.5128 ns | Freq=1.9500 GHz
+CTRL=1010 | NAND[3:1]=111 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+------------------------------------------------------------
+CTRL=1011 | NAND[3:1]=000 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1011 | NAND[3:1]=001 | Cycles=39 | Period=0.5128 ns | Freq=1.9500 GHz
+CTRL=1011 | NAND[3:1]=010 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1011 | NAND[3:1]=011 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1011 | NAND[3:1]=100 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1011 | NAND[3:1]=101 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1011 | NAND[3:1]=110 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1011 | NAND[3:1]=111 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+------------------------------------------------------------
+CTRL=1100 | NAND[3:1]=000 | Cycles=46 | Period=0.4348 ns | Freq=2.3000 GHz
+CTRL=1100 | NAND[3:1]=001 | Cycles=46 | Period=0.4348 ns | Freq=2.3000 GHz
+CTRL=1100 | NAND[3:1]=010 | Cycles=46 | Period=0.4348 ns | Freq=2.3000 GHz
+CTRL=1100 | NAND[3:1]=011 | Cycles=46 | Period=0.4348 ns | Freq=2.3000 GHz
+CTRL=1100 | NAND[3:1]=100 | Cycles=46 | Period=0.4348 ns | Freq=2.3000 GHz
+CTRL=1100 | NAND[3:1]=101 | Cycles=46 | Period=0.4348 ns | Freq=2.3000 GHz
+CTRL=1100 | NAND[3:1]=110 | Cycles=46 | Period=0.4348 ns | Freq=2.3000 GHz
+CTRL=1100 | NAND[3:1]=111 | Cycles=46 | Period=0.4348 ns | Freq=2.3000 GHz
+------------------------------------------------------------
+CTRL=1101 | NAND[3:1]=000 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1101 | NAND[3:1]=001 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1101 | NAND[3:1]=010 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1101 | NAND[3:1]=011 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1101 | NAND[3:1]=100 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1101 | NAND[3:1]=101 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1101 | NAND[3:1]=110 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+CTRL=1101 | NAND[3:1]=111 | Cycles=43 | Period=0.4651 ns | Freq=2.1500 GHz
+------------------------------------------------------------
+CTRL=1110 | NAND[3:1]=000 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1110 | NAND[3:1]=001 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1110 | NAND[3:1]=010 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1110 | NAND[3:1]=011 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1110 | NAND[3:1]=100 | Cycles=39 | Period=0.5128 ns | Freq=1.9500 GHz
+CTRL=1110 | NAND[3:1]=101 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1110 | NAND[3:1]=110 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1110 | NAND[3:1]=111 | Cycles=39 | Period=0.5128 ns | Freq=1.9500 GHz
+------------------------------------------------------------
+CTRL=1111 | NAND[3:1]=000 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1111 | NAND[3:1]=001 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1111 | NAND[3:1]=010 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1111 | NAND[3:1]=011 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1111 | NAND[3:1]=100 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1111 | NAND[3:1]=101 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+CTRL=1111 | NAND[3:1]=110 | Cycles=39 | Period=0.5128 ns | Freq=1.9500 GHz
+CTRL=1111 | NAND[3:1]=111 | Cycles=40 | Period=0.5000 ns | Freq=2.0000 GHz
+============================================================
+  Sweep complete.
+============================================================

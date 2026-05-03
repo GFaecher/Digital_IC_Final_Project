@@ -319,20 +319,20 @@
 "object":"/designs/top/instances_seq/divide_uut_eighth_freq_reg",
 "type":"instance"},
 {"index": "1", 
- "date": "Sat May 02 20:38:21 UTC 2026",
- "seconds": 1777754301.521829,
+ "date": "Sun May 03 16:51:09 UTC 2026",
+ "seconds": 1777827069.3271198,
  "netlist": "fv/top/fv_map.v.gz", 
  "netlist_exists": "1", 
- "netlist_normalize": "/h/erober10/EE-166/finalProject/work/fv/top/fv_map.v.gz", 
- "netlist_mtime": "1777754300", 
- "netlist_timestamp": "Sat May 02 20:38:20 UTC 2026", 
+ "netlist_normalize": "/h/gfaech01/digital/Digital_IC_Final_Project/work/fv/top/fv_map.v.gz", 
+ "netlist_mtime": "1777827068", 
+ "netlist_timestamp": "Sun May 03 16:51:08 UTC 2026", 
  "netlist_size": "1334", 
- "netlist_cksum": "1580219877", 
+ "netlist_cksum": "106884094", 
  "design_name": "top", 
- "synth_workdir": "/h/erober10/EE-166/finalProject/work", 
+ "synth_workdir": "/h/gfaech01/digital/Digital_IC_Final_Project/work", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 0.802574 
+ "write_verif_file_runtime": 1.108765 
  }
 ]
