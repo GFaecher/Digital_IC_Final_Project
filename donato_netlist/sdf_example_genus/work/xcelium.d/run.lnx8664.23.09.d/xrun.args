@@ -11,7 +11,7 @@ rwc
 -verisium
 +incdir+../rtl
 -top
-tb
+tb_netlist
 -f
 ../rtl/sdf_sim.vc
 -l

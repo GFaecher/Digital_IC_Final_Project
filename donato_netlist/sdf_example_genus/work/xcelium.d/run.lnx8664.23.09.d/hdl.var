@@ -5,4 +5,4 @@ define SNAPSHOT worklib.AN2D12BWP16P90:v
 DEFINE RUNMODEDEFAULT 1
 DEFINE LIB_MAP ( + => worklib )
 define ELAB_SNAPSHOT
-define SNAPSHOT worklib.tb:sv
+define SNAPSHOT worklib.tb_netlist:sv

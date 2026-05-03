@@ -1,9 +1,9 @@
 #########################################################################
 # Verisium Debug version 24.09.001-s (Built on 2024-09-26T16:03:08Z)
-# history.py generated at 2026/04/30 14:36:43
-# host: lab120h
-# port: 36285
-# launch command: indago -connect dc:lab120h.eecs.tufts.edu:58903 -interactive
+# history.py generated at 2026/05/03 12:40:13
+# host: dell52
+# port: 45033
+# launch command: indago -connect dc:dell52.eecs.tufts.edu:56533 -interactive
 # #########################################################################
 import time, os, sys
 if 'self' not in globals():
@@ -12,11 +12,11 @@ if 'self' not in globals():
     self = VerisiumDebugServer(VerisiumDebugArgs(
         is_gui=True,
         is_launch_needed=True,
-        port=36285,
-        extra_args='-connect dc:lab120h.eecs.tufts.edu:58903 -interactive'
+        port=45033,
+        extra_args='-connect dc:dell52.eecs.tufts.edu:56533 -interactive'
     ))
 
-# Verisium: Attempting to connect to Verisium server on host: localhost, port: 36285
+# Verisium: Attempting to connect to Verisium server on host: localhost, port: 45033
 # Verisium: **************************************************************************************
 # Verisium: *****                        Verisium version 24.09.001-s                        *****
 # Verisium: *****                 NOTE: Some API features are Beta quality.                  *****

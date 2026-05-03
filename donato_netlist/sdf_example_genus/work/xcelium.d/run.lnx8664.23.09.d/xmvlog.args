@@ -21,8 +21,8 @@
 /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/VERILOG/N16ADFP_StdCell.v
 -YDIR
 ../rtl/
-../rtl/ro.sv
-../rtl/tb.sv
+../rtl/ro_netlist-compile.v
+../rtl/tb_netlist.sv
 -CDSLIB
 ./xcelium.d/run.lnx8664.23.09.d/cdsrun.lib
 -HDLVAR

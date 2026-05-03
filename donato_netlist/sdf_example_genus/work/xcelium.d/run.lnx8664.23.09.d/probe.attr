@@ -1,7 +1,7 @@
-lwd_dir /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/work/xcelium.d/worklib/tb/sv/debug_db/tb/../..
-snapshot_name worklib.tb:sv
+lwd_dir /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/work/xcelium.d/worklib/tb_netlist/sv/debug_db/tb_netlist/../..
+snapshot_name worklib.tb_netlist:sv
 cells 1
-hostname lab120h
+hostname dell52
 work_directory /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/work
 autofetch 0
 persistent_sources 0

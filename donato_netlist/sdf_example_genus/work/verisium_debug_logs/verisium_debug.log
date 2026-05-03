@@ -8,7 +8,7 @@ in 'SimConnect::_simcontrolConnect' overlay db = null, overlayH = 0, is valid = 
 in 'JDACTBDataProvider::notifyLiveConnectionDB', sessionId = 0
 
 
-**** found lwd dir to be: /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/work/xcelium.d/worklib/tb/sv
+**** found lwd dir to be: /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/work/xcelium.d/worklib/tb_netlist/sv
 
 
 
@@ -20,7 +20,7 @@ PPEAttributes values:
     isPersistentSources = false
     isXprop = false
     cdslib = /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/work/xcelium.d/run.d/cds.lib
-    snapshot = worklib.tb:sv
+    snapshot = worklib.tb_netlist:sv
     workdir = /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/work
     xceliumDir = /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/work/xcelium.d
     rundDir = /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/work/xcelium.d/run.d
@@ -28,7 +28,7 @@ PPEAttributes values:
     cds_implicit_tmpdir = 
     cds_alternate_tmpdir = 
     du_agent = 
-    lwddir = /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/work/xcelium.d/worklib/tb/sv
+    lwddir = /h/gfaech01/digital/Digital_IC_Final_Project/donato_netlist/sdf_example_genus/work/xcelium.d/worklib/tb_netlist/sv
     cds_alternate_cdslib = 
     elab_options = 
     found = true
@@ -57,7 +57,7 @@ End of dump DB Order
 
 
 
-Scripting Service started, listening on port 36285...
+Scripting Service started, listening on port 45033...
 
 
 GOT COMMAND: 

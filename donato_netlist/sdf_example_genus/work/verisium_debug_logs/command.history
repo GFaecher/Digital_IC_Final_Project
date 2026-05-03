@@ -1,7 +1,2 @@
-Connected to dc:lab120h.eecs.tufts.edu:58903
+Connected to dc:dell52.eecs.tufts.edu:56533
 xmsim run
-xmsim run
-xmsim reset
-xmsim run
-xmsim ida_probe -log=on
-xmsim ida_probe -log=off

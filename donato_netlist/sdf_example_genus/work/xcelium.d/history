@@ -2,4 +2,4 @@
 // File created by:  xrun
 // Do not modify this file
 
-s1::(30Apr2026:14:35:41):( xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top tb -f ../rtl/sdf_sim.vc -l ./simulation.log )
+s1::(03May2026:12:38:08):( xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top tb_netlist -f ../rtl/sdf_sim.vc -l ./simulation.log )

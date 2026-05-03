@@ -11,7 +11,7 @@
 rwc
 -no_analogsolver
 -MESSAGES
-tb
+tb_netlist
 -XLMODE
 ./xcelium.d/run.lnx8664.23.09.d
 -RUNMODE

@@ -4,5 +4,6 @@
 +define+SYNTHESIS
 
 // include below line-by-line the path to all relevant RTL files used to build the Macro
-../rtl/ro_netlist.sv
 +incdir+/ee/166/CHIPKIT/ip/rtl_inc/
+
+../rtl/ro_netlist.sv
