@@ -11,7 +11,7 @@ logic divider_out;
 logic up_out;
 logic down_out;
 logic dco_out;
-logic [3:0] cWord;
+logic [4:0] cWord;
 logic nand1_out;
 logic nand2_out;
 logic nand3_out;

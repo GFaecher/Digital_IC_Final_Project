@@ -33,7 +33,7 @@ ND4D4BWP16P90(A1, A2, A3, A4, ZN);
 */
 
 module ro_netlist (
-    input   logic [3:0]     CTRL,
+    input   logic [4:0]     CTRL,
     input   logic           NAND_CTRL1,
     input   logic           NAND_CTRL2,
     input   logic           NAND_CTRL3,
