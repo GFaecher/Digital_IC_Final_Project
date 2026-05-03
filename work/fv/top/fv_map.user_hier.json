@@ -5,7 +5,6 @@
 "ports":
 [
 {"name":"EN","orig_name":"EN"},
-{"name":"CTRL[4]","orig_name":"CTRL[4]"},
 {"name":"CTRL[3]","orig_name":"CTRL[3]"},
 {"name":"CTRL[2]","orig_name":"CTRL[2]"},
 {"name":"CTRL[1]","orig_name":"CTRL[1]"},
