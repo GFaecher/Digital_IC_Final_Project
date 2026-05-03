@@ -246,11 +246,6 @@
 {"sequential":"true",
 "gint_phase_inversion":"false",
 "latch":"false",
-"object":"/designs/top/instances_seq/accum_uut_sum_reg[6]",
-"type":"instance"},
-{"sequential":"true",
-"gint_phase_inversion":"false",
-"latch":"false",
 "object":"/designs/top/instances_seq/accum_uut_sum_reg[5]",
 "type":"instance"},
 {"sequential":"true",
@@ -291,12 +286,21 @@
 {"sequential":"true",
 "gint_phase_inversion":"false",
 "latch":"false",
+<<<<<<< HEAD
 "object":"/designs/top/instances_seq/pfd_uut_Q_UP_reg",
+=======
+"object":"/designs/top/instances_seq/divide_uut_half_freq_reg",
 "type":"instance"},
 {"sequential":"true",
 "gint_phase_inversion":"false",
 "latch":"false",
 "object":"/designs/top/instances_seq/pfd_uut_Q_DOWN_reg",
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
+"type":"instance"},
+{"sequential":"true",
+"gint_phase_inversion":"false",
+"latch":"false",
+"object":"/designs/top/instances_seq/pfd_uut_Q_UP_reg",
 "type":"instance"},
 {"sequential":"true",
 "gint_phase_inversion":"false",
@@ -319,6 +323,7 @@
 "object":"/designs/top/instances_seq/divide_uut_quarter_freq_reg",
 "type":"instance"},
 {"index": "1", 
+<<<<<<< HEAD
  "date": "Sun May 03 19:55:33 UTC 2026",
  "seconds": 1777838133.2764509,
  "netlist": "fv/top/fv_map.v.gz", 
@@ -328,11 +333,26 @@
  "netlist_timestamp": "Sun May 03 19:55:32 UTC 2026", 
  "netlist_size": "1427", 
  "netlist_cksum": "2164415886", 
+=======
+ "date": "Sun May 03 19:24:24 UTC 2026",
+ "seconds": 1777836264.822888,
+ "netlist": "fv/top/fv_map.v.gz", 
+ "netlist_exists": "1", 
+ "netlist_normalize": "/h/erober10/EE-166/finalProject/work/fv/top/fv_map.v.gz", 
+ "netlist_mtime": "1777836263", 
+ "netlist_timestamp": "Sun May 03 19:24:23 UTC 2026", 
+ "netlist_size": "1291", 
+ "netlist_cksum": "2054805222", 
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
  "design_name": "top", 
  "synth_workdir": "/h/erober10/EE-166/finalProject/work", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
+<<<<<<< HEAD
  "write_verif_file_runtime": 0.923777 
+=======
+ "write_verif_file_runtime": 0.96839 
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
  }
 ]

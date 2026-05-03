@@ -1,7 +1,11 @@
 (DELAYFILE
   (SDFVERSION  "OVI 3.0")
   (DESIGN      "top")
+<<<<<<< HEAD
   (DATE        "Sun May 03 15:55:34 EDT 2026")
+=======
+  (DATE        "Sun May 03 15:24:26 EDT 2026")
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
   (VENDOR      "Cadence, Inc.")
   (PROGRAM     "Genus(TM) Synthesis Solution")
   (VERSION     "21.18-s082_1")
@@ -12,7 +16,11 @@
   (TIMESCALE   1ps)
   (CELL
      (CELLTYPE "SDFCNQD2BWP16P90")
+<<<<<<< HEAD
      (INSTANCE accum_uut_sum_reg\[6\])
+=======
+     (INSTANCE accum_uut_sum_reg\[5\])
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT CDN (::0.0))
@@ -21,8 +29,13 @@
           (PORT SI (::0.0))
           (PORT SE (::0.0))
           (COND CP==1'b1&&D==1'b1&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::20)))
+<<<<<<< HEAD
           (COND CDN==1'b1&&D==1'b0&&SE==1'b1 (IOPATH CP Q (::56) (::64)))
           (COND CDN==1'b1&&D==1'b1&&SE==1'b1 (IOPATH CP Q (::56) (::64)))
+=======
+          (COND CDN==1'b1&&D==1'b0&&SE==1'b1 (IOPATH CP Q (::57) (::65)))
+          (COND CDN==1'b1&&D==1'b1&&SE==1'b1 (IOPATH CP Q (::57) (::65)))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
           (COND CP==1'b0&&D==1'b0&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::20)))
           (COND CP==1'b0&&D==1'b0&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::20)))
           (COND CP==1'b0&&D==1'b0&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::20)))
@@ -31,8 +44,13 @@
           (COND CP==1'b0&&D==1'b1&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::20)))
           (COND CP==1'b0&&D==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::20)))
           (COND CP==1'b0&&D==1'b1&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::20)))
+<<<<<<< HEAD
           (COND CDN==1'b1&&SE==1'b0&&SI==1'b0 (IOPATH CP Q (::57) (::64)))
           (COND CDN==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CP Q (::57) (::64)))
+=======
+          (COND CDN==1'b1&&SE==1'b0&&SI==1'b0 (IOPATH CP Q (::57) (::65)))
+          (COND CDN==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CP Q (::57) (::65)))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
           (COND CP==1'b1&&D==1'b0&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::20)))
           (COND CP==1'b1&&D==1'b1&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::20)))
           (COND CP==1'b1&&D==1'b0&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::20)))
@@ -40,6 +58,7 @@
           (COND CP==1'b1&&D==1'b1&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::20)))
           (COND CP==1'b1&&D==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::20)))
           (COND CP==1'b1&&D==1'b0&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::20)))
+<<<<<<< HEAD
         )
      )
      (TIMINGCHECK
@@ -165,6 +184,8 @@
           (COND CP==1'b1&&D==1'b1&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::21)))
           (COND CP==1'b1&&D==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::21)))
           (COND CP==1'b1&&D==1'b0&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::21)))
+=======
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
      (TIMINGCHECK
@@ -172,14 +193,22 @@
         (RECREM (posedge CDN) (COND D_nSE_SI_SDFCHK (posedge CP)) (::-14) (::24))
         (RECREM (posedge CDN) (COND D_SE_SI_SDFCHK (posedge CP)) (::-14) (::24))
         (RECREM (posedge CDN) (COND D_nSE_nSI_SDFCHK (posedge CP)) (::-14) (::24))
+<<<<<<< HEAD
         (SETUPHOLD (negedge D) (COND CDN_nSE_nSI_SDFCHK (posedge CP)) (::23) (::7))
         (SETUPHOLD (posedge D) (COND CDN_nSE_nSI_SDFCHK (posedge CP)) (::45) (::-26))
         (SETUPHOLD (negedge D) (COND CDN_nSE_SI_SDFCHK (posedge CP)) (::24) (::7))
         (SETUPHOLD (posedge D) (COND CDN_nSE_SI_SDFCHK (posedge CP)) (::43) (::-26))
+=======
+        (SETUPHOLD (negedge D) (COND CDN_nSE_nSI_SDFCHK (posedge CP)) (::22) (::7))
+        (SETUPHOLD (posedge D) (COND CDN_nSE_nSI_SDFCHK (posedge CP)) (::44) (::-25))
+        (SETUPHOLD (negedge D) (COND CDN_nSE_SI_SDFCHK (posedge CP)) (::24) (::7))
+        (SETUPHOLD (posedge D) (COND CDN_nSE_SI_SDFCHK (posedge CP)) (::42) (::-25))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         (SETUPHOLD (negedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::24) (::7))
         (SETUPHOLD (posedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::42) (::-24))
         (SETUPHOLD (negedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::23) (::7))
         (SETUPHOLD (posedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::42) (::-24))
+<<<<<<< HEAD
         (SETUPHOLD (negedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::35) (::-3))
         (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::67) (::-47))
         (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::64) (::-46))
@@ -189,10 +218,73 @@
   (CELL
      (CELLTYPE "OAI211D1BWP16P90")
      (INSTANCE g1336__5107)
+=======
+        (SETUPHOLD (negedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::33) (::-2))
+        (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::65) (::-45))
+        (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::62) (::-44))
+        (SETUPHOLD (posedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::53) (::-25))
+     )
+  )
+  (CELL
+     (CELLTYPE "SDFCNQD2BWP16P90")
+     (INSTANCE accum_uut_sum_reg\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CDN (::0.0))
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (PORT SI (::0.0))
+          (PORT SE (::0.0))
+          (COND CP==1'b1&&D==1'b1&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::22)))
+          (COND CDN==1'b1&&D==1'b0&&SE==1'b1 (IOPATH CP Q (::59) (::67)))
+          (COND CDN==1'b1&&D==1'b1&&SE==1'b1 (IOPATH CP Q (::59) (::67)))
+          (COND CP==1'b0&&D==1'b0&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b0&&D==1'b0&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b0&&D==1'b0&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b0&&D==1'b1&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::23)))
+          (COND CP==1'b0&&D==1'b0&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::23)))
+          (COND CP==1'b0&&D==1'b1&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b0&&D==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::23)))
+          (COND CP==1'b0&&D==1'b1&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::23)))
+          (COND CDN==1'b1&&SE==1'b0&&SI==1'b0 (IOPATH CP Q (::59) (::67)))
+          (COND CDN==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CP Q (::59) (::67)))
+          (COND CP==1'b1&&D==1'b0&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b1&&D==1'b1&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b1&&D==1'b0&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b1&&D==1'b0&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b1&&D==1'b1&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b1&&D==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b1&&D==1'b0&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::22)))
+        )
+     )
+     (TIMINGCHECK
+        (RECREM (posedge CDN) (COND nD_SE_SI_SDFCHK (posedge CP)) (::-14) (::24))
+        (RECREM (posedge CDN) (COND D_nSE_SI_SDFCHK (posedge CP)) (::-14) (::24))
+        (RECREM (posedge CDN) (COND D_SE_SI_SDFCHK (posedge CP)) (::-14) (::24))
+        (RECREM (posedge CDN) (COND D_nSE_nSI_SDFCHK (posedge CP)) (::-14) (::24))
+        (SETUPHOLD (negedge D) (COND CDN_nSE_nSI_SDFCHK (posedge CP)) (::23) (::6))
+        (SETUPHOLD (posedge D) (COND CDN_nSE_nSI_SDFCHK (posedge CP)) (::45) (::-26))
+        (SETUPHOLD (negedge D) (COND CDN_nSE_SI_SDFCHK (posedge CP)) (::25) (::6))
+        (SETUPHOLD (posedge D) (COND CDN_nSE_SI_SDFCHK (posedge CP)) (::43) (::-26))
+        (SETUPHOLD (negedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::24) (::7))
+        (SETUPHOLD (posedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::43) (::-25))
+        (SETUPHOLD (negedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::23) (::7))
+        (SETUPHOLD (posedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::43) (::-25))
+        (SETUPHOLD (negedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::33) (::-2))
+        (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::65) (::-45))
+        (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::62) (::-44))
+        (SETUPHOLD (posedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::53) (::-25))
+     )
+  )
+  (CELL
+     (CELLTYPE "XOR3D2BWP16P90")
+     (INSTANCE g1091__2398)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT A2 (::0.0))
+<<<<<<< HEAD
           (PORT B (::0.0))
           (PORT C (::0.0))
           (COND A1==1'b0&&A2==1'b1&&B==1'b1 (IOPATH C ZN (::20) (::22)))
@@ -203,10 +295,26 @@
           (COND A1==1'b1&&A2==1'b1&&C==1'b1 (IOPATH B ZN (::21) (::20)))
           (IOPATH A1 ZN (::25) (::29))
           (IOPATH A2 ZN (::22) (::24))
+=======
+          (PORT A3 (::0.0))
+          (COND A2==1'b0&&A3==1'b0 (IOPATH A1 Z (::69) (::65)))
+          (COND A1==1'b0&&A2==1'b0 (IOPATH A3 Z (::42) (::41)))
+          (COND A1==1'b0&&A2==1'b1 (IOPATH A3 Z (::41) (::41)))
+          (COND A2==1'b1&&A3==1'b0 (IOPATH A1 Z (::62) (::75)))
+          (COND A2==1'b0&&A3==1'b1 (IOPATH A1 Z (::68) (::74)))
+          (COND A1==1'b1&&A2==1'b0 (IOPATH A3 Z (::41) (::42)))
+          (COND A2==1'b1&&A3==1'b1 (IOPATH A1 Z (::78) (::65)))
+          (COND A1==1'b1&&A2==1'b1 (IOPATH A3 Z (::42) (::41)))
+          (COND A1==1'b0&&A3==1'b0 (IOPATH A2 Z (::82) (::71)))
+          (COND A1==1'b1&&A3==1'b0 (IOPATH A2 Z (::70) (::80)))
+          (COND A1==1'b0&&A3==1'b1 (IOPATH A2 Z (::74) (::87)))
+          (COND A1==1'b1&&A3==1'b1 (IOPATH A2 Z (::83) (::75)))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
   (CELL
+<<<<<<< HEAD
      (CELLTYPE "XNR2D1BWP16P90")
      (INSTANCE g1337__6260)
      (DELAY
@@ -217,6 +325,33 @@
           (COND A2==1'b0 (IOPATH A1 ZN (::28) (::29)))
           (COND A1==1'b1 (IOPATH A2 ZN (::32) (::34)))
           (COND A2==1'b1 (IOPATH A1 ZN (::26) (::26)))
+=======
+     (CELLTYPE "FA1D1BWP16P90")
+     (INSTANCE g1092__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (COND A==1'b0&&B==1'b1 (IOPATH CI CO (::36) (::42)))
+          (COND A==1'b1&&B==1'b0 (IOPATH CI CO (::36) (::44)))
+          (COND A==1'b0&&CI==1'b1 (IOPATH B CO (::34) (::35)))
+          (COND A==1'b1&&CI==1'b0 (IOPATH B CO (::33) (::38)))
+          (COND B==1'b0&&CI==1'b1 (IOPATH A CO (::58) (::47)))
+          (COND B==1'b1&&CI==1'b0 (IOPATH A CO (::60) (::44)))
+          (COND A==1'b0&&B==1'b0 (IOPATH CI S (::44) (::46)))
+          (COND A==1'b0&&B==1'b1 (IOPATH CI S (::66) (::60)))
+          (COND B==1'b0&&CI==1'b0 (IOPATH A S (::62) (::50)))
+          (COND A==1'b0&&CI==1'b0 (IOPATH B S (::39) (::40)))
+          (COND B==1'b1&&CI==1'b0 (IOPATH A S (::67) (::83)))
+          (COND B==1'b0&&CI==1'b1 (IOPATH A S (::71) (::81)))
+          (COND A==1'b1&&CI==1'b0 (IOPATH B S (::61) (::56)))
+          (COND A==1'b0&&CI==1'b1 (IOPATH B S (::59) (::57)))
+          (COND A==1'b1&&B==1'b0 (IOPATH CI S (::68) (::60)))
+          (COND B==1'b1&&CI==1'b1 (IOPATH A S (::75) (::44)))
+          (COND A==1'b1&&CI==1'b1 (IOPATH B S (::48) (::36)))
+          (COND A==1'b1&&B==1'b1 (IOPATH CI S (::50) (::42)))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
@@ -265,6 +400,7 @@
         (SETUPHOLD (posedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::42) (::-24))
         (SETUPHOLD (negedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::23) (::7))
         (SETUPHOLD (posedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::42) (::-24))
+<<<<<<< HEAD
         (SETUPHOLD (negedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::35) (::-3))
         (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::67) (::-47))
         (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::64) (::-46))
@@ -295,6 +431,12 @@
           (COND A1==1'b1 (IOPATH A2 ZN (::33) (::34)))
           (COND A2==1'b1 (IOPATH A1 ZN (::30) (::31)))
         )
+=======
+        (SETUPHOLD (negedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::33) (::-2))
+        (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::65) (::-45))
+        (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::62) (::-44))
+        (SETUPHOLD (posedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::53) (::-25))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      )
   )
   (CELL
@@ -307,7 +449,11 @@
           (PORT D (::0.0))
           (PORT SI (::0.0))
           (PORT SE (::0.0))
+<<<<<<< HEAD
           (COND CP==1'b1&&D==1'b1&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::21)))
+=======
+          (COND CP==1'b1&&D==1'b1&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::22)))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
           (COND CDN==1'b1&&D==1'b0&&SE==1'b1 (IOPATH CP Q (::58) (::66)))
           (COND CDN==1'b1&&D==1'b1&&SE==1'b1 (IOPATH CP Q (::58) (::66)))
           (COND CP==1'b0&&D==1'b0&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::22)))
@@ -320,6 +466,7 @@
           (COND CP==1'b0&&D==1'b1&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::22)))
           (COND CDN==1'b1&&SE==1'b0&&SI==1'b0 (IOPATH CP Q (::58) (::66)))
           (COND CDN==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CP Q (::58) (::66)))
+<<<<<<< HEAD
           (COND CP==1'b1&&D==1'b0&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::21)))
           (COND CP==1'b1&&D==1'b1&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::21)))
           (COND CP==1'b1&&D==1'b0&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::21)))
@@ -327,6 +474,15 @@
           (COND CP==1'b1&&D==1'b1&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::21)))
           (COND CP==1'b1&&D==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::21)))
           (COND CP==1'b1&&D==1'b0&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::21)))
+=======
+          (COND CP==1'b1&&D==1'b0&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b1&&D==1'b1&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b1&&D==1'b0&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b1&&D==1'b0&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b1&&D==1'b1&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b1&&D==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::22)))
+          (COND CP==1'b1&&D==1'b0&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::22)))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
      (TIMINGCHECK
@@ -342,6 +498,7 @@
         (SETUPHOLD (posedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::42) (::-24))
         (SETUPHOLD (negedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::23) (::7))
         (SETUPHOLD (posedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::42) (::-24))
+<<<<<<< HEAD
         (SETUPHOLD (negedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::35) (::-3))
         (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::67) (::-47))
         (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::64) (::-46))
@@ -358,6 +515,12 @@
           (IOPATH A1 ZN (::25) (::31))
           (IOPATH B1 ZN (::23) (::25))
         )
+=======
+        (SETUPHOLD (negedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::33) (::-2))
+        (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::65) (::-45))
+        (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::62) (::-44))
+        (SETUPHOLD (posedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::53) (::-25))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      )
   )
   (CELL
@@ -405,21 +568,33 @@
         (SETUPHOLD (posedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::42) (::-25))
         (SETUPHOLD (negedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::23) (::7))
         (SETUPHOLD (posedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::42) (::-25))
+<<<<<<< HEAD
         (SETUPHOLD (negedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::35) (::-3))
         (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::67) (::-47))
         (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::64) (::-46))
         (SETUPHOLD (posedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::55) (::-26))
+=======
+        (SETUPHOLD (negedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::33) (::-2))
+        (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::65) (::-45))
+        (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::62) (::-44))
+        (SETUPHOLD (posedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::53) (::-25))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      )
   )
   (CELL
      (CELLTYPE "OAI211D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1344__6783)
+=======
+     (INSTANCE g1096__6260)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT A2 (::0.0))
           (PORT B (::0.0))
           (PORT C (::0.0))
+<<<<<<< HEAD
           (COND A1==1'b0&&A2==1'b1&&B==1'b1 (IOPATH C ZN (::26) (::31)))
           (COND A1==1'b1&&A2==1'b0&&B==1'b1 (IOPATH C ZN (::26) (::35)))
           (COND A1==1'b0&&A2==1'b1&&C==1'b1 (IOPATH B ZN (::27) (::31)))
@@ -428,19 +603,37 @@
           (COND A1==1'b1&&A2==1'b1&&C==1'b1 (IOPATH B ZN (::27) (::29)))
           (IOPATH A1 ZN (::33) (::39))
           (IOPATH A2 ZN (::29) (::31))
+=======
+          (COND A1==1'b0&&A2==1'b1&&B==1'b1 (IOPATH C ZN (::24) (::29)))
+          (COND A1==1'b1&&A2==1'b0&&B==1'b1 (IOPATH C ZN (::24) (::33)))
+          (COND A1==1'b0&&A2==1'b1&&C==1'b1 (IOPATH B ZN (::26) (::29)))
+          (COND A1==1'b1&&A2==1'b0&&C==1'b1 (IOPATH B ZN (::26) (::33)))
+          (COND A1==1'b1&&A2==1'b1&&B==1'b1 (IOPATH C ZN (::24) (::26)))
+          (COND A1==1'b1&&A2==1'b1&&C==1'b1 (IOPATH B ZN (::26) (::27)))
+          (IOPATH A1 ZN (::31) (::37))
+          (IOPATH A2 ZN (::27) (::30))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
   (CELL
      (CELLTYPE "XNR2D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1345__3680)
+=======
+     (INSTANCE g1097__4319)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT A2 (::0.0))
           (COND A1==1'b0 (IOPATH A2 ZN (::36) (::36)))
           (COND A2==1'b0 (IOPATH A1 ZN (::28) (::29)))
+<<<<<<< HEAD
           (COND A1==1'b1 (IOPATH A2 ZN (::32) (::34)))
+=======
+          (COND A1==1'b1 (IOPATH A2 ZN (::32) (::33)))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
           (COND A2==1'b1 (IOPATH A1 ZN (::26) (::25)))
         )
      )
@@ -482,6 +675,7 @@
         (RECREM (posedge CDN) (COND D_nSE_SI_SDFCHK (posedge CP)) (::-14) (::24))
         (RECREM (posedge CDN) (COND D_SE_SI_SDFCHK (posedge CP)) (::-14) (::24))
         (RECREM (posedge CDN) (COND D_nSE_nSI_SDFCHK (posedge CP)) (::-14) (::24))
+<<<<<<< HEAD
         (SETUPHOLD (negedge D) (COND CDN_nSE_nSI_SDFCHK (posedge CP)) (::40) (::-7))
         (SETUPHOLD (posedge D) (COND CDN_nSE_nSI_SDFCHK (posedge CP)) (::68) (::-48))
         (SETUPHOLD (negedge D) (COND CDN_nSE_SI_SDFCHK (posedge CP)) (::42) (::-7))
@@ -490,6 +684,16 @@
         (SETUPHOLD (posedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::44) (::-26))
         (SETUPHOLD (negedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::27) (::4))
         (SETUPHOLD (posedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::44) (::-26))
+=======
+        (SETUPHOLD (negedge D) (COND CDN_nSE_nSI_SDFCHK (posedge CP)) (::38) (::-5))
+        (SETUPHOLD (posedge D) (COND CDN_nSE_nSI_SDFCHK (posedge CP)) (::66) (::-46))
+        (SETUPHOLD (negedge D) (COND CDN_nSE_SI_SDFCHK (posedge CP)) (::39) (::-5))
+        (SETUPHOLD (posedge D) (COND CDN_nSE_SI_SDFCHK (posedge CP)) (::65) (::-46))
+        (SETUPHOLD (negedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::27) (::5))
+        (SETUPHOLD (posedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::43) (::-26))
+        (SETUPHOLD (negedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::26) (::5))
+        (SETUPHOLD (posedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::43) (::-26))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         (SETUPHOLD (negedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::18) (::8))
         (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::39) (::-21))
         (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::48) (::-31))
@@ -498,7 +702,11 @@
   )
   (CELL
      (CELLTYPE "ND2D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1347__1617)
+=======
+     (INSTANCE g1099__8428)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -510,7 +718,11 @@
   )
   (CELL
      (CELLTYPE "XNR2D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1348__2802)
+=======
+     (INSTANCE g1100__5526)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -524,13 +736,18 @@
   )
   (CELL
      (CELLTYPE "XOR3D2BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1349__1705)
+=======
+     (INSTANCE g1101__6783)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT A2 (::0.0))
           (PORT A3 (::0.0))
           (COND A2==1'b0&&A3==1'b0 (IOPATH A1 Z (::69) (::65)))
+<<<<<<< HEAD
           (COND A1==1'b0&&A2==1'b0 (IOPATH A3 Z (::78) (::56)))
           (COND A1==1'b0&&A2==1'b1 (IOPATH A3 Z (::53) (::70)))
           (COND A2==1'b1&&A3==1'b0 (IOPATH A1 Z (::62) (::75)))
@@ -538,6 +755,15 @@
           (COND A1==1'b1&&A2==1'b0 (IOPATH A3 Z (::53) (::70)))
           (COND A2==1'b1&&A3==1'b1 (IOPATH A1 Z (::78) (::65)))
           (COND A1==1'b1&&A2==1'b1 (IOPATH A3 Z (::78) (::56)))
+=======
+          (COND A1==1'b0&&A2==1'b0 (IOPATH A3 Z (::75) (::54)))
+          (COND A1==1'b0&&A2==1'b1 (IOPATH A3 Z (::52) (::68)))
+          (COND A2==1'b1&&A3==1'b0 (IOPATH A1 Z (::62) (::75)))
+          (COND A2==1'b0&&A3==1'b1 (IOPATH A1 Z (::68) (::74)))
+          (COND A1==1'b1&&A2==1'b0 (IOPATH A3 Z (::52) (::68)))
+          (COND A2==1'b1&&A3==1'b1 (IOPATH A1 Z (::78) (::65)))
+          (COND A1==1'b1&&A2==1'b1 (IOPATH A3 Z (::75) (::54)))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
           (COND A1==1'b0&&A3==1'b0 (IOPATH A2 Z (::54) (::59)))
           (COND A1==1'b1&&A3==1'b0 (IOPATH A2 Z (::60) (::61)))
           (COND A1==1'b0&&A3==1'b1 (IOPATH A2 Z (::62) (::57)))
@@ -547,7 +773,11 @@
   )
   (CELL
      (CELLTYPE "IND2D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1350__5122)
+=======
+     (INSTANCE g1102__3680)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -559,25 +789,34 @@
   )
   (CELL
      (CELLTYPE "IND2D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1351__8246)
+=======
+     (INSTANCE g1103__1617)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT B1 (::0.0))
-          (IOPATH A1 ZN (::24) (::30))
-          (IOPATH B1 ZN (::23) (::21))
+          (IOPATH A1 ZN (::24) (::29))
+          (IOPATH B1 ZN (::22) (::21))
         )
      )
   )
   (CELL
      (CELLTYPE "IND2D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1352__7098)
+=======
+     (INSTANCE g1104__2802)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT B1 (::0.0))
           (IOPATH A1 ZN (::22) (::27))
           (IOPATH B1 ZN (::19) (::17))
+<<<<<<< HEAD
         )
      )
   )
@@ -590,11 +829,14 @@
           (PORT B1 (::0.0))
           (IOPATH A1 ZN (::22) (::27))
           (IOPATH B1 ZN (::20) (::18))
+=======
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
   (CELL
      (CELLTYPE "CKND1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1354)
      (DELAY
         (ABSOLUTE
@@ -612,20 +854,36 @@
           (PORT B1 (::0.0))
           (IOPATH A1 ZN (::22) (::27))
           (IOPATH B1 ZN (::19) (::17))
+=======
+     (INSTANCE g1105)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I ZN (::23) (::30))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
   (CELL
      (CELLTYPE "OAI21D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1356__5115)
+=======
+     (INSTANCE g1106__1705)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT A2 (::0.0))
           (PORT B (::0.0))
           (COND A1==1'b0&&A2==1'b1 (IOPATH B ZN (::20) (::23)))
+<<<<<<< HEAD
           (COND A1==1'b1&&A2==1'b0 (IOPATH B ZN (::20) (::21)))
           (COND A1==1'b1&&A2==1'b1 (IOPATH B ZN (::20) (::19)))
+=======
+          (COND A1==1'b1&&A2==1'b0 (IOPATH B ZN (::20) (::20)))
+          (COND A1==1'b1&&A2==1'b1 (IOPATH B ZN (::20) (::18)))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
           (IOPATH A1 ZN (::28) (::23))
           (IOPATH A2 ZN (::23) (::26))
         )
@@ -633,13 +891,18 @@
   )
   (CELL
      (CELLTYPE "OAOI211D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1357__7482)
+=======
+     (INSTANCE g1107__5122)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT A2 (::0.0))
           (PORT B (::0.0))
           (PORT C (::0.0))
+<<<<<<< HEAD
           (COND A1==1'b1&&A2==1'b1&&B==1'b0 (IOPATH C ZN (::68) (::40)))
           (COND A1==1'b1&&A2==1'b1&&C==1'b0 (IOPATH B ZN (::68) (::43)))
           (COND A1==1'b0&&A2==1'b0&&B==1'b0 (IOPATH C ZN (::60) (::40)))
@@ -650,58 +913,106 @@
           (COND A1==1'b0&&A2==1'b1&&C==1'b0 (IOPATH B ZN (::68) (::50)))
           (COND A1==1'b1&&A2==1'b0&&C==1'b0 (IOPATH B ZN (::70) (::55)))
           (IOPATH A2 ZN (::83) (::54))
+=======
+          (COND A1==1'b1&&A2==1'b1&&B==1'b0 (IOPATH C ZN (::62) (::37)))
+          (COND A1==1'b1&&A2==1'b1&&C==1'b0 (IOPATH B ZN (::62) (::39)))
+          (COND A1==1'b0&&A2==1'b0&&B==1'b0 (IOPATH C ZN (::54) (::37)))
+          (IOPATH A1 ZN (::74) (::49))
+          (COND A1==1'b0&&A2==1'b0&&B==1'b1 (IOPATH C ZN (::79) (::38)))
+          (COND A1==1'b0&&A2==1'b1&&B==1'b0 (IOPATH C ZN (::62) (::37)))
+          (COND A1==1'b1&&A2==1'b0&&B==1'b0 (IOPATH C ZN (::61) (::37)))
+          (COND A1==1'b0&&A2==1'b1&&C==1'b0 (IOPATH B ZN (::62) (::45)))
+          (COND A1==1'b1&&A2==1'b0&&C==1'b0 (IOPATH B ZN (::63) (::50)))
+          (IOPATH A2 ZN (::74) (::43))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
   (CELL
      (CELLTYPE "NR2D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1358__4733)
+=======
+     (INSTANCE g1108__8246)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT A2 (::0.0))
+<<<<<<< HEAD
           (IOPATH A1 ZN (::32) (::40))
           (IOPATH A2 ZN (::21) (::17))
+=======
+          (IOPATH A1 ZN (::31) (::39))
+          (IOPATH A2 ZN (::22) (::17))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
   (CELL
      (CELLTYPE "ND2D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1359__6161)
+=======
+     (INSTANCE g1109__7098)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT A2 (::0.0))
+<<<<<<< HEAD
           (IOPATH A1 ZN (::27) (::46))
           (IOPATH A2 ZN (::16) (::21))
+=======
+          (IOPATH A1 ZN (::29) (::50))
+          (IOPATH A2 ZN (::18) (::25))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
   (CELL
      (CELLTYPE "NR2D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1360__9315)
+=======
+     (INSTANCE g1110__6131)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT A2 (::0.0))
+<<<<<<< HEAD
           (IOPATH A1 ZN (::32) (::40))
+=======
+          (IOPATH A1 ZN (::31) (::39))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
           (IOPATH A2 ZN (::21) (::17))
         )
      )
   )
   (CELL
      (CELLTYPE "ND2D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1361__9945)
+=======
+     (INSTANCE g1111__1881)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT A2 (::0.0))
+<<<<<<< HEAD
           (IOPATH A1 ZN (::30) (::52))
           (IOPATH A2 ZN (::18) (::25))
+=======
+          (IOPATH A1 ZN (::26) (::44))
+          (IOPATH A2 ZN (::16) (::21))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
   (CELL
+<<<<<<< HEAD
      (CELLTYPE "NR2D1BWP16P90")
      (INSTANCE g1362__2883)
      (DELAY
@@ -756,17 +1067,30 @@
         (ABSOLUTE
           (PORT I (::0.0))
           (IOPATH I ZN (::26) (::41))
+=======
+     (CELLTYPE "CKND1BWP16P90")
+     (INSTANCE g1112)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I ZN (::26) (::39))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
   (CELL
      (CELLTYPE "INR3D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1367__6417)
+=======
+     (INSTANCE g1113__5115)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT B1 (::0.0))
           (PORT B2 (::0.0))
+<<<<<<< HEAD
           (IOPATH B2 ZN (::76) (::44))
           (IOPATH A1 ZN (::86) (::42))
           (IOPATH B1 ZN (::78) (::37))
@@ -792,10 +1116,16 @@
           (COND A1==1'b1&&A2==1'b1&&A3==1'b1 (IOPATH B ZN (::12) (::14)))
           (IOPATH A1 ZN (::24) (::19))
           (IOPATH A2 ZN (::23) (::18))
+=======
+          (IOPATH B2 ZN (::71) (::42))
+          (IOPATH A1 ZN (::80) (::40))
+          (IOPATH B1 ZN (::72) (::35))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
   (CELL
+<<<<<<< HEAD
      (CELLTYPE "INR4D1BWP16P90")
      (INSTANCE g1369__2398)
      (DELAY
@@ -808,6 +1138,36 @@
           (IOPATH B3 ZN (::24) (::14))
           (IOPATH A1 ZN (::39) (::19))
           (IOPATH B1 ZN (::29) (::15))
+=======
+     (CELLTYPE "IOA21D1BWP16P90")
+     (INSTANCE g1114__7482)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B (::0.0))
+          (COND A1==1'b0&&A2==1'b1 (IOPATH B ZN (::12) (::16)))
+          (COND A1==1'b1&&A2==1'b0 (IOPATH B ZN (::12) (::16)))
+          (IOPATH A1 ZN (::29) (::23))
+          (COND A1==1'b0&&A2==1'b0 (IOPATH B ZN (::12) (::16)))
+          (IOPATH A2 ZN (::25) (::24))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NR4D1BWP16P90")
+     (INSTANCE g1115__4733)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT A3 (::0.0))
+          (PORT A4 (::0.0))
+          (IOPATH A3 ZN (::29) (::15))
+          (IOPATH A4 ZN (::30) (::16))
+          (IOPATH A1 ZN (::23) (::10))
+          (IOPATH A2 ZN (::27) (::14))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
@@ -863,18 +1223,30 @@
      )
   )
   (CELL
+<<<<<<< HEAD
      (CELLTYPE "IND4D1BWP16P90")
      (INSTANCE g1371__5107)
+=======
+     (CELLTYPE "INR4D1BWP16P90")
+     (INSTANCE g1117__6161)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
           (PORT B1 (::0.0))
           (PORT B2 (::0.0))
           (PORT B3 (::0.0))
+<<<<<<< HEAD
           (IOPATH B2 ZN (::13) (::26))
           (IOPATH B3 ZN (::13) (::24))
           (IOPATH A1 ZN (::22) (::38))
           (IOPATH B1 ZN (::14) (::28))
+=======
+          (IOPATH B2 ZN (::26) (::11))
+          (IOPATH B3 ZN (::29) (::14))
+          (IOPATH A1 ZN (::37) (::19))
+          (IOPATH B1 ZN (::28) (::12))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
         )
      )
   )
@@ -927,6 +1299,7 @@
         (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::44) (::-26))
         (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::53) (::-35))
         (SETUPHOLD (posedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::35) (::-5))
+<<<<<<< HEAD
      )
   )
   (CELL
@@ -969,6 +1342,8 @@
         (RECREM (posedge CDN) (COND D_SDFCHK (posedge CP)) (::-16) (::24))
         (SETUPHOLD (negedge D) (COND CDN_SDFCHK (posedge CP)) (::5) (::12))
         (SETUPHOLD (posedge D) (COND CDN_SDFCHK (posedge CP)) (::23) (::-12))
+=======
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      )
   )
   (CELL
@@ -1023,6 +1398,7 @@
      )
   )
   (CELL
+<<<<<<< HEAD
      (CELLTYPE "NR3D1BWP16P90")
      (INSTANCE g1376__6260)
      (DELAY
@@ -1034,6 +1410,47 @@
           (IOPATH A1 ZN (::20) (::12))
           (IOPATH A2 ZN (::22) (::14))
         )
+=======
+     (CELLTYPE "DFCNQD2BWP16P90")
+     (INSTANCE pfd_uut_Q_DOWN_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CDN (::0.0))
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (COND CP==1'b0&&D==1'b0 (IOPATH CDN Q () (::20)))
+          (COND CP==1'b0&&D==1'b1 (IOPATH CDN Q () (::20)))
+          (COND CP==1'b1&&D==1'b0 (IOPATH CDN Q () (::20)))
+          (COND CP==1'b1&&D==1'b1 (IOPATH CDN Q () (::20)))
+          (IOPATH CP Q (::56) (::63))
+        )
+     )
+     (TIMINGCHECK
+        (RECREM (posedge CDN) (COND D_SDFCHK (posedge CP)) (::-16) (::24))
+        (SETUPHOLD (negedge D) (COND CDN_SDFCHK (posedge CP)) (::5) (::12))
+        (SETUPHOLD (posedge D) (COND CDN_SDFCHK (posedge CP)) (::23) (::-12))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFCNQD2BWP16P90")
+     (INSTANCE pfd_uut_Q_UP_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CDN (::0.0))
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (COND CP==1'b0&&D==1'b0 (IOPATH CDN Q () (::20)))
+          (COND CP==1'b0&&D==1'b1 (IOPATH CDN Q () (::20)))
+          (COND CP==1'b1&&D==1'b0 (IOPATH CDN Q () (::20)))
+          (COND CP==1'b1&&D==1'b1 (IOPATH CDN Q () (::20)))
+          (IOPATH CP Q (::59) (::66))
+        )
+     )
+     (TIMINGCHECK
+        (RECREM (posedge CDN) (COND D_SDFCHK (posedge CP)) (::-17) (::25))
+        (SETUPHOLD (negedge D) (COND CDN_SDFCHK (posedge CP)) (::5) (::12))
+        (SETUPHOLD (posedge D) (COND CDN_SDFCHK (posedge CP)) (::24) (::-13))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      )
   )
   (CELL
@@ -1183,6 +1600,8 @@
         (SETUPHOLD (posedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::47) (::-30))
         (SETUPHOLD (negedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::29) (::3))
         (SETUPHOLD (posedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::47) (::-30))
+<<<<<<< HEAD
+=======
         (SETUPHOLD (negedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::14) (::10))
         (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::34) (::-16))
         (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::45) (::-27))
@@ -1190,8 +1609,76 @@
      )
   )
   (CELL
+     (CELLTYPE "SDFCNQD2BWP16P90")
+     (INSTANCE divide_uut_eighth_freq_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CDN (::0.0))
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (PORT SI (::0.0))
+          (PORT SE (::0.0))
+          (COND CP==1'b1&&D==1'b1&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::13)))
+          (COND CDN==1'b1&&D==1'b0&&SE==1'b1 (IOPATH CP Q (::47) (::57)))
+          (COND CDN==1'b1&&D==1'b1&&SE==1'b1 (IOPATH CP Q (::47) (::57)))
+          (COND CP==1'b0&&D==1'b0&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b0&&D==1'b0&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b0&&D==1'b0&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b0&&D==1'b1&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b0&&D==1'b0&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b0&&D==1'b1&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b0&&D==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b0&&D==1'b1&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::13)))
+          (COND CDN==1'b1&&SE==1'b0&&SI==1'b0 (IOPATH CP Q (::48) (::57)))
+          (COND CDN==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CP Q (::48) (::57)))
+          (COND CP==1'b1&&D==1'b0&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b1&&D==1'b1&&SE==1'b0&&SI==1'b0 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b1&&D==1'b0&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b1&&D==1'b0&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b1&&D==1'b1&&SE==1'b1&&SI==1'b0 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b1&&D==1'b1&&SE==1'b0&&SI==1'b1 (IOPATH CDN Q () (::13)))
+          (COND CP==1'b1&&D==1'b0&&SE==1'b1&&SI==1'b1 (IOPATH CDN Q () (::13)))
+        )
+     )
+     (TIMINGCHECK
+        (RECREM (posedge CDN) (COND nD_SE_SI_SDFCHK (posedge CP)) (::-14) (::24))
+        (RECREM (posedge CDN) (COND D_nSE_SI_SDFCHK (posedge CP)) (::-14) (::24))
+        (RECREM (posedge CDN) (COND D_SE_SI_SDFCHK (posedge CP)) (::-14) (::24))
+        (RECREM (posedge CDN) (COND D_nSE_nSI_SDFCHK (posedge CP)) (::-14) (::24))
+        (SETUPHOLD (negedge D) (COND CDN_nSE_nSI_SDFCHK (posedge CP)) (::18) (::10))
+        (SETUPHOLD (posedge D) (COND CDN_nSE_nSI_SDFCHK (posedge CP)) (::40) (::-21))
+        (SETUPHOLD (negedge D) (COND CDN_nSE_SI_SDFCHK (posedge CP)) (::20) (::10))
+        (SETUPHOLD (posedge D) (COND CDN_nSE_SI_SDFCHK (posedge CP)) (::39) (::-21))
+        (SETUPHOLD (negedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::29) (::3))
+        (SETUPHOLD (posedge SI) (COND CDN_D_SE_SDFCHK (posedge CP)) (::47) (::-30))
+        (SETUPHOLD (negedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::29) (::3))
+        (SETUPHOLD (posedge SI) (COND CDN_nD_SE_SDFCHK (posedge CP)) (::47) (::-30))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
+        (SETUPHOLD (negedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::14) (::10))
+        (SETUPHOLD (posedge SE) (COND CDN_nD_SI_SDFCHK (posedge CP)) (::34) (::-16))
+        (SETUPHOLD (negedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::45) (::-27))
+        (SETUPHOLD (posedge SE) (COND CDN_D_nSI_SDFCHK (posedge CP)) (::27) (::4))
+     )
+  )
+  (CELL
+     (CELLTYPE "OR2D1BWP16P90")
+     (INSTANCE g1125__9315)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 Z (::18) (::22))
+          (IOPATH A2 Z (::19) (::23))
+        )
+     )
+  )
+  (CELL
      (CELLTYPE "AOI21D1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1380__4319)
+=======
+     (INSTANCE g1126__9945)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -1207,6 +1694,7 @@
   )
   (CELL
      (CELLTYPE "CKND1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1381)
      (DELAY
         (ABSOLUTE
@@ -1242,6 +1730,9 @@
   (CELL
      (CELLTYPE "CKND1BWP16P90")
      (INSTANCE g1384)
+=======
+     (INSTANCE g1127)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
@@ -1250,20 +1741,24 @@
      )
   )
   (CELL
+<<<<<<< HEAD
      (CELLTYPE "OR2D1BWP16P90")
      (INSTANCE g1385__6783)
+=======
+     (CELLTYPE "IND2D1BWP16P90")
+     (INSTANCE g1128__2883)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
-          (PORT A2 (::0.0))
-          (IOPATH A1 Z (::13) (::17))
-          (IOPATH A2 Z (::19) (::23))
+          (PORT B1 (::0.0))
+          (IOPATH A1 ZN (::19) (::22))
+          (IOPATH B1 ZN (::18) (::21))
         )
      )
   )
   (CELL
      (CELLTYPE "NR2D1BWP16P90")
-     (INSTANCE g1386__3680)
+     (INSTANCE g1129__2346)
      (DELAY
         (ABSOLUTE
           (PORT A1 (::0.0))
@@ -1275,7 +1770,66 @@
   )
   (CELL
      (CELLTYPE "CKND1BWP16P90")
+     (INSTANCE g1130)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I ZN (::15) (::13))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR2D1BWP16P90")
+     (INSTANCE g1131__1666)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 Z (::13) (::17))
+          (IOPATH A2 Z (::19) (::23))
+        )
+     )
+  )
+  (CELL
+<<<<<<< HEAD
+     (CELLTYPE "NR2D1BWP16P90")
+     (INSTANCE g1386__3680)
+=======
+     (CELLTYPE "ND2D1BWP16P90")
+     (INSTANCE g1132__7410)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+<<<<<<< HEAD
+          (IOPATH A1 ZN (::20) (::16))
+          (IOPATH A2 ZN (::21) (::16))
+=======
+          (IOPATH A1 ZN (::17) (::24))
+          (IOPATH A2 ZN (::18) (::25))
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CKND1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1387)
+=======
+     (INSTANCE g1133)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I ZN (::21) (::21))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CKND1BWP16P90")
+     (INSTANCE g1134)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
@@ -1285,7 +1839,11 @@
   )
   (CELL
      (CELLTYPE "CKND1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1388)
+=======
+     (INSTANCE g1135)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
@@ -1295,7 +1853,11 @@
   )
   (CELL
      (CELLTYPE "CKND1BWP16P90")
+<<<<<<< HEAD
      (INSTANCE g1389)
+=======
+     (INSTANCE g1136)
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
@@ -1303,6 +1865,7 @@
         )
      )
   )
+<<<<<<< HEAD
   (CELL
      (CELLTYPE "CKND1BWP16P90")
      (INSTANCE g1390)
@@ -1313,4 +1876,6 @@
         )
      )
   )
+=======
+>>>>>>> 90b4e5451bdad0339ba628baf341bdcf0a318382
 )
