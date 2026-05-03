@@ -2,7 +2,7 @@
 
 module ro_netlist (
     input   logic           EN,
-    input   logic [4:0]     CTRL,
+    input   logic [3:0]     CTRL,
     input   logic           NAND_CTRL1,
     input   logic           NAND_CTRL2,
     input   logic           NAND_CTRL3,
