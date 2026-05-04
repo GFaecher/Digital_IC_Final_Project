@@ -1,5 +1,5 @@
 xrun(64): 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	23.09-s001: Started on May 03, 2026 at 21:48:07 EDT
+TOOL:	xrun(64)	23.09-s001: Started on May 04, 2026 at 02:22:26 EDT
 xrun
 	-sv
 	-gui
@@ -21,11 +21,135 @@ xrun
 SOFTINCLUDE ../../affirma_ams/etc/dms/cds.lib
 |
 xrun: *W,DLCIML (/usr/cots/cadence/XCELIUM2309/tools/inca/files/cds.lib,13): cds.lib CDS.LIB file included multiple times '/usr/cots/cadence/XCELIUM2309/tools.lnx86/affirma_ams/etc/dms/cds.lib' (cds.lib command ignored).
+Recompiling... reason: file '../data/top-compile.v' is newer than expected.
+	expected: Mon May  4 02:19:27 2026
+	actual:   Mon May  4 02:22:11 2026
 SOFTINCLUDE ../../affirma_ams/etc/dms/cds.lib
 |
 xmvlog: *W,DLCIML (/usr/cots/cadence/XCELIUM2309/tools/inca/files/cds.lib,13): cds.lib CDS.LIB file included multiple times '/usr/cots/cadence/XCELIUM2309/tools.lnx86/affirma_ams/etc/dms/cds.lib' (cds.lib command ignored).
-file: /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/VERILOG/N16ADFP_StdCell.v
-xmvlog: *F,DLNFS: Packed library for 'worklib' was either corrupt or the file system cache consistency check failed. To correct the problem, remove the packed library, and recompile. If the problem persists, contact Cadence Design Systems.
-xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 2).
-xrun: *W,HSTRYERR: Syntax error while parsing the history database: ./xcelium.d/history. Disabling xrun history.
-TOOL:	xrun(64)	23.09-s001: Exiting on May 03, 2026 at 21:48:25 EDT  (total: 00:00:18)
+file: ../data/top-compile.v
+	module worklib.top:v
+		errors: 0, warnings: 0
+file: ../rtl/top_tb.sv
+xmvlog: *W,LIBNOU: Library "../rtl/" given but not used.
+xmvlog: *W,SPDUSD: Include directory ../rtl given but not used.
+xmvlog: *W,SPDUSD: Include directory /ee/166/CHIPKIT/ip/rtl_inc given but not used.
+xmvlog: *W,SPDUSD: Include directory /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/VERILOG/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 5
+SOFTINCLUDE ../../affirma_ams/etc/dms/cds.lib
+|
+xmelab: *W,DLCIML (/usr/cots/cadence/XCELIUM2309/tools/inca/files/cds.lib,13): cds.lib CDS.LIB file included multiple times '/usr/cots/cadence/XCELIUM2309/tools.lnx86/affirma_ams/etc/dms/cds.lib' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		top_tb
+SOFTINCLUDE ../../affirma_ams/etc/dms/cds.lib
+|
+xmsdfc: *W,DLCIML (/usr/cots/cadence/XCELIUM2309/tools/inca/files/cds.lib,13): cds.lib CDS.LIB file included multiple times '/usr/cots/cadence/XCELIUM2309/tools.lnx86/affirma_ams/etc/dms/cds.lib' (cds.lib command ignored).
+	Reading SDF file from location "../data/top.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     top.sdf.X
+		Log file:              
+		Backannotation scope:  top_tb.dut
+		Configuration file:    
+		MTM control:           MAXIMUM
+		Scale factors:         
+		Scale type:            
+xmelab: *W,SDFCTE: Module SDFCNQD2BWP16P90LVT of instance top_tb.dut.\accum_uut_sum_reg[6]  does not match SDF celltype of SDFCNQD2BWP16P90, skipping annotation <../data/top.sdf, line 838>.
+xmelab: *W,SDFCTE: Module SDFCNQD2BWP16P90LVT of instance top_tb.dut.\accum_uut_sum_reg[5]  does not match SDF celltype of SDFCNQD2BWP16P90, skipping annotation <../data/top.sdf, line 889>.
+xmelab: *W,SDFCTE: Module SDFCNQD2BWP16P90LVT of instance top_tb.dut.\accum_uut_sum_reg[4]  does not match SDF celltype of SDFCNQD2BWP16P90, skipping annotation <../data/top.sdf, line 963>.
+xmelab: *W,SDFCTE: Module SDFCNQD2BWP16P90LVT of instance top_tb.dut.\accum_uut_sum_reg[3]  does not match SDF celltype of SDFCNQD2BWP16P90, skipping annotation <../data/top.sdf, line 1048>.
+xmelab: *W,SDFCTE: Module SDFCNQD2BWP16P90LVT of instance top_tb.dut.\accum_uut_sum_reg[2]  does not match SDF celltype of SDFCNQD2BWP16P90, skipping annotation <../data/top.sdf, line 1125>.
+xmelab: *W,SDFCTE: Module SDFCNQD2BWP16P90LVT of instance top_tb.dut.\accum_uut_sum_reg[1]  does not match SDF celltype of SDFCNQD2BWP16P90, skipping annotation <../data/top.sdf, line 1188>.
+xmelab: *W,SDFCTE: Module SDFCNQD2BWP16P90LVT of instance top_tb.dut.\accum_uut_sum_reg[0]  does not match SDF celltype of SDFCNQD2BWP16P90, skipping annotation <../data/top.sdf, line 1273>.
+xmelab: *W,SDFCTE: Module SDFCNQD2BWP16P90LVT of instance top_tb.dut.accum_uut_nand1_reg does not match SDF celltype of SDFCNQD2BWP16P90, skipping annotation <../data/top.sdf, line 1639>.
+xmelab: *W,SDFCTE: Module SDFCNQD2BWP16P90LVT of instance top_tb.dut.accum_uut_nand3_reg does not match SDF celltype of SDFCNQD2BWP16P90, skipping annotation <../data/top.sdf, line 1706>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge CDN) (COND D_SDFCHK (posedge CP)) (-17) (25)) of instance top_tb.dut.pfd_uut_Q_UP_reg of module DFCNQD2BWP16P90 <../data/top.sdf, line 1771>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge CDN) (COND D_SDFCHK (posedge CP)) (-16) (24)) of instance top_tb.dut.pfd_uut_Q_DOWN_reg of module DFCNQD2BWP16P90 <../data/top.sdf, line 1792>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge CDN) (COND nD_SE_SI_SDFCHK (posedge CP)) (-14) (24)) of instance top_tb.dut.divide_uut_eighth_freq_reg of module SDFCNQD2BWP16P90 <../data/top.sdf, line 1830>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge CDN) (COND D_nSE_SI_SDFCHK (posedge CP)) (-14) (24)) of instance top_tb.dut.divide_uut_eighth_freq_reg of module SDFCNQD2BWP16P90 <../data/top.sdf, line 1831>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge CDN) (COND D_SE_SI_SDFCHK (posedge CP)) (-14) (24)) of instance top_tb.dut.divide_uut_eighth_freq_reg of module SDFCNQD2BWP16P90 <../data/top.sdf, line 1832>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge CDN) (COND D_nSE_nSI_SDFCHK (posedge CP)) (-14) (24)) of instance top_tb.dut.divide_uut_eighth_freq_reg of module SDFCNQD2BWP16P90 <../data/top.sdf, line 1833>.
+xmelab: *W,SDFCTE: Module SDFCNQD2BWP16P90LVT of instance top_tb.dut.accum_uut_nand2_reg does not match SDF celltype of SDFCNQD2BWP16P90, skipping annotation <../data/top.sdf, line 1864>.
+xmelab: *W,SDFCTE: Module SDFCNQD2BWP16P90LVT of instance top_tb.dut.divide_uut_half_freq_reg does not match SDF celltype of SDFCNQD2BWP16P90, skipping annotation <../data/top.sdf, line 1915>.
+xmelab: *W,SDFCTE: Module SDFCNQD2BWP16P90LVT of instance top_tb.dut.divide_uut_quarter_freq_reg does not match SDF celltype of SDFCNQD2BWP16P90, skipping annotation <../data/top.sdf, line 1966>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker of module CKBD1BWP16P90 <../data/top.sdf, line 2145>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker1 of module CKBD1BWP16P90 <../data/top.sdf, line 2155>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker2 of module CKBD1BWP16P90 <../data/top.sdf, line 2165>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker3 of module CKBD1BWP16P90 <../data/top.sdf, line 2175>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker4 of module CKBD1BWP16P90 <../data/top.sdf, line 2185>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker5 of module CKBD1BWP16P90 <../data/top.sdf, line 2195>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker6 of module CKBD1BWP16P90 <../data/top.sdf, line 2205>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker7 of module CKBD1BWP16P90 <../data/top.sdf, line 2215>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker8 of module CKBD1BWP16P90 <../data/top.sdf, line 2225>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker9 of module CKBD1BWP16P90 <../data/top.sdf, line 2235>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker10 of module CKBD1BWP16P90 <../data/top.sdf, line 2245>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker11 of module CKBD1BWP16P90 <../data/top.sdf, line 2255>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker12 of module CKBD1BWP16P90 <../data/top.sdf, line 2265>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker13 of module CKBD1BWP16P90 <../data/top.sdf, line 2275>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker14 of module CKBD1BWP16P90 <../data/top.sdf, line 2285>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker15 of module CKBD1BWP16P90 <../data/top.sdf, line 2295>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker16 of module CKBD1BWP16P90 <../data/top.sdf, line 2305>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH I ZN) of instance top_tb.dut.cdn_loop_breaker17 of module CKBD1BWP16P90 <../data/top.sdf, line 2315>.
+	Annotation completed with 0 Errors and 36 Warnings
+xmelab: *W,NTCNNC: Non-convergence of negative timing check values in instance top_tb.dut.divide_uut_eighth_freq_reg.
+	SDF statistics: 
+		 No. of Pathdelays = 699     	 No. of Disabled Pathdelays = 0        Annotated = 48.78% (341/699) 
+		 No. of Tchecks    = 700     	 No. of Disabled Tchecks    = 0        Annotated = 2.29% (16/700) 
+				        Total(T) 	   Disabled(D) 	    Annotated(A)	  Percentage(A/(T-D))
+		 Path Delays	           699	             0	               341	                 48.78
+		       $hold	            54	             0	                 0	                  0.00
+		      $width	           432	             0	                 0	                  0.00
+		   $recovery	            54	             0	                 0	                  0.00
+		  $setuphold	           160	             0	                16	                 10.00
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+SOFTINCLUDE ../../affirma_ams/etc/dms/cds.lib
+|
+xmvlog_cg: *W,DLCIML (/usr/cots/cadence/XCELIUM2309/tools/inca/files/cds.lib,13): cds.lib CDS.LIB file included multiple times '/usr/cots/cadence/XCELIUM2309/tools.lnx86/affirma_ams/etc/dms/cds.lib' (cds.lib command ignored).
+		worklib.SDFCNQD2BWP16P90:v <0x51b66708>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                 159      27
+		UDPs:                    573       3
+		Primitives:              820       6
+		Timing outputs:          157      17
+		Registers:                25      14
+		Scalar wires:            198       -
+		Initial blocks:            2       2
+		Pseudo assignments:        4       -
+		Timing checks:           860      16
+		Interconnect:            319       -
+		Delayed tcheck signals:    8       5
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.top_tb:sv
+	Parallel LWD Data Generation
+	Generating Debug Data:
+		LWD Database path: (/h/gfaech01/digital/Digital_IC_Final_Project/work/xcelium.d/worklib/top_tb/sv/debug_db/top_tb)
+		Power Aware Instances:                    0
+		Liberty Instances:                        0
+		Out Of Module References:                 0
+		Assertions:                               0
+		Liberty Information:
+			PG Pins:	                  0
+			Liberty Pins:	                  0
+SOFTINCLUDE ../../affirma_ams/etc/dms/cds.lib
+|
+xmsim: *W,DLCIML (/usr/cots/cadence/XCELIUM2309/tools/inca/files/cds.lib,13): cds.lib CDS.LIB file included multiple times '/usr/cots/cadence/XCELIUM2309/tools.lnx86/affirma_ams/etc/dms/cds.lib' (cds.lib command ignored).
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to Verisium...
+xcelium> 
+xcelium> source /usr/cots/cadence/XCELIUM2309/tools/xcelium/files/xmsimrc
+xcelium> 
+xcelium> 
+xcelium> run
+Simulation complete via $finish(1) at time 1299950 PS + 0
+../rtl/top_tb.sv:59         $finish;
+xcelium> 

@@ -10,829 +10,6 @@
   (PROCESS     "::1.0")
   (TEMPERATURE ::-40.0)
   (TIMESCALE   1ps)
-    (CELL
-     (CELLTYPE "ND4D4BWP16P90")
-     (INSTANCE nand_gate_capacitor)
-     (DELAY
-        (ABSOLUTE
-          (PORT A1 (::0.0))
-          (PORT A2 (::0.0))
-          (PORT A3 (::0.0))
-          (PORT A4 (::0.0))
-          (IOPATH A3 ZN (::5) (::15))
-          (IOPATH A4 ZN (::4) (::16))
-          (IOPATH A1 ZN (::6) (::11))
-          (IOPATH A2 ZN (::4) (::13))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "ND2D2BWP16P90")
-     (INSTANCE enable_nand)
-     (DELAY
-        (ABSOLUTE
-          (PORT A1 (::0.0))
-          (PORT A2 (::0.0))
-          (IOPATH A1 ZN (::5) (::8))
-          (IOPATH A2 ZN (::10) (::13))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "INVD2BWP16P90")
-     (INSTANCE start_inv)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I ZN (::8) (::7))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element1)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::17) (::17))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element2)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element3)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element4)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element5)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element6)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element7)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element8)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element9)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element10)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element11)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element12)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element13)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element14)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element15)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element16)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element17)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element18)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element19)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element20)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element21)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element22)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element23)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element24)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element25)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element26)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element27)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element28)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element29)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element30)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element31)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::18) (::18))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "CKBD2BWP16P90")
-     (INSTANCE delay_element32)
-     (DELAY
-        (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I Z (::16) (::16))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_1)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_2)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::33) (::32)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::33) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::29) (::28)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::30) (::30)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::33) (::32)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::33) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_3)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_4)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_5)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_6)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_7)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_8)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_9)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_10)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_11)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_12)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_13)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_14)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_15)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_1_16)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_2_1)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_2_2)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_2_3)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_2_4)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_2_5)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_2_6)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_2_7)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_2_8)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_3_1)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_3_2)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_3_3)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_3_4)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_4_1)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_4_2)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::30) (::29)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::32) (::32)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::34) (::33)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::34) (::33)))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "MUX2ND4BWP16P90")
-     (INSTANCE mux_5_1)
-     (DELAY
-        (ABSOLUTE
-          (PORT I0 (::0.0))
-          (PORT I1 (::0.0))
-          (PORT S (::0.0))
-          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::37) (::36)))
-          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::37) (::36)))
-          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::33) (::32)))
-          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::34) (::34)))
-          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::37) (::36)))
-          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::37) (::36)))
-        )
-     )
-  )
   (CELL
      (CELLTYPE "SDFCNQD2BWP16P90")
      (INSTANCE accum_uut_sum_reg\[6\])
@@ -2137,182 +1314,469 @@
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker)
+     (CELLTYPE "ND4D4BWP16P90")
+     (INSTANCE nand_gate_capacitor)
      (DELAY
         (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT A3 (::0.0))
+          (PORT A4 (::0.0))
+          (IOPATH A3 ZN (::5) (::15))
+          (IOPATH A4 ZN (::4) (::16))
+          (IOPATH A1 ZN (::6) (::11))
+          (IOPATH A2 ZN (::4) (::13))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker1)
+     (CELLTYPE "ND2D2BWP16P90")
+     (INSTANCE enable_nand)
      (DELAY
         (ABSOLUTE
-          (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 ZN (::5) (::8))
+          (IOPATH A2 ZN (::10) (::13))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker2)
+     (CELLTYPE "INVD2BWP16P90")
+     (INSTANCE start_inv)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I ZN (::8) (::7))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker3)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element1)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::17) (::17))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker4)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element2)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker5)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element3)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker6)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element4)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker7)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element5)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker8)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element6)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker9)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element7)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker10)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element8)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker11)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element9)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker12)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element10)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker13)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element11)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker14)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element12)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker15)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element13)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker16)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element14)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
         )
      )
   )
   (CELL
-     (CELLTYPE "CKBD1BWP16P90")
-     (INSTANCE cdn_loop_breaker17)
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element15)
      (DELAY
         (ABSOLUTE
           (PORT I (::0.0))
-          (IOPATH I ZN (::1) (::1))
+          (IOPATH I Z (::18) (::18))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element16)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I Z (::18) (::18))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element17)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I Z (::18) (::18))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CKBD2BWP16P90")
+     (INSTANCE delay_element18)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I Z (::16) (::16))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MUX3ND4BWP16P90")
+     (INSTANCE mux_1_1)
+     (DELAY
+        (ABSOLUTE
+          (PORT I0 (::0.0))
+          (PORT I1 (::0.0))
+          (PORT I2 (::0.0))
+          (PORT S0 (::0.0))
+          (PORT S1 (::0.0))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::44) (::44)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::46) (::46)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::44) (::44)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::46) (::46)))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MUX3ND4BWP16P90")
+     (INSTANCE mux_1_2)
+     (DELAY
+        (ABSOLUTE
+          (PORT I0 (::0.0))
+          (PORT I1 (::0.0))
+          (PORT I2 (::0.0))
+          (PORT S0 (::0.0))
+          (PORT S1 (::0.0))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::44) (::44)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::46) (::46)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::44) (::44)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::46) (::46)))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MUX3ND4BWP16P90")
+     (INSTANCE mux_1_3)
+     (DELAY
+        (ABSOLUTE
+          (PORT I0 (::0.0))
+          (PORT I1 (::0.0))
+          (PORT I2 (::0.0))
+          (PORT S0 (::0.0))
+          (PORT S1 (::0.0))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::44) (::44)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::46) (::46)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::44) (::44)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::46) (::46)))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MUX3ND4BWP16P90")
+     (INSTANCE mux_1_4)
+     (DELAY
+        (ABSOLUTE
+          (PORT I0 (::0.0))
+          (PORT I1 (::0.0))
+          (PORT I2 (::0.0))
+          (PORT S0 (::0.0))
+          (PORT S1 (::0.0))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::44) (::44)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::46) (::46)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::44) (::44)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::46) (::46)))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MUX3ND4BWP16P90")
+     (INSTANCE mux_1_5)
+     (DELAY
+        (ABSOLUTE
+          (PORT I0 (::0.0))
+          (PORT I1 (::0.0))
+          (PORT I2 (::0.0))
+          (PORT S0 (::0.0))
+          (PORT S1 (::0.0))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::44) (::44)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::46) (::46)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::44) (::44)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::46) (::46)))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MUX3ND4BWP16P90")
+     (INSTANCE mux_1_6)
+     (DELAY
+        (ABSOLUTE
+          (PORT I0 (::0.0))
+          (PORT I1 (::0.0))
+          (PORT I2 (::0.0))
+          (PORT S0 (::0.0))
+          (PORT S1 (::0.0))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::38) (::30)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::33) (::41)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::44) (::44)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::46) (::46)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::44) (::44)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::46) (::46)))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MUX3ND4BWP16P90")
+     (INSTANCE mux_2_1)
+     (DELAY
+        (ABSOLUTE
+          (PORT I0 (::0.0))
+          (PORT I1 (::0.0))
+          (PORT I2 (::0.0))
+          (PORT S0 (::0.0))
+          (PORT S1 (::0.0))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::37) (::29)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::32) (::40)))
+          (COND I0==1'b0&&I2==1'b0&&S0==1'b1&&S1==1'b0 (IOPATH I1 ZN (::48) (::46)))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::37) (::29)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::37) (::29)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::32) (::40)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::32) (::40)))
+          (COND I0==1'b1&&I2==1'b0&&S0==1'b1&&S1==1'b0 (IOPATH I1 ZN (::48) (::46)))
+          (COND I0==1'b0&&I2==1'b1&&S0==1'b1&&S1==1'b0 (IOPATH I1 ZN (::48) (::46)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::37) (::29)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::32) (::40)))
+          (COND I0==1'b1&&I2==1'b1&&S0==1'b1&&S1==1'b0 (IOPATH I1 ZN (::48) (::46)))
+          (COND I1==1'b0&&I2==1'b0&&S0==1'b0&&S1==1'b0 (IOPATH I0 ZN (::48) (::47)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::43) (::43)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::46) (::45)))
+          (COND I0==1'b0&&I1==1'b0&&S0==1'b0&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I1==1'b1&&I2==1'b0&&S0==1'b0&&S1==1'b0 (IOPATH I0 ZN (::48) (::47)))
+          (COND I1==1'b0&&I2==1'b1&&S0==1'b0&&S1==1'b0 (IOPATH I0 ZN (::48) (::47)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::43) (::43)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::46) (::45)))
+          (COND I0==1'b0&&I1==1'b0&&S0==1'b1&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I0==1'b0&&I1==1'b1&&S0==1'b0&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I0==1'b1&&I1==1'b0&&S0==1'b0&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I1==1'b1&&I2==1'b1&&S0==1'b0&&S1==1'b0 (IOPATH I0 ZN (::48) (::47)))
+          (COND I0==1'b0&&I1==1'b1&&S0==1'b1&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I0==1'b1&&I1==1'b1&&S0==1'b0&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I0==1'b1&&I1==1'b0&&S0==1'b1&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I0==1'b1&&I1==1'b1&&S0==1'b1&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MUX3ND4BWP16P90")
+     (INSTANCE mux_2_2)
+     (DELAY
+        (ABSOLUTE
+          (PORT I0 (::0.0))
+          (PORT I1 (::0.0))
+          (PORT I2 (::0.0))
+          (PORT S0 (::0.0))
+          (PORT S1 (::0.0))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::37) (::29)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::32) (::40)))
+          (COND I0==1'b0&&I2==1'b0&&S0==1'b1&&S1==1'b0 (IOPATH I1 ZN (::48) (::46)))
+          (COND I0==1'b0&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::37) (::29)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S0==1'b0 (IOPATH S1 ZN (::37) (::29)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::32) (::40)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b0 (IOPATH S1 ZN (::32) (::40)))
+          (COND I0==1'b1&&I2==1'b0&&S0==1'b1&&S1==1'b0 (IOPATH I1 ZN (::48) (::46)))
+          (COND I0==1'b0&&I2==1'b1&&S0==1'b1&&S1==1'b0 (IOPATH I1 ZN (::48) (::46)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S0==1'b1 (IOPATH S1 ZN (::37) (::29)))
+          (COND I0==1'b1&&I1==1'b1&&I2==1'b0&&S0==1'b1 (IOPATH S1 ZN (::32) (::40)))
+          (COND I0==1'b1&&I2==1'b1&&S0==1'b1&&S1==1'b0 (IOPATH I1 ZN (::48) (::46)))
+          (COND I1==1'b0&&I2==1'b0&&S0==1'b0&&S1==1'b0 (IOPATH I0 ZN (::48) (::47)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::43) (::43)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b0&&S1==1'b0 (IOPATH S0 ZN (::46) (::45)))
+          (COND I0==1'b0&&I1==1'b0&&S0==1'b0&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I1==1'b1&&I2==1'b0&&S0==1'b0&&S1==1'b0 (IOPATH I0 ZN (::48) (::47)))
+          (COND I1==1'b0&&I2==1'b1&&S0==1'b0&&S1==1'b0 (IOPATH I0 ZN (::48) (::47)))
+          (COND I0==1'b0&&I1==1'b1&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::43) (::43)))
+          (COND I0==1'b1&&I1==1'b0&&I2==1'b1&&S1==1'b0 (IOPATH S0 ZN (::46) (::45)))
+          (COND I0==1'b0&&I1==1'b0&&S0==1'b1&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I0==1'b0&&I1==1'b1&&S0==1'b0&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I0==1'b1&&I1==1'b0&&S0==1'b0&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I1==1'b1&&I2==1'b1&&S0==1'b0&&S1==1'b0 (IOPATH I0 ZN (::48) (::47)))
+          (COND I0==1'b0&&I1==1'b1&&S0==1'b1&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I0==1'b1&&I1==1'b1&&S0==1'b0&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I0==1'b1&&I1==1'b0&&S0==1'b1&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+          (COND I0==1'b1&&I1==1'b1&&S0==1'b1&&S1==1'b1 (IOPATH I2 ZN (::35) (::33)))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MUX2ND4BWP16P90")
+     (INSTANCE mux_3)
+     (DELAY
+        (ABSOLUTE
+          (PORT I0 (::0.0))
+          (PORT I1 (::0.0))
+          (PORT S (::0.0))
+          (COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN (::38) (::36)))
+          (COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN (::38) (::37)))
+          (COND I0==1'b0&&I1==1'b1 (IOPATH S ZN (::33) (::32)))
+          (COND I0==1'b1&&I1==1'b0 (IOPATH S ZN (::34) (::34)))
+          (COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN (::38) (::36)))
+          (COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN (::38) (::37)))
         )
      )
   )

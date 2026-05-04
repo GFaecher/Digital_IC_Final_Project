@@ -26,8 +26,9 @@ module top_tb;
     initial begin
         rstn = 1'b0;
         en = 1'b0;
-        #10;
+        #100;
         rstn = 1'b1;
+        #100;
         en = 1'b1;
         #1000;
     end

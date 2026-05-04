@@ -20,8 +20,7 @@ module top(CLK, EN, RSTN, out_clk);
   wire n_36, n_37, n_38, n_39, n_40, n_41, n_42, n_43;
   wire nand1_out, nand2_out, nand3_out, up_out;
 
-  wire NAND_CTRL1, NAND_CTRL2, NAND_CTRL3;
-  wire [4:0] CTRL;
+// This is the DCO
   wire UNCONNECTED, delay_out_1, delay_out_2, delay_out_3, delay_out_4,
        delay_out_5, delay_out_6, delay_out_7;
   wire delay_out_8, delay_out_9, delay_out_10, delay_out_11,
@@ -32,8 +31,8 @@ module top(CLK, EN, RSTN, out_clk);
   wire n_49, n_50, n_51, n_52, n_53, n_54, n_55, n_56;
   wire n_57, n_58, n_59, n_60, n_61, nand_out, start_inv_out;
 
-ND4D4BWP16P90 nand_gate_capacitor(.A1 (dco_out), .A2 (NAND_CTRL1), .A3   
-       (NAND_CTRL2), .A4 (NAND_CTRL3), .ZN (UNCONNECTED));
+ND4D4BWP16P90 nand_gate_capacitor(.A1 (dco_out), .A2 (nand1_out), .A3   
+       (nand2_out), .A4 (nand3_out), .ZN (UNCONNECTED));
   ND2D2BWP16P90 enable_nand(.A1 (EN), .A2 (dco_out), .ZN (nand_out));
   INVD2BWP16P90 start_inv(.I (nand_out), .ZN (start_inv_out));
   CKBD2BWP16P90 delay_element1(.I (start_inv_out), .Z (delay_out_1));
@@ -55,23 +54,23 @@ ND4D4BWP16P90 nand_gate_capacitor(.A1 (dco_out), .A2 (NAND_CTRL1), .A3
   CKBD2BWP16P90 delay_element17(.I (delay_out_16), .Z (delay_out_17));
   CKBD2BWP16P90 delay_element18(.I (delay_out_17), .Z (delay_out_18));
   MUX3ND4BWP16P90 mux_1_1(.I0 (n_61), .I1 (n_60), .I2 (n_59), .S0
-       (CTRL[0]), .S1 (CTRL[1]), .ZN (mux_1_1out));
+       (cWord[0]), .S1 (cWord[1]), .ZN (mux_1_1out));
   MUX3ND4BWP16P90 mux_1_2(.I0 (n_58), .I1 (n_57), .I2 (n_56), .S0
-       (CTRL[0]), .S1 (CTRL[1]), .ZN (mux_1_2out));
+       (cWord[0]), .S1 (cWord[1]), .ZN (mux_1_2out));
   MUX3ND4BWP16P90 mux_1_3(.I0 (n_55), .I1 (n_54), .I2 (n_53), .S0
-       (CTRL[0]), .S1 (CTRL[1]), .ZN (mux_1_3out));
+       (cWord[0]), .S1 (cWord[1]), .ZN (mux_1_3out));
   MUX3ND4BWP16P90 mux_1_4(.I0 (n_52), .I1 (n_51), .I2 (n_50), .S0
-       (CTRL[0]), .S1 (CTRL[1]), .ZN (mux_1_4out));
+       (cWord[0]), .S1 (cWord[1]), .ZN (mux_1_4out));
   MUX3ND4BWP16P90 mux_1_5(.I0 (n_49), .I1 (n_48), .I2 (n_47), .S0
-       (CTRL[0]), .S1 (CTRL[1]), .ZN (mux_1_5out));
+       (cWord[0]), .S1 (cWord[1]), .ZN (mux_1_5out));
   MUX3ND4BWP16P90 mux_1_6(.I0 (n_46), .I1 (n_45), .I2 (n_44), .S0
-       (CTRL[0]), .S1 (CTRL[1]), .ZN (mux_1_6out));
+       (cWord[0]), .S1 (cWord[1]), .ZN (mux_1_6out));
   MUX3ND4BWP16P90 mux_2_1(.I0 (mux_1_1out), .I1 (mux_1_2out), .I2
-       (mux_1_3out), .S0 (CTRL[2]), .S1 (CTRL[3]), .ZN (mux_2_1out));
+       (mux_1_3out), .S0 (cWord[2]), .S1 (cWord[3]), .ZN (mux_2_1out));
   MUX3ND4BWP16P90 mux_2_2(.I0 (mux_1_4out), .I1 (mux_1_5out), .I2
-       (mux_1_6out), .S0 (CTRL[2]), .S1 (CTRL[3]), .ZN (mux_2_2out));
+       (mux_1_6out), .S0 (cWord[2]), .S1 (cWord[3]), .ZN (mux_2_2out));
   MUX2ND4BWP16P90 mux_3(.I0 (mux_2_1out), .I1 (mux_2_2out), .S
-       (CTRL[4]), .ZN (dco_out));
+       (cWord[4]), .ZN (dco_out));
   CKBD1BWP16P90 cdn_loop_breaker(.I (delay_out_18), .Z (n_44));
   CKBD1BWP16P90 cdn_loop_breaker1(.I (delay_out_17), .Z (n_45));
   CKBD1BWP16P90 cdn_loop_breaker2(.I (delay_out_16), .Z (n_46));
@@ -91,6 +90,7 @@ ND4D4BWP16P90 nand_gate_capacitor(.A1 (dco_out), .A2 (NAND_CTRL1), .A3
   CKBD1BWP16P90 cdn_loop_breaker16(.I (delay_out_2), .Z (n_60));
   CKBD1BWP16P90 cdn_loop_breaker17(.I (delay_out_1), .Z (n_61));
 
+//DCO end
 
   SDFCNQD2BWP16P90 \accum_uut_sum_reg[6] (.CDN (RSTN), .CP (dco_out),
        .D (cWord[4]), .SI (n_43), .SE (n_27), .Q (cWord[4]));

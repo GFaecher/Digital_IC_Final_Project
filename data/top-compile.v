@@ -20,20 +20,29 @@ module top(CLK, EN, RSTN, out_clk);
   wire n_36, n_37, n_38, n_39, n_40, n_41, n_42, n_43;
   wire nand1_out, nand2_out, nand3_out, up_out;
 
-  wire NAND_CTRL1, NAND_CTRL2, NAND_CTRL3;
-  wire [4:0] CTRL;
+// This is the DCO
   wire UNCONNECTED, delay_out_1, delay_out_2, delay_out_3, delay_out_4,
        delay_out_5, delay_out_6, delay_out_7;
   wire delay_out_8, delay_out_9, delay_out_10, delay_out_11,
        delay_out_12, delay_out_13, delay_out_14, delay_out_15;
-  wire delay_out_16, delay_out_17, delay_out_18, mux_1_1out,
-       mux_1_2out, mux_1_3out, mux_1_4out, mux_1_5out;
-  wire mux_1_6out, mux_2_1out, mux_2_2out, n_44, n_45, n_46, n_47, n_48;
-  wire n_49, n_50, n_51, n_52, n_53, n_54, n_55, n_56;
-  wire n_57, n_58, n_59, n_60, n_61, nand_out, start_inv_out;
-
-ND4D4BWP16P90 nand_gate_capacitor(.A1 (dco_out), .A2 (NAND_CTRL1), .A3   
-       (NAND_CTRL2), .A4 (NAND_CTRL3), .ZN (UNCONNECTED));
+  wire delay_out_16, delay_out_17, delay_out_18, delay_out_19,
+       delay_out_20, delay_out_21, delay_out_22, delay_out_23;
+  wire delay_out_24, delay_out_25, delay_out_26, delay_out_27,
+       delay_out_28, delay_out_29, delay_out_30, delay_out_31;
+  wire delay_out_32, mux_1_1out, mux_1_2_out, mux_1_2out, mux_1_3out,
+       mux_1_4out, mux_1_5out, mux_1_6out;
+  wire mux_1_7out, mux_1_8out, mux_1_9out, mux_1_10out, mux_1_11out,
+       mux_1_12out, mux_1_13out, mux_1_14out;
+  wire mux_1_15out, mux_1_16out, mux_2_1out, mux_2_2out, mux_2_3out,
+       mux_2_4out, mux_2_5out, mux_2_6out;
+  wire mux_2_7out, mux_2_8out, mux_3_1out, mux_3_2out, mux_3_3out,
+       mux_3_4out, mux_4_1out, mux_4_2out;
+  wire n_44, n_45, n_46, n_47, n_48, n_49, n_50, n_51;
+  wire n_52, n_53, n_54, n_55, n_56, n_57, n_58, n_59;
+  wire n_60, n_61, n_62, n_63, n_64, n_65, n_66, n_67;
+  wire n_68, n_69, n_70, n_71, n_72, n_73, n_74, n_75, nand_out, start_inv_out;
+  ND4D4BWP16P90 nand_gate_capacitor(.A1 (dco_out), .A2 (nand1_out), .A3
+       (nand2_out), .A4 (nand3_out), .ZN (UNCONNECTED));
   ND2D2BWP16P90 enable_nand(.A1 (EN), .A2 (dco_out), .ZN (nand_out));
   INVD2BWP16P90 start_inv(.I (nand_out), .ZN (start_inv_out));
   CKBD2BWP16P90 delay_element1(.I (start_inv_out), .Z (delay_out_1));
@@ -54,69 +63,110 @@ ND4D4BWP16P90 nand_gate_capacitor(.A1 (dco_out), .A2 (NAND_CTRL1), .A3
   CKBD2BWP16P90 delay_element16(.I (delay_out_15), .Z (delay_out_16));
   CKBD2BWP16P90 delay_element17(.I (delay_out_16), .Z (delay_out_17));
   CKBD2BWP16P90 delay_element18(.I (delay_out_17), .Z (delay_out_18));
-  MUX3ND4BWP16P90 mux_1_1(.I0 (n_61), .I1 (n_60), .I2 (n_59), .S0
-       (CTRL[0]), .S1 (CTRL[1]), .ZN (mux_1_1out));
-  MUX3ND4BWP16P90 mux_1_2(.I0 (n_58), .I1 (n_57), .I2 (n_56), .S0
-       (CTRL[0]), .S1 (CTRL[1]), .ZN (mux_1_2out));
-  MUX3ND4BWP16P90 mux_1_3(.I0 (n_55), .I1 (n_54), .I2 (n_53), .S0
-       (CTRL[0]), .S1 (CTRL[1]), .ZN (mux_1_3out));
-  MUX3ND4BWP16P90 mux_1_4(.I0 (n_52), .I1 (n_51), .I2 (n_50), .S0
-       (CTRL[0]), .S1 (CTRL[1]), .ZN (mux_1_4out));
-  MUX3ND4BWP16P90 mux_1_5(.I0 (n_49), .I1 (n_48), .I2 (n_47), .S0
-       (CTRL[0]), .S1 (CTRL[1]), .ZN (mux_1_5out));
-  MUX3ND4BWP16P90 mux_1_6(.I0 (n_46), .I1 (n_45), .I2 (n_44), .S0
-       (CTRL[0]), .S1 (CTRL[1]), .ZN (mux_1_6out));
-  MUX3ND4BWP16P90 mux_2_1(.I0 (mux_1_1out), .I1 (mux_1_2out), .I2
-       (mux_1_3out), .S0 (CTRL[2]), .S1 (CTRL[3]), .ZN (mux_2_1out));
-  MUX3ND4BWP16P90 mux_2_2(.I0 (mux_1_4out), .I1 (mux_1_5out), .I2
-       (mux_1_6out), .S0 (CTRL[2]), .S1 (CTRL[3]), .ZN (mux_2_2out));
-  MUX2ND4BWP16P90 mux_3(.I0 (mux_2_1out), .I1 (mux_2_2out), .S
-       (CTRL[4]), .ZN (dco_out));
-  CKBD1BWP16P90 cdn_loop_breaker(.I (delay_out_18), .Z (n_44));
-  CKBD1BWP16P90 cdn_loop_breaker1(.I (delay_out_17), .Z (n_45));
-  CKBD1BWP16P90 cdn_loop_breaker2(.I (delay_out_16), .Z (n_46));
-  CKBD1BWP16P90 cdn_loop_breaker3(.I (delay_out_15), .Z (n_47));
-  CKBD1BWP16P90 cdn_loop_breaker4(.I (delay_out_14), .Z (n_48));
-  CKBD1BWP16P90 cdn_loop_breaker5(.I (delay_out_13), .Z (n_49));
-  CKBD1BWP16P90 cdn_loop_breaker6(.I (delay_out_12), .Z (n_50));
-  CKBD1BWP16P90 cdn_loop_breaker7(.I (delay_out_11), .Z (n_51));
-  CKBD1BWP16P90 cdn_loop_breaker8(.I (delay_out_10), .Z (n_52));
-  CKBD1BWP16P90 cdn_loop_breaker9(.I (delay_out_9), .Z (n_53));
-  CKBD1BWP16P90 cdn_loop_breaker10(.I (delay_out_8), .Z (n_54));
-  CKBD1BWP16P90 cdn_loop_breaker11(.I (delay_out_7), .Z (n_55));
-  CKBD1BWP16P90 cdn_loop_breaker12(.I (delay_out_6), .Z (n_56));
-  CKBD1BWP16P90 cdn_loop_breaker13(.I (delay_out_5), .Z (n_57));
-  CKBD1BWP16P90 cdn_loop_breaker14(.I (delay_out_4), .Z (n_58));
-  CKBD1BWP16P90 cdn_loop_breaker15(.I (delay_out_3), .Z (n_59));
-  CKBD1BWP16P90 cdn_loop_breaker16(.I (delay_out_2), .Z (n_60));
-  CKBD1BWP16P90 cdn_loop_breaker17(.I (delay_out_1), .Z (n_61));
+  CKBD2BWP16P90 delay_element19(.I (delay_out_18), .Z (delay_out_19));
+  CKBD2BWP16P90 delay_element20(.I (delay_out_19), .Z (delay_out_20));
+  CKBD2BWP16P90 delay_element21(.I (delay_out_20), .Z (delay_out_21));
+  CKBD2BWP16P90 delay_element22(.I (delay_out_21), .Z (delay_out_22));
+  CKBD2BWP16P90 delay_element23(.I (delay_out_22), .Z (delay_out_23));
+  CKBD2BWP16P90 delay_element24(.I (delay_out_23), .Z (delay_out_24));
+  CKBD2BWP16P90 delay_element25(.I (delay_out_24), .Z (delay_out_25));
+  CKBD2BWP16P90 delay_element26(.I (delay_out_25), .Z (delay_out_26));
+  CKBD2BWP16P90 delay_element27(.I (delay_out_26), .Z (delay_out_27));
+  CKBD2BWP16P90 delay_element28(.I (delay_out_27), .Z (delay_out_28));
+  CKBD2BWP16P90 delay_element29(.I (delay_out_28), .Z (delay_out_29));
+  CKBD2BWP16P90 delay_element30(.I (delay_out_29), .Z (delay_out_30));
+  CKBD2BWP16P90 delay_element31(.I (delay_out_30), .Z (delay_out_31));
+  CKBD2BWP16P90 delay_element32(.I (delay_out_31), .Z (delay_out_32));
+  MUX2ND4BWP16P90 mux_1_1(.I0 (n_75), .I1 (n_74), .S (cWord[0]), .ZN
+       (mux_1_1out));
+  MUX2ND4BWP16P90 mux_1_2(.I0 (n_73), .I1 (n_72), .S (cWord[0]), .ZN 
+       (mux_1_2out));
+  MUX2ND4BWP16P90 mux_1_3(.I0 (n_71), .I1 (n_70), .S (cWord[0]), .ZN
+       (mux_1_3out));
+  MUX2ND4BWP16P90 mux_1_4(.I0 (n_69), .I1 (n_68), .S (cWord[0]), .ZN
+       (mux_1_4out));
+  MUX2ND4BWP16P90 mux_1_5(.I0 (n_67), .I1 (n_66), .S (cWord[0]), .ZN
+       (mux_1_5out));
+  MUX2ND4BWP16P90 mux_1_6(.I0 (n_65), .I1 (n_64), .S (cWord[0]), .ZN
+       (mux_1_6out));
+  MUX2ND4BWP16P90 mux_1_7(.I0 (n_63), .I1 (n_62), .S (cWord[0]), .ZN
+       (mux_1_7out));
+  MUX2ND4BWP16P90 mux_1_8(.I0 (n_61), .I1 (n_60), .S (cWord[0]), .ZN
+       (mux_1_8out));
+  MUX2ND4BWP16P90 mux_1_9(.I0 (n_59), .I1 (n_58), .S (cWord[0]), .ZN
+       (mux_1_9out));
+  MUX2ND4BWP16P90 mux_1_10(.I0 (n_57), .I1 (n_56), .S (cWord[0]), .ZN
+       (mux_1_10out));
+  MUX2ND4BWP16P90 mux_1_11(.I0 (n_55), .I1 (n_54), .S (cWord[0]), .ZN
+       (mux_1_11out));
+  MUX2ND4BWP16P90 mux_1_12(.I0 (n_53), .I1 (n_52), .S (cWord[0]), .ZN
+       (mux_1_12out));
+  MUX2ND4BWP16P90 mux_1_13(.I0 (n_51), .I1 (n_50), .S (cWord[0]), .ZN
+       (mux_1_13out));
+  MUX2ND4BWP16P90 mux_1_14(.I0 (n_49), .I1 (n_48), .S (cWord[0]), .ZN
+       (mux_1_14out));
+  MUX2ND4BWP16P90 mux_1_15(.I0 (n_47), .I1 (n_46), .S (cWord[0]), .ZN
+       (mux_1_15out));
+  MUX2ND4BWP16P90 mux_1_16(.I0 (n_45), .I1 (n_44), .S (cWord[0]), .ZN
+       (mux_1_16out));
+  MUX2ND4BWP16P90 mux_2_1(.I0 (mux_1_1out), .I1 (mux_1_2out), .S
+       (cWord[1]), .ZN (mux_2_1out));
+  MUX2ND4BWP16P90 mux_2_2(.I0 (mux_1_3out), .I1 (mux_1_4out), .S
+       (cWord[1]), .ZN (mux_2_2out));
+  MUX2ND4BWP16P90 mux_2_3(.I0 (mux_1_5out), .I1 (mux_1_6out), .S
+       (cWord[1]), .ZN (mux_2_3out));
+  MUX2ND4BWP16P90 mux_2_4(.I0 (mux_1_7out), .I1 (mux_1_8out), .S
+       (cWord[1]), .ZN (mux_2_4out));
+  MUX2ND4BWP16P90 mux_2_5(.I0 (mux_1_9out), .I1 (mux_1_10out), .S
+       (cWord[1]), .ZN (mux_2_5out));
+  MUX2ND4BWP16P90 mux_2_6(.I0 (mux_1_11out), .I1 (mux_1_12out), .S
+       (cWord[1]), .ZN (mux_2_6out));
+  MUX2ND4BWP16P90 mux_2_7(.I0 (mux_1_13out), .I1 (mux_1_14out), .S
+       (cWord[1]), .ZN (mux_2_7out));
+  MUX2ND4BWP16P90 mux_2_8(.I0 (mux_1_15out), .I1 (mux_1_16out), .S
+       (cWord[1]), .ZN (mux_2_8out));
+  MUX2ND4BWP16P90 mux_3_1(.I0 (mux_2_1out), .I1 (mux_2_2out), .S
+       (cWord[2]), .ZN (mux_3_1out));
+  MUX2ND4BWP16P90 mux_3_2(.I0 (mux_2_3out), .I1 (mux_2_4out), .S
+       (cWord[2]), .ZN (mux_3_2out));
+  MUX2ND4BWP16P90 mux_3_3(.I0 (mux_2_5out), .I1 (mux_2_6out), .S
+       (cWord[2]), .ZN (mux_3_3out));
+  MUX2ND4BWP16P90 mux_3_4(.I0 (mux_2_7out), .I1 (mux_2_8out), .S
+       (cWord[2]), .ZN (mux_3_4out));
+  MUX2ND4BWP16P90 mux_4_1(.I0 (mux_3_1out), .I1 (mux_3_2out), .S
+       (cWord[3]), .ZN (mux_4_1out));
+  MUX2ND4BWP16P90 mux_4_2(.I0 (mux_3_3out), .I1 (mux_3_4out), .S
+       (cWord[3]), .ZN (mux_4_2out));
+  MUX2ND4BWP16P90 mux_5_1(.I0 (mux_4_1out), .I1 (mux_4_2out), .S
+       (cWord[4]), .ZN (dco_out));
 
+//DCO end (Except for loop breakers)
 
-  SDFCNQD2BWP16P90 \accum_uut_sum_reg[6] (.CDN (RSTN), .CP (dco_out),
+  SDFCNQD2BWP16P90LVT \accum_uut_sum_reg[6] (.CDN (RSTN), .CP (dco_out),
        .D (cWord[4]), .SI (n_43), .SE (n_27), .Q (cWord[4]));
-  SDFCNQD2BWP16P90 \accum_uut_sum_reg[5] (.CDN (RSTN), .CP (dco_out),
+  SDFCNQD2BWP16P90LVT \accum_uut_sum_reg[5] (.CDN (RSTN), .CP (dco_out),
        .D (cWord[3]), .SI (n_41), .SE (n_27), .Q (cWord[3]));
   XOR3D2BWP16P90 g1334__2398(.A1 (cWord[4]), .A2 (n_16), .A3 (n_42), .Z
        (n_43));
-  SDFCNQD2BWP16P90 \accum_uut_sum_reg[4] (.CDN (RSTN), .CP (dco_out),
+  SDFCNQD2BWP16P90LVT \accum_uut_sum_reg[4] (.CDN (RSTN), .CP (dco_out),
        .D (cWord[2]), .SI (n_39), .SE (n_27), .Q (cWord[2]));
   OAI211D1BWP16P90 g1336__5107(.A1 (n_18), .A2 (n_38), .B (n_17), .C
        (n_23), .ZN (n_42));
   XNR2D1BWP16P90 g1337__6260(.A1 (n_40), .A2 (n_25), .ZN (n_41));
-  SDFCNQD2BWP16P90 \accum_uut_sum_reg[3] (.CDN (RSTN), .CP (dco_out),
+  SDFCNQD2BWP16P90LVT \accum_uut_sum_reg[3] (.CDN (RSTN), .CP (dco_out),
        .D (cWord[1]), .SI (n_36), .SE (n_27), .Q (cWord[1]));
   ND2D1BWP16P90 g1339__4319(.A1 (n_38), .A2 (n_17), .ZN (n_40));
   XNR2D1BWP16P90 g1340__8428(.A1 (n_37), .A2 (n_29), .ZN (n_39));
-  SDFCNQD2BWP16P90 \accum_uut_sum_reg[2] (.CDN (RSTN), .CP (dco_out),
+  SDFCNQD2BWP16P90LVT \accum_uut_sum_reg[2] (.CDN (RSTN), .CP (dco_out),
        .D (cWord[0]), .SI (n_34), .SE (n_27), .Q (cWord[0]));
   IND2D1BWP16P90 g1342__5526(.A1 (n_20), .B1 (n_37), .ZN (n_38));
-  SDFCNQD2BWP16P90 \accum_uut_sum_reg[1] (.CDN (RSTN), .CP (dco_out),
+  SDFCNQD2BWP16P90LVT \accum_uut_sum_reg[1] (.CDN (RSTN), .CP (dco_out),
        .D (accum_uut_sum[1]), .SI (n_33), .SE (n_27), .Q
        (accum_uut_sum[1]));
   OAI211D1BWP16P90 g1344__6783(.A1 (n_22), .A2 (n_32), .B (n_21), .C
        (n_19), .ZN (n_37));
   XNR2D1BWP16P90 g1345__3680(.A1 (n_35), .A2 (n_30), .ZN (n_36));
-  SDFCNQD2BWP16P90 \accum_uut_sum_reg[0] (.CDN (RSTN), .CP (dco_out),
+  SDFCNQD2BWP16P90LVT \accum_uut_sum_reg[0] (.CDN (RSTN), .CP (dco_out),
        .D (n_27), .SI (n_26), .SE (accum_uut_sum[0]), .Q
        (accum_uut_sum[0]));
   ND2D1BWP16P90 g1347__1617(.A1 (n_32), .A2 (n_21), .ZN (n_35));
@@ -148,11 +198,11 @@ ND4D4BWP16P90 nand_gate_capacitor(.A1 (dco_out), .A2 (NAND_CTRL1), .A3
        (down_out), .ZN (n_14));
   INR4D1BWP16P90 g1369__2398(.A1 (n_11), .B1 (cWord[2]), .B2
        (cWord[0]), .B3 (cWord[3]), .ZN (n_13));
-  SDFCNQD2BWP16P90 accum_uut_nand1_reg(.CDN (RSTN), .CP (dco_out), .D
+  SDFCNQD2BWP16P90LVT accum_uut_nand1_reg(.CDN (RSTN), .CP (dco_out), .D
        (n_6), .SI (nand1_out), .SE (n_0), .Q (nand1_out));
   IND4D1BWP16P90 g1371__5107(.A1 (n_9), .B1 (cWord[1]), .B2 (cWord[4]),
        .B3 (cWord[3]), .ZN (n_12));
-  SDFCNQD2BWP16P90 accum_uut_nand3_reg(.CDN (RSTN), .CP (dco_out), .D
+  SDFCNQD2BWP16P90LVT accum_uut_nand3_reg(.CDN (RSTN), .CP (dco_out), .D
        (n_8), .SI (nand3_out), .SE (n_0), .Q (nand3_out));
   DFCNQD2BWP16P90 pfd_uut_Q_UP_reg(.CDN (n_10), .CP (CLK), .D (n_7), .Q
        (up_out));
@@ -163,12 +213,12 @@ ND4D4BWP16P90 nand_gate_capacitor(.A1 (dco_out), .A2 (NAND_CTRL1), .A3
        (out_clk));
   NR3D1BWP16P90 g1376__6260(.A1 (n_6), .A2 (cWord[1]), .A3 (cWord[4]),
        .ZN (n_11));
-  SDFCNQD2BWP16P90 accum_uut_nand2_reg(.CDN (RSTN), .CP (dco_out), .D
+  SDFCNQD2BWP16P90LVT accum_uut_nand2_reg(.CDN (RSTN), .CP (dco_out), .D
        (nand2_out), .SI (accum_uut_sum[1]), .SE (EN), .Q (nand2_out));
-  SDFCNQD2BWP16P90 divide_uut_half_freq_reg(.CDN (RSTN), .CP (dco_out),
+  SDFCNQD2BWP16P90LVT divide_uut_half_freq_reg(.CDN (RSTN), .CP (dco_out),
        .D (EN), .SI (n_0), .SE (divide_uut_half_freq), .Q
        (divide_uut_half_freq));
-  SDFCNQD2BWP16P90 divide_uut_quarter_freq_reg(.CDN (RSTN), .CP
+  SDFCNQD2BWP16P90LVT divide_uut_quarter_freq_reg(.CDN (RSTN), .CP
        (divide_uut_half_freq), .D (EN), .SI (n_0), .SE
        (divide_uut_quarter_freq), .Q (divide_uut_quarter_freq));
   AOI21D1BWP16P90 g1380__4319(.A1 (up_out), .A2 (down_out), .B (n_1),
@@ -185,5 +235,39 @@ ND4D4BWP16P90 nand_gate_capacitor(.A1 (dco_out), .A2 (NAND_CTRL1), .A3
   CKND1BWP16P90 g1388(.I (cWord[0]), .ZN (n_2));
   CKND1BWP16P90 g1389(.I (RSTN), .ZN (n_1));
   CKND1BWP16P90 g1390(.I (EN), .ZN (n_0));
+
+// Loop Breakers for DCO
+    CKBD1BWP16P90 cdn_loop_breaker(.I (delay_out_32), .Z (n_44));
+  CKBD1BWP16P90 cdn_loop_breaker1(.I (delay_out_31), .Z (n_45));
+  CKBD1BWP16P90 cdn_loop_breaker2(.I (delay_out_30), .Z (n_46));
+  CKBD1BWP16P90 cdn_loop_breaker3(.I (delay_out_29), .Z (n_47));
+  CKBD1BWP16P90 cdn_loop_breaker4(.I (delay_out_28), .Z (n_48));
+  CKBD1BWP16P90 cdn_loop_breaker5(.I (delay_out_27), .Z (n_49));
+  CKBD1BWP16P90 cdn_loop_breaker6(.I (delay_out_26), .Z (n_50));
+  CKBD1BWP16P90 cdn_loop_breaker7(.I (delay_out_25), .Z (n_51));
+  CKBD1BWP16P90 cdn_loop_breaker8(.I (delay_out_24), .Z (n_52));
+  CKBD1BWP16P90 cdn_loop_breaker9(.I (delay_out_23), .Z (n_53));
+  CKBD1BWP16P90 cdn_loop_breaker10(.I (delay_out_22), .Z (n_54));
+  CKBD1BWP16P90 cdn_loop_breaker11(.I (delay_out_21), .Z (n_55));
+  CKBD1BWP16P90 cdn_loop_breaker12(.I (delay_out_20), .Z (n_56));
+  CKBD1BWP16P90 cdn_loop_breaker13(.I (delay_out_19), .Z (n_57));
+  CKBD1BWP16P90 cdn_loop_breaker14(.I (delay_out_18), .Z (n_58));
+  CKBD1BWP16P90 cdn_loop_breaker15(.I (delay_out_17), .Z (n_59));
+  CKBD1BWP16P90 cdn_loop_breaker16(.I (delay_out_16), .Z (n_60));
+  CKBD1BWP16P90 cdn_loop_breaker17(.I (delay_out_15), .Z (n_61));
+  CKBD1BWP16P90 cdn_loop_breaker18(.I (delay_out_14), .Z (n_62));
+  CKBD1BWP16P90 cdn_loop_breaker19(.I (delay_out_13), .Z (n_63));
+  CKBD1BWP16P90 cdn_loop_breaker20(.I (delay_out_12), .Z (n_64));
+  CKBD1BWP16P90 cdn_loop_breaker21(.I (delay_out_11), .Z (n_65));
+  CKBD1BWP16P90 cdn_loop_breaker22(.I (delay_out_10), .Z (n_66));
+  CKBD1BWP16P90 cdn_loop_breaker23(.I (delay_out_9), .Z (n_67));
+  CKBD1BWP16P90 cdn_loop_breaker24(.I (delay_out_8), .Z (n_68));
+  CKBD1BWP16P90 cdn_loop_breaker25(.I (delay_out_7), .Z (n_69));
+  CKBD1BWP16P90 cdn_loop_breaker26(.I (delay_out_6), .Z (n_70));
+  CKBD1BWP16P90 cdn_loop_breaker27(.I (delay_out_5), .Z (n_71));
+  CKBD1BWP16P90 cdn_loop_breaker28(.I (delay_out_4), .Z (n_72));
+  CKBD1BWP16P90 cdn_loop_breaker29(.I (delay_out_3), .Z (n_73));
+  CKBD1BWP16P90 cdn_loop_breaker30(.I (delay_out_2), .Z (n_74));
+  CKBD1BWP16P90 cdn_loop_breaker31(.I (delay_out_1), .Z (n_75));
 endmodule
 

@@ -15,7 +15,7 @@ module top_tb;
     );
 
     initial begin
-        $sdf_annotate("../data/ro_netlist.sdf",top_tb.dut.dco_uut,,,"MAXIMUM");
+        $sdf_annotate("../data/top.sdf",top_tb.dut,,,"MAXIMUM");
         $dumpfile("top_tb.vcd");
         $dumpvars;
     end
@@ -42,18 +42,19 @@ module top_tb;
         CLK = 1'b0;
         RSTN = 1'b0;
         EN = 1'b0;
-        #100;
+        #200;
         RSTN = 1'b1;
+        #50;
         EN = 1'b1;
-        generate_wave(0.25, 200.0);
+        generate_wave(0.0875, 200.0);
         #10;
-        generate_wave(0.3125, 200.0);
+        generate_wave(0.1, 200.0);
         #10;
-        generate_wave(0.375, 200.0);
+        generate_wave(0.15, 200.0);
         #10;
-        generate_wave(0.4375, 200.0);
+        generate_wave(0.2, 200.0);
         #10;
-        generate_wave(0.5, 200.0);
+        generate_wave(0.275, 200.0);
         #10;
         $finish;
     end
