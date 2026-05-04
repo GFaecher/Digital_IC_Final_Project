@@ -1,0 +1,17 @@
+// Paths are relative to the work folder
++libext+.v+.sv+.vlib
++incdir+/ee/166/CHIPKIT/ip/rtl_inc
++incdir+/usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/VERILOG/
+/usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/VERILOG/N16ADFP_StdCell.v
+-y ../rtl/
+
+//../rtl/accumulator.sv
+//../rtl/freq_divider.sv
+//../rtl/PFD.sv
+//../rtl/ro_netlist-compile.v
+//../rtl/RTL.svh
+//../rtl/top.sv
+
+../data/top-compile.v
+
+../rtl/top_tb.sv

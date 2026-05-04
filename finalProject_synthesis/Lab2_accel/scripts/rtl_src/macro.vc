@@ -1,0 +1,20 @@
++libext+.v+.sv
+
+../rtl/accumulator.sv
+/ee/166/CHIPKIT/ip/ahb/ahb_intf.sv
+../rtl/freq_divider.sv
+/ee/166/CHIPKIT/ip/ahb/ahb_intf.sv
+../rtl/PFD.sv
+/ee/166/CHIPKIT/ip/ahb/ahb_intf.sv
+../rtl/top.sv
+/ee/166/CHIPKIT/ip/ahb/ahb_intf.sv
+../rtl/ro_netlist_stub.sv
+/ee/166/CHIPKIT/ip/ahb/ahb_intf.sv
++incdir+/ee/166/CHIPKIT/ip/rtl_inc/
+-y /ee/166/CHIPKIT/ip/ahb
++incdir+/ee/166/CHIPKIT/ip/ahb
+-y ../rtl/
++incdir+../rtl/
+
+
+

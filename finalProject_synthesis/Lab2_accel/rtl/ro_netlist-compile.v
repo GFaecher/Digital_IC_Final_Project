@@ -1,0 +1,80 @@
+  input EN, NAND_CTRL1, NAND_CTRL2, NAND_CTRL3;
+  input [4:0] CTRL;
+  output CLK;
+  wire EN, NAND_CTRL1, NAND_CTRL2, NAND_CTRL3;
+  wire [4:0] CTRL;
+  wire CLK;
+  wire UNCONNECTED, delay_out_1, delay_out_2, delay_out_3, delay_out_4,
+       delay_out_5, delay_out_6, delay_out_7;
+  wire delay_out_8, delay_out_9, delay_out_10, delay_out_11,
+       delay_out_12, delay_out_13, delay_out_14, delay_out_15;
+  wire delay_out_16, mux_1_1out, mux_1_2_out, mux_1_2out, mux_1_3out,
+       mux_1_4out, mux_1_5out, mux_1_6out;
+  wire mux_1_7out, mux_1_8out, mux_2_1out, mux_2_2out, mux_2_3out,
+       mux_2_4out, mux_3_1out, mux_3_2out;
+  wire n_10, n_11, n_12, n_13, n_14, n_15, n_16, n_17;
+  wire n_18, n_19, n_20, n_21, n_22, n_23, nand_out, start_inv_out;
+  ND4D4BWP16P90 nand_gate_capacitor(.A1 (CLK), .A2 (NAND_CTRL1), .A3
+       (NAND_CTRL2), .A4 (NAND_CTRL3), .ZN (UNCONNECTED));
+  ND2D2BWP16P90 enable_nand(.A1 (EN), .A2 (CLK), .ZN (nand_out));
+  INVD2BWP16P90 start_inv(.I (nand_out), .ZN (start_inv_out));
+  CKBD2BWP16P90 delay_element1(.I (start_inv_out), .Z (delay_out_1));
+  CKBD2BWP16P90 delay_element2(.I (delay_out_1), .Z (delay_out_2));
+  CKBD2BWP16P90 delay_element3(.I (delay_out_2), .Z (delay_out_3));
+  CKBD2BWP16P90 delay_element4(.I (delay_out_3), .Z (delay_out_4));
+  CKBD2BWP16P90 delay_element5(.I (delay_out_4), .Z (delay_out_5));
+  CKBD2BWP16P90 delay_element6(.I (delay_out_5), .Z (delay_out_6));
+  CKBD2BWP16P90 delay_element7(.I (delay_out_6), .Z (delay_out_7));
+  CKBD2BWP16P90 delay_element8(.I (delay_out_7), .Z (delay_out_8));
+  CKBD2BWP16P90 delay_element9(.I (delay_out_8), .Z (delay_out_9));
+  CKBD2BWP16P90 delay_element10(.I (delay_out_9), .Z (delay_out_10));
+  CKBD2BWP16P90 delay_element11(.I (delay_out_10), .Z (delay_out_11));
+  CKBD2BWP16P90 delay_element12(.I (delay_out_11), .Z (delay_out_12));
+  CKBD2BWP16P90 delay_element13(.I (delay_out_12), .Z (delay_out_13));
+  CKBD2BWP16P90 delay_element14(.I (delay_out_13), .Z (delay_out_14));
+  CKBD2BWP16P90 delay_element15(.I (delay_out_14), .Z (delay_out_15));
+  CKBD2BWP16P90 delay_element16(.I (delay_out_15), .Z (delay_out_16));
+  MUX2ND4BWP16P90 mux_1_1(.I0 (n_23), .I1 (n_22), .S (CTRL[0]), .ZN
+       (mux_1_1out));
+  MUX2ND4BWP16P90 mux_1_2(.I0 (delay_out_3), .I1 (delay_out_4), .S
+       (CTRL[0]), .ZN (mux_1_2out));
+  MUX2ND4BWP16P90 mux_1_3(.I0 (n_21), .I1 (n_20), .S (CTRL[0]), .ZN
+       (mux_1_3out));
+  MUX2ND4BWP16P90 mux_1_4(.I0 (n_19), .I1 (n_18), .S (CTRL[0]), .ZN
+       (mux_1_4out));
+  MUX2ND4BWP16P90 mux_1_5(.I0 (n_17), .I1 (n_16), .S (CTRL[0]), .ZN
+       (mux_1_5out));
+  MUX2ND4BWP16P90 mux_1_6(.I0 (n_15), .I1 (n_14), .S (CTRL[0]), .ZN
+       (mux_1_6out));
+  MUX2ND4BWP16P90 mux_1_7(.I0 (n_13), .I1 (n_12), .S (CTRL[0]), .ZN
+       (mux_1_7out));
+  MUX2ND4BWP16P90 mux_1_8(.I0 (n_11), .I1 (n_10), .S (CTRL[0]), .ZN
+       (mux_1_8out));
+  MUX2ND4BWP16P90 mux_2_1(.I0 (mux_1_1out), .I1 (mux_1_2_out), .S
+       (CTRL[1]), .ZN (mux_2_1out));
+  MUX2ND4BWP16P90 mux_2_2(.I0 (mux_1_3out), .I1 (mux_1_4out), .S
+       (CTRL[1]), .ZN (mux_2_2out));
+  MUX2ND4BWP16P90 mux_2_3(.I0 (mux_1_5out), .I1 (mux_1_6out), .S
+       (CTRL[1]), .ZN (mux_2_3out));
+  MUX2ND4BWP16P90 mux_2_4(.I0 (mux_1_7out), .I1 (mux_1_8out), .S
+       (CTRL[1]), .ZN (mux_2_4out));
+  MUX2ND4BWP16P90 mux_3_1(.I0 (mux_2_1out), .I1 (mux_2_2out), .S
+       (CTRL[3]), .ZN (mux_3_1out));
+  MUX2ND4BWP16P90 mux_3_2(.I0 (mux_2_3out), .I1 (mux_2_4out), .S
+       (CTRL[3]), .ZN (mux_3_2out));
+  MUX2ND4BWP16P90 mux_4_1(.I0 (mux_3_1out), .I1 (mux_3_2out), .S
+       (CTRL[4]), .ZN (CLK));
+  CKBD1BWP16P90 cdn_loop_breaker(.I (delay_out_16), .Z (n_10));
+  CKBD1BWP16P90 cdn_loop_breaker1(.I (delay_out_15), .Z (n_11));
+  CKBD1BWP16P90 cdn_loop_breaker2(.I (delay_out_14), .Z (n_12));
+  CKBD1BWP16P90 cdn_loop_breaker3(.I (delay_out_13), .Z (n_13));
+  CKBD1BWP16P90 cdn_loop_breaker4(.I (delay_out_12), .Z (n_14));
+  CKBD1BWP16P90 cdn_loop_breaker5(.I (delay_out_11), .Z (n_15));
+  CKBD1BWP16P90 cdn_loop_breaker6(.I (delay_out_10), .Z (n_16));
+  CKBD1BWP16P90 cdn_loop_breaker7(.I (delay_out_9), .Z (n_17));
+  CKBD1BWP16P90 cdn_loop_breaker8(.I (delay_out_8), .Z (n_18));
+  CKBD1BWP16P90 cdn_loop_breaker9(.I (delay_out_7), .Z (n_19));
+  CKBD1BWP16P90 cdn_loop_breaker10(.I (delay_out_6), .Z (n_20));
+  CKBD1BWP16P90 cdn_loop_breaker11(.I (delay_out_5), .Z (n_21));
+  CKBD1BWP16P90 cdn_loop_breaker12(.I (delay_out_2), .Z (n_22));
+  CKBD1BWP16P90 cdn_loop_breaker13(.I (delay_out_1), .Z (n_23));
