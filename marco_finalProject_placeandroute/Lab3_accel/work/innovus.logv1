@@ -1,0 +1,885 @@
+[05/04 15:55:02      0s] 
+[05/04 15:55:02      0s] Cadence Innovus(TM) Implementation System.
+[05/04 15:55:02      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/04 15:55:02      0s] 
+[05/04 15:55:02      0s] Version:	v23.30-p003_1, built Thu Feb 1 14:17:36 PST 2024
+[05/04 15:55:02      0s] Options:	
+[05/04 15:55:02      0s] Date:		Mon May  4 15:55:02 2026
+[05/04 15:55:02      0s] Host:		dell52 (x86_64 w/Linux 4.18.0-553.71.1.el8_10.x86_64) (32cores*128cpus*Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz 49152KB)
+[05/04 15:55:02      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[05/04 15:55:02      0s] 
+[05/04 15:55:02      0s] License:
+[05/04 15:55:02      0s] 		[15:55:02.253842] Configured Lic search path (23.02-s003): 5280@vm-license1:27000@vm-license1
+
+[05/04 15:55:02      0s] 		invs	Innovus Implementation System	23.1	checkout succeeded
+[05/04 15:55:02      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/04 15:55:04      1s] {{{ isCertus 0,  isCertusOrDistOptClient = 0, isInnovusCertusClient = 0}}}
+[05/04 15:55:19     15s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v23.30-p003_1 (64bit) 02/01/2024 14:17 (Linux 3.10.0-693.el7.x86_64)
+[05/04 15:55:22     18s] @(#)CDS: NanoRoute 23.30-p003_1 NR240109-1512/23_10-UB (database version 18.20.618_1) {superthreading v2.20}
+[05/04 15:55:22     18s] @(#)CDS: AAE 23.10-p002 (64bit) 02/01/2024 (Linux 3.10.0-693.el7.x86_64)
+[05/04 15:55:22     18s] @(#)CDS: CTE 23.10-p003_1 () Dec  5 2023 19:42:23 ( )
+[05/04 15:55:22     18s] @(#)CDS: SYNTECH 23.10-p002_1 () Nov 29 2023 02:17:21 ( )
+[05/04 15:55:22     18s] @(#)CDS: CPE v23.10-p004
+[05/04 15:55:22     18s] @(#)CDS: IQuantus/TQuantus 22.1.1-s215 (64bit) Mon Nov 20 10:05:08 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+[05/04 15:55:22     18s] @(#)CDS: OA 22.61-p007 Wed Sep 27 19:40:10 2023
+[05/04 15:55:22     18s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[05/04 15:55:22     18s] @(#)CDS: RCDB 11.15.0
+[05/04 15:55:22     18s] @(#)CDS: STYLUS 23.10-a001_1 (12/04/2023 04:39 PST)
+[05/04 15:55:22     18s] @(#)CDS: IntegrityPlanner-23.10-12651 (23.10) (2023-09-06 08:32:42+0800)
+[05/04 15:55:22     18s] @(#)CDS: SYNTHESIS_ENGINE 23.10-b027
+[05/04 15:55:22     18s] Create and set the environment variable TMPDIR to /data/qvu01/innovus_temp_353582_dell52_qvu01_T9ckzn.
+
+[05/04 15:55:22     18s] Change the soft stacksize limit to 0.2%RAM (1029 mbytes). Set global soft_stack_size_limit to change the value.
+[05/04 15:55:24     19s] 
+[05/04 15:55:24     19s] **INFO:  MMMC transition support version v31-84 
+[05/04 15:55:24     19s] 
+[05/04 15:55:24     19s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/04 15:55:24     19s] <CMD> suppressMessage ENCEXT-2799
+[05/04 15:55:24     19s] <CMD> win
+[05/04 15:55:40     20s] <CMD> encMessage warning 0
+[05/04 15:55:40     20s] Suppress "**WARN ..." messages.
+[05/04 15:55:40     20s] <CMD> encMessage debug 0
+[05/04 15:55:40     20s] <CMD> is_common_ui_mode
+[05/04 15:55:40     20s] <CMD> restoreDesign /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat top
+[05/04 15:55:40     20s] #% Begin load design ... (date=05/04 15:55:40, mem=1760.4M)
+[05/04 15:55:42     21s] Loading design 'top' saved by 'Innovus' '23.30-p003_1' on 'Mon May 4 15:54:50 2026'.
+[05/04 15:55:42     21s] % Begin Load MMMC data ... (date=05/04 15:55:42, mem=1764.6M)
+[05/04 15:55:42     21s] % End Load MMMC data ... (date=05/04 15:55:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=1766.1M, current mem=1765.0M)
+[05/04 15:55:42     21s] 
+[05/04 15:55:42     21s] Loading LEF file /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/libs/lef/N16ADFP_APR_Innovus_11M.10a.tlef ...
+[05/04 15:55:42     21s] 
+[05/04 15:55:42     21s] Loading LEF file /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/libs/lef/N16ADFP_StdCell.lef ...
+[05/04 15:55:42     21s] Set DBUPerIGU to M1 pitch 180.
+[05/04 15:55:42     21s] [15:55:42.468073] Periodic Lic check successful
+[15:55:42.468104] Feature usage summary:
+[15:55:42.468104] Innovus_Impl_System
+[15:55:42.468105] Innovus_20nm_Opt
+
+[05/04 15:55:42     21s] This command "restoreDesign /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat ..." required an extra checkout of license invs_20nm.
+[05/04 15:55:42     21s] Additional license(s) checked out: 1 'Innovus_20nm_Opt' license(s)
+[05/04 15:55:42     22s] 
+[05/04 15:55:42     22s] Loading LEF file /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/libs/lef/N16ADFP_SRAM_100a.lef ...
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'AA[0]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'AA[1]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'AA[2]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'AA[3]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'AA[4]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'AB[0]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'AB[1]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'AB[2]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'AB[3]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'AB[4]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'BWEB[0]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'BWEB[1]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'BWEB[2]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'BWEB[3]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'BWEB[4]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'BWEB[5]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'BWEB[6]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'BWEB[7]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'BWEB[8]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-200):	Pin 'BWEB[9]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-200' for more detail.
+[05/04 15:55:42     22s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[05/04 15:55:42     22s] To increase the message display limit, refer to the product command reference manual.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'PUDELAY' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[0]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[1]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[2]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[3]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[4]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[5]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[6]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[7]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[8]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[9]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[10]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[11]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[12]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[13]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[14]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[15]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[16]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[17]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (IMPLF-201):	Pin 'Q[18]' in macro 'TS6N16ADFPCLLLVTA32X32M2FWSHOD' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/04 15:55:42     22s] Type 'man IMPLF-201' for more detail.
+[05/04 15:55:42     22s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[05/04 15:55:42     22s] To increase the message display limit, refer to the product command reference manual.
+[05/04 15:55:42     22s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[05/04 15:55:42     22s] Loading view definition file from /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/viewDefinition.tcl
+[05/04 15:55:42     22s] Reading ss_0p72v_m40c_lib_set timing library '/usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib' ...
+[05/04 15:55:51     31s] **WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib, Line 6263802)
+[05/04 15:55:51     31s] **WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib, Line 6263803)
+[05/04 15:55:51     31s] **WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib, Line 6265912)
+[05/04 15:55:51     31s] **WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib, Line 6265913)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLBWP20P90_VPP_VSS'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLBWP20P90_VPP_VBB'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLBWP20P90LVT_VPP_VSS'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLBWP20P90LVT_VPP_VBB'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLBWP20P90LVT'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLBWP20P90'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLBWP16P90_VPP_VSS'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLBWP16P90_VPP_VBB'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLBWP16P90LVT_VPP_VSS'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLBWP16P90LVT_VPP_VBB'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLBWP16P90LVT'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLBWP16P90'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'FILL8BWP20P90LVT'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'FILL8BWP20P90'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'FILL8BWP16P90LVT'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'FILL8BWP16P90'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'FILL64BWP20P90LVT'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'FILL64BWP20P90'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'FILL64BWP16P90LVT'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] **WARN: (TECHLIB-302):	No function defined for cell 'FILL64BWP16P90'. The cell will only be used for analysis. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.lib)
+[05/04 15:56:08     48s] Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[05/04 15:56:10     50s] Read 1480 cells in library 'N16ADFP_StdCellss0p72vm40c_ccs' 
+[05/04 15:56:10     50s] Reading ss_0p72v_m40c_lib_set timing library '/usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib' ...
+[05/04 15:56:10     50s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS1N16ADFPCLLLVTA128X64M4SWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib)
+[05/04 15:56:10     50s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS1N16ADFPCLLLVTA16X88M2SWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib)
+[05/04 15:56:10     50s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS1N16ADFPCLLLVTA16X96M2SWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib)
+[05/04 15:56:10     50s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS1N16ADFPCLLLVTA512X45M4SWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib)
+[05/04 15:56:10     50s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS6N16ADFPCLLLVTA128X32M4FWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib)
+[05/04 15:56:10     50s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS6N16ADFPCLLLVTA128X64M4FWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib)
+[05/04 15:56:10     50s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS6N16ADFPCLLLVTA16X120M2FWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib)
+[05/04 15:56:10     50s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS6N16ADFPCLLLVTA16X32M2FWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib)
+[05/04 15:56:10     50s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS6N16ADFPCLLLVTA16X72M2FWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib)
+[05/04 15:56:10     50s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS6N16ADFPCLLLVTA32X32M2FWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib)
+[05/04 15:56:10     50s] Read 10 cells in library 'N16ADFP_SRAM_ss0p72v0p72vm40c' 
+[05/04 15:56:10     50s] Reading ff_0p88v_125c_lib_set timing library '/usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellff0p88v125c_ccs.lib' ...
+[05/04 15:56:19     59s] **WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellff0p88v125c_ccs.lib, Line 6263760)
+[05/04 15:56:19     59s] **WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellff0p88v125c_ccs.lib, Line 6263761)
+[05/04 15:56:19     59s] **WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellff0p88v125c_ccs.lib, Line 6265870)
+[05/04 15:56:19     59s] **WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellff0p88v125c_ccs.lib, Line 6265871)
+[05/04 15:56:37     78s] Read 1480 cells in library 'N16ADFP_StdCellff0p88v125c_ccs' 
+[05/04 15:56:37     78s] Reading ff_0p88v_125c_lib_set timing library '/usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ff0p88v0p88v125c_100a.lib' ...
+[05/04 15:56:37     78s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS1N16ADFPCLLLVTA128X64M4SWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ff0p88v0p88v125c_100a.lib)
+[05/04 15:56:37     78s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS1N16ADFPCLLLVTA16X88M2SWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ff0p88v0p88v125c_100a.lib)
+[05/04 15:56:37     78s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS1N16ADFPCLLLVTA16X96M2SWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ff0p88v0p88v125c_100a.lib)
+[05/04 15:56:37     78s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS1N16ADFPCLLLVTA512X45M4SWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ff0p88v0p88v125c_100a.lib)
+[05/04 15:56:37     78s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS6N16ADFPCLLLVTA128X32M4FWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ff0p88v0p88v125c_100a.lib)
+[05/04 15:56:37     78s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS6N16ADFPCLLLVTA128X64M4FWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ff0p88v0p88v125c_100a.lib)
+[05/04 15:56:37     78s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS6N16ADFPCLLLVTA16X120M2FWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ff0p88v0p88v125c_100a.lib)
+[05/04 15:56:37     78s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS6N16ADFPCLLLVTA16X32M2FWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ff0p88v0p88v125c_100a.lib)
+[05/04 15:56:37     78s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS6N16ADFPCLLLVTA16X72M2FWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ff0p88v0p88v125c_100a.lib)
+[05/04 15:56:37     78s] **WARN: (TECHLIB-905):	Found a function attribute specified on pin 'PUDELAY' with 'interface_timing' attribute set to true on cell 'TS6N16ADFPCLLLVTA32X32M2FWSHOD'. As per the liberty standard, a function attribute should not be specified for a cell which has interface_timing attribute set to true. This function attribute will be ignored. (File /usr/cots/ip_libraries/tsmc/N16ADFP/sram/N16ADFP_SRAM/NLDM/N16ADFP_SRAM_ff0p88v0p88v125c_100a.lib)
+[05/04 15:56:38     79s] Read 10 cells in library 'N16ADFP_SRAM_ff0p88v0p88v125c' 
+[05/04 15:56:38     79s] Ending "PreSetAnalysisView" (total cpu=0:00:57.0, real=0:00:56.0, peak res=2538.2M, current mem=1831.8M)
+[05/04 15:56:38     79s] *** End library_loading (cpu=0.95min, real=0.93min, mem=504.0M, fe_cpu=1.32min, fe_real=1.60min, fe_mem=2161.2M) ***
+[05/04 15:56:38     79s] % Begin Load netlist data ... (date=05/04 15:56:38, mem=1831.8M)
+[05/04 15:56:38     79s] *** Begin netlist parsing (mem=2161.2M) ***
+[05/04 15:56:38     79s] Created 1490 new cells from 4 timing libraries.
+[05/04 15:56:38     79s] Reading netlist ...
+[05/04 15:56:38     79s] Backslashed names will retain backslash and a trailing blank character.
+[05/04 15:56:38     79s] Reading verilogBinary netlist '/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/vbin/top.v.bin'
+[05/04 15:56:38     79s] 
+[05/04 15:56:38     79s] *** Memory Usage v#2 (Current mem = 2170.238M, initial mem = 820.586M) ***
+[05/04 15:56:38     79s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2170.2M) ***
+[05/04 15:56:38     79s] % End Load netlist data ... (date=05/04 15:56:38, total cpu=0:00:00.1, real=0:00:00.0, peak res=1935.3M, current mem=1935.3M)
+[05/04 15:56:38     79s] Set top cell to top.
+[05/04 15:56:38     79s] Hooked 2980 DB cells to tlib cells.
+[05/04 15:56:38     79s] Ending "BindLib:" (total cpu=0:00:00.3, real=0:00:00.0, peak res=2032.5M, current mem=2032.5M)
+[05/04 15:56:38     79s] Starting recursive module instantiation check.
+[05/04 15:56:38     79s] No recursion found.
+[05/04 15:56:38     79s] Building hierarchical netlist for Cell top ...
+[05/04 15:56:38     79s] ***** UseNewTieNetMode *****.
+[05/04 15:56:38     79s] *** Netlist is unique.
+[05/04 15:56:38     79s] Setting Std. cell height to 1152 DBU (smallest netlist inst).
+[05/04 15:56:38     79s] ** info: there are 2981 modules.
+[05/04 15:56:38     79s] ** info: there are 78 stdCell insts.
+[05/04 15:56:38     79s] ** info: there are 0 insts with no signal pins.
+[05/04 15:56:38     79s] 
+[05/04 15:56:38     79s] *** Memory Usage v#2 (Current mem = 2227.652M, initial mem = 820.586M) ***
+[05/04 15:56:38     79s] *info: set bottom ioPad orient R0
+[05/04 15:56:38     79s] ** INFO: FINFET definition is detected in tech LEF. The pitch is 0.048 , offset is 0 and direction is Horizontal Enable FinFet support.
+[05/04 15:56:38     79s] block snap rule changed from un_init to FinFet/un_init
+[05/04 15:56:38     79s] IO pad snap rule changed from un_init to FinFet/FinFet/un_init
+[05/04 15:56:38     79s] constraint snap rule changed from un_init to FinFet/FinFet/FinFet/un_init
+[05/04 15:56:38     79s] DIE snap rule changed from un_init to FinFet/FinFet/FinFet/FinFet/un_init
+[05/04 15:56:38     79s] Core snap rule changed from un_init to FinFet/FinFet/FinFet/FinFet/FinFet/un_init
+[05/04 15:56:38     79s] **WARN: (IMPFP-3961):	The techSite 'dcore' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/04 15:56:38     79s] Type 'man IMPFP-3961' for more detail.
+[05/04 15:56:38     79s] **WARN: (IMPFP-3961):	The techSite 'bcore' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/04 15:56:38     79s] Type 'man IMPFP-3961' for more detail.
+[05/04 15:56:38     79s] **WARN: (IMPFP-3961):	The techSite 'coreExt' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/04 15:56:38     79s] Type 'man IMPFP-3961' for more detail.
+[05/04 15:56:38     79s] 
+[05/04 15:56:38     79s] Honor LEF defined pitches for advanced node
+[05/04 15:56:38     79s] Start create_tracks
+[05/04 15:56:38     79s] Loading preference file /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/gui.pref.tcl ...
+[05/04 15:56:39     79s] **INFO: setDesignMode -flowEffort extreme -> setting 'setOptMode -opt_exp_flow_effort_extreme true'
+[05/04 15:56:39     79s] ##  Process: 16            (User Set)               
+[05/04 15:56:39     79s] ##     Node: (not set)                           
+[05/04 15:56:39     79s] 
+##  Check design process and node:  
+##  Design tech node is not set.
+
+[05/04 15:56:39     79s] Applying the recommended capacitance filtering threshold values for 16nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+[05/04 15:56:39     79s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[05/04 15:56:39     79s] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[05/04 15:56:39     79s] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+[05/04 15:56:39     79s] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+[05/04 15:56:39     80s] **INFO: Hold fixing will be done using "BUFFD2BWP16P90 BUFFD4BWP16P90 BUFFD8BWP16P90 BUFFD16BWP16P90" only.
+[05/04 15:56:39     80s] setAnalysisMode -usefulSkew already set.
+[05/04 15:56:39     80s] **WARN: (IMPOPT-3602):	The specified path group name ToRegs is not defined.
+[05/04 15:56:39     80s] Type 'man IMPOPT-3602' for more detail.
+[05/04 15:56:39     80s] Effort level <high> specified for ToRegs path_group
+[05/04 15:56:39     80s] Slack adjustment of -0 applied on ToRegs path_group
+[05/04 15:56:39     80s] **WARN: (IMPOPT-3602):	The specified path group name Outputs is not defined.
+[05/04 15:56:39     80s] Type 'man IMPOPT-3602' for more detail.
+[05/04 15:56:39     80s] Slack adjustment of -0 applied on Outputs path_group
+[05/04 15:56:39     80s] **WARN: (IMPOPT-3602):	The specified path group name Inputs is not defined.
+[05/04 15:56:39     80s] Type 'man IMPOPT-3602' for more detail.
+[05/04 15:56:39     80s] Slack adjustment of -0 applied on Inputs path_group
+[05/04 15:56:39     80s] **WARN: (IMPOPT-3602):	The specified path group name FromRegs is not defined.
+[05/04 15:56:39     80s] Type 'man IMPOPT-3602' for more detail.
+[05/04 15:56:39     80s] Effort level <high> specified for FromRegs path_group
+[05/04 15:56:39     80s] Slack adjustment of -0 applied on FromRegs path_group
+[05/04 15:56:39     80s] **WARN: (IMPOPT-3602):	The specified path group name Feedthrough is not defined.
+[05/04 15:56:39     80s] Type 'man IMPOPT-3602' for more detail.
+[05/04 15:56:39     80s] Slack adjustment of -0 applied on Feedthrough path_group
+[05/04 15:56:39     80s] #WARNING (NRIF-95) Option setNanoRouteMode -routeTopRoutingLayer has invalid value "0". Reset to max routing layer "12".
+[05/04 15:56:39     80s] 
+[05/04 15:56:39     80s] viaInitial starts at Mon May  4 15:56:39 2026
+viaInitial ends at Mon May  4 15:56:39 2026
+Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+[05/04 15:56:39     80s] Setting -allow_wire_shape_change to 0. ViaGen will not allow via to change the metal shape of existing wires.
+[05/04 15:56:39     80s] Setting -disable_via_merging to 1. ViaGen disables via merging with the via created earlier.
+[05/04 15:56:39     80s] Setting -extend_out_wire_end to 1. ViaGen will allow via extending outside of the end of the existing wires.
+[05/04 15:56:39     80s] Setting -ignore_DRC to 0. ViaGen will do DRC check while creating vias.
+[05/04 15:56:39     80s] Setting -inherit_wire_status to 1. ViaGen will create vias and set the status as the bottom wires.
+[05/04 15:56:39     80s] Setting -keep_fixed_via to 1. Fixed vias cannot be modified by tool.
+[05/04 15:56:39     80s] Setting -optimize_cross_via to 1. ViaGen will try to generate vias with the minimum enclosure.
+[05/04 15:56:39     80s] -parameterized_via_only is set to 1. ViaGen will generate parameterized vias only, which means the DEF syntax of generated vias is with +VIARULE.
+[05/04 15:56:39     80s] Setting -use_cce to 1. ViaGen will call CCE to colorize via and may re-colorize surrounding vias to resolve color conflict within the local range.
+[05/04 15:56:39     80s] **WARN: (IMPMODE-2):	Option "-equivalent_waveform_model_propagation" for command set_delay_cal_mode is obsolete and has been replaced by "-equivalent_waveform_model {none|no_propagation|propagation}". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script accordingly.
+[05/04 15:56:39     80s] **WARN: (IMPMODE-3):	Option "-equivalent_waveform_model_type" for command set_delay_cal_mode is obsolete and has been replaced by "-ewm_type {simulation|moments}". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script accordingly.
+[05/04 15:56:39     80s] Stripe will break at selected block.
+[05/04 15:56:39     80s] addStripe will not ignore design rule checking when generating stripes.
+[05/04 15:56:39     80s] addStripe will not break automatically at non-default domains when generating global stripes over the core area or default domain.
+[05/04 15:56:39     80s] Exact stripe pitch will not be observed after snapping to routing tracks.
+[05/04 15:56:39     80s] The power planner will not be remove floating stripes over blocks.
+[05/04 15:56:39     80s] Stripes will break as close as possible to obstructions.
+[05/04 15:56:39     80s] Change floorplan default-technical-site to 'core'.
+[05/04 15:56:39     80s] Extraction setup Delayed 
+[05/04 15:56:39     80s] *Info: initialize multi-corner CTS.
+[05/04 15:56:39     80s] Ending "SetAnalysisView" (total cpu=0:00:00.3, real=0:00:00.0, peak res=2032.5M, current mem=1927.9M)
+[05/04 15:56:39     80s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[05/04 15:56:39     80s] 
+[05/04 15:56:39     80s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/04 15:56:39     80s] Summary for sequential cells identification: 
+[05/04 15:56:39     80s]   Identified SBFF number: 80
+[05/04 15:56:39     80s]   Identified MBFF number: 0
+[05/04 15:56:39     80s]   Identified SB Latch number: 16
+[05/04 15:56:39     80s]   Identified MB Latch number: 0
+[05/04 15:56:39     80s]   Not identified SBFF number: 0
+[05/04 15:56:39     80s]   Not identified MBFF number: 0
+[05/04 15:56:39     80s]   Not identified SB Latch number: 0
+[05/04 15:56:39     80s]   Not identified MB Latch number: 0
+[05/04 15:56:39     80s]   Number of sequential cells which are not FFs: 20
+[05/04 15:56:39     80s] Total number of combinational cells: 1136
+[05/04 15:56:39     80s] Total number of sequential cells: 116
+[05/04 15:56:39     80s] Total number of tristate cells: 0
+[05/04 15:56:39     80s] Total number of level shifter cells: 0
+[05/04 15:56:39     80s] Total number of power gating cells: 0
+[05/04 15:56:39     80s] Total number of isolation cells: 2
+[05/04 15:56:39     80s] Total number of power switch cells: 2
+[05/04 15:56:39     80s] Total number of pulse generator cells: 0
+[05/04 15:56:39     80s] Total number of always on buffers: 0
+[05/04 15:56:39     80s] Total number of retention cells: 0
+[05/04 15:56:39     80s] Total number of physical cells: 224
+[05/04 15:56:39     80s] List of usable buffers: BUFFD12BWP16P90 BUFFD12BWP16P90LVT BUFFD12BWP20P90LVT BUFFD12BWP20P90 BUFFD16BWP16P90 BUFFD16BWP16P90LVT BUFFD16BWP20P90 BUFFD16BWP20P90LVT BUFFD1BWP16P90 BUFFD1BWP16P90LVT BUFFD1BWP20P90LVT BUFFD1BWP20P90 BUFFD2BWP16P90 BUFFD2BWP16P90LVT BUFFD2BWP20P90LVT BUFFD2BWP20P90 BUFFD4BWP16P90 BUFFD4BWP16P90LVT BUFFD4BWP20P90LVT BUFFD4BWP20P90 BUFFD8BWP16P90 BUFFD8BWP16P90LVT BUFFD8BWP20P90LVT BUFFD8BWP20P90 CKBD12BWP16P90 CKBD12BWP16P90LVT CKBD12BWP20P90LVT CKBD12BWP20P90 CKBD16BWP16P90 CKBD16BWP16P90LVT CKBD16BWP20P90 CKBD16BWP20P90LVT CKBD1BWP16P90 CKBD1BWP16P90LVT CKBD1BWP20P90LVT CKBD1BWP20P90 CKBD2BWP16P90 CKBD2BWP16P90LVT CKBD2BWP20P90LVT CKBD2BWP20P90 CKBD4BWP16P90 CKBD4BWP16P90LVT CKBD4BWP20P90LVT CKBD4BWP20P90 CKBD8BWP16P90 CKBD8BWP16P90LVT CKBD8BWP20P90 CKBD8BWP20P90LVT DEL025D1BWP16P90LVT DEL025D1BWP20P90LVT GBUFFMCOD1BWP16P90 GBUFFMCOD1BWP16P90LVT GBUFFMCOD1BWP20P90LVT GBUFFMCOD1BWP20P90 GBUFFMCOD2BWP16P90 GBUFFMCOD2BWP16P90LVT GBUFFMCOD2BWP20P90LVT GBUFFMCOD2BWP20P90 GBUFFMCOD4BWP16P90 GBUFFMCOD4BWP16P90LVT GBUFFMCOD4BWP20P90LVT GBUFFMCOD4BWP20P90 GBUFFMCOD8BWP16P90 GBUFFMCOD8BWP16P90LVT GBUFFMCOD8BWP20P90LVT GBUFFMCOD8BWP20P90
+[05/04 15:56:39     80s] Total number of usable buffers: 66
+[05/04 15:56:39     80s] List of unusable buffers:
+[05/04 15:56:39     80s] Total number of unusable buffers: 0
+[05/04 15:56:39     80s] List of usable inverters: CKND12BWP16P90 CKND12BWP16P90LVT CKND12BWP20P90LVT CKND12BWP20P90 CKND16BWP16P90 CKND16BWP16P90LVT CKND16BWP20P90 CKND16BWP20P90LVT CKND1BWP16P90 CKND1BWP16P90LVT CKND1BWP20P90LVT CKND1BWP20P90 CKND2BWP16P90 CKND2BWP16P90LVT CKND2BWP20P90LVT CKND2BWP20P90 CKND4BWP16P90 CKND4BWP16P90LVT CKND4BWP20P90LVT CKND4BWP20P90 CKND8BWP16P90 CKND8BWP16P90LVT CKND8BWP20P90 CKND8BWP20P90LVT GINVMCOD1BWP16P90 GINVMCOD1BWP16P90LVT GINVMCOD1BWP20P90 GINVMCOD1BWP20P90LVT GINVMCOD2BWP16P90 GINVMCOD2BWP16P90LVT GINVMCOD2BWP20P90LVT GINVMCOD2BWP20P90 GINVMCOD4BWP16P90 GINVMCOD4BWP16P90LVT GINVMCOD4BWP20P90LVT GINVMCOD4BWP20P90 GINVMCOD8BWP16P90 GINVMCOD8BWP16P90LVT GINVMCOD8BWP20P90 GINVMCOD8BWP20P90LVT INVD12BWP16P90 INVD12BWP16P90LVT INVD12BWP20P90LVT INVD12BWP20P90 INVD16BWP16P90 INVD16BWP16P90LVT INVD16BWP20P90 INVD16BWP20P90LVT INVD1BWP16P90 INVD1BWP16P90LVT INVD1BWP20P90LVT INVD1BWP20P90 INVD2BWP16P90 INVD2BWP16P90LVT INVD2BWP20P90LVT INVD2BWP20P90 INVD4BWP16P90 INVD4BWP16P90LVT INVD4BWP20P90LVT INVD4BWP20P90 INVD8BWP16P90 INVD8BWP16P90LVT INVD8BWP20P90LVT INVD8BWP20P90
+[05/04 15:56:39     80s] Total number of usable inverters: 64
+[05/04 15:56:39     80s] List of unusable inverters:
+[05/04 15:56:39     80s] Total number of unusable inverters: 0
+[05/04 15:56:39     80s] List of identified usable delay cells: DEL025D1BWP16P90 DEL025D1BWP20P90 DEL050D1BWP16P90 DEL050D1BWP16P90LVT DEL050D1BWP20P90LVT DEL050D1BWP20P90 DEL075D1BWP16P90 DEL075D1BWP16P90LVT DEL075D1BWP20P90 DEL075D1BWP20P90LVT
+[05/04 15:56:39     80s] Total number of identified usable delay cells: 10
+[05/04 15:56:39     80s] List of identified unusable delay cells:
+[05/04 15:56:39     80s] Total number of identified unusable delay cells: 0
+[05/04 15:56:39     80s] 
+[05/04 15:56:39     80s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[05/04 15:56:39     80s] 
+[05/04 15:56:39     80s] TimeStamp Deleting Cell Server Begin ...
+[05/04 15:56:39     80s] 
+[05/04 15:56:39     80s] TimeStamp Deleting Cell Server End ...
+[05/04 15:56:39     80s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2331.1M, current mem=2331.1M)
+[05/04 15:56:39     80s] 
+[05/04 15:56:39     80s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[05/04 15:56:39     80s] Summary for sequential cells identification: 
+[05/04 15:56:39     80s]   Identified SBFF number: 80
+[05/04 15:56:39     80s]   Identified MBFF number: 0
+[05/04 15:56:39     80s]   Identified SB Latch number: 16
+[05/04 15:56:39     80s]   Identified MB Latch number: 0
+[05/04 15:56:39     80s]   Not identified SBFF number: 0
+[05/04 15:56:39     80s]   Not identified MBFF number: 0
+[05/04 15:56:39     80s]   Not identified SB Latch number: 0
+[05/04 15:56:39     80s]   Not identified MB Latch number: 0
+[05/04 15:56:39     80s]   Number of sequential cells which are not FFs: 20
+[05/04 15:56:39     80s]  Visiting view : normWC
+[05/04 15:56:39     80s]    : PowerDomain = none : Weighted F : unweighted  = 4.50 (1.000) with rcCorner = 0
+[05/04 15:56:39     80s]    : PowerDomain = none : Weighted F : unweighted  = 3.60 (1.000) with rcCorner = -1
+[05/04 15:56:39     80s]  Visiting view : normBC
+[05/04 15:56:39     80s]    : PowerDomain = none : Weighted F : unweighted  = 3.70 (1.000) with rcCorner = 1
+[05/04 15:56:39     80s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = -1
+[05/04 15:56:39     80s] 
+[05/04 15:56:39     80s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[05/04 15:56:39     80s] 
+[05/04 15:56:39     80s] TimeStamp Deleting Cell Server Begin ...
+[05/04 15:56:39     80s] 
+[05/04 15:56:39     80s] TimeStamp Deleting Cell Server End ...
+[05/04 15:56:39     80s] % Begin Load MMMC data post ... (date=05/04 15:56:39, mem=2332.5M)
+[05/04 15:56:39     80s] % End Load MMMC data post ... (date=05/04 15:56:39, total cpu=0:00:00.0, real=0:00:00.0, peak res=2332.5M, current mem=2332.5M)
+[05/04 15:56:39     80s] Reading floorplan file - /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/top.fp.gz (mem = 2521.7M).
+[05/04 15:56:39     80s] % Begin Load floorplan data ... (date=05/04 15:56:39, mem=2333.1M)
+[05/04 15:56:40     80s] *info: reset 88 existing net BottomPreferredLayer and AvoidDetour
+[05/04 15:56:40     80s] Deleting old partition specification.
+[05/04 15:56:40     80s] Set FPlanBox to (0 0 113760 115200)
+[05/04 15:56:40     80s] **WARN: (IMPFP-3961):	The techSite 'dcore' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/04 15:56:40     80s] Type 'man IMPFP-3961' for more detail.
+[05/04 15:56:40     80s] **WARN: (IMPFP-3961):	The techSite 'bcore' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/04 15:56:40     80s] Type 'man IMPFP-3961' for more detail.
+[05/04 15:56:40     80s] **WARN: (IMPFP-3961):	The techSite 'coreExt' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/04 15:56:40     80s] Type 'man IMPFP-3961' for more detail.
+[05/04 15:56:40     80s] 
+[05/04 15:56:40     80s] Honor LEF defined pitches for advanced node
+[05/04 15:56:40     80s] Start create_tracks
+[05/04 15:56:40     80s]  ... processed partition successfully.
+[05/04 15:56:40     80s] Reading binary special route file /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/top.fp.spr.gz (Created by Innovus v23.30-p003_1 on Mon May  4 15:54:48 2026, version: 1)
+[05/04 15:56:40     80s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2335.4M, current mem=2335.4M)
+[05/04 15:56:40     81s] There are 1 nets with bottomPreferredRoutingLayer being set
+[05/04 15:56:40     81s] There are 1 nets with avoidDetour being set
+[05/04 15:56:40     81s] Extracting standard cell pins and blockage ...... 
+[05/04 15:56:40     81s] Pin and blockage extraction finished
+[05/04 15:56:40     81s] % End Load floorplan data ... (date=05/04 15:56:40, total cpu=0:00:00.1, real=0:00:01.0, peak res=2337.6M, current mem=2337.6M)
+[05/04 15:56:40     81s] Reading congestion map file /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/top.route.congmap.gz ...
+[05/04 15:56:40     81s] % Begin Load SymbolTable ... (date=05/04 15:56:40, mem=2337.9M)
+[05/04 15:56:40     81s] Changing maximum routing layer from 12 to 9.
+[05/04 15:56:40     81s] routingBox: (0 0) (113760 115200)
+[05/04 15:56:40     81s] coreBox:    (9000 9216) (104760 105984)
+[05/04 15:56:40     81s] Un-suppress "**WARN ..." messages.
+[05/04 15:56:40     81s] % End Load SymbolTable ... (date=05/04 15:56:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=2339.3M, current mem=2339.3M)
+[05/04 15:56:40     81s] Loading place ...
+[05/04 15:56:40     81s] % Begin Load placement data ... (date=05/04 15:56:40, mem=2339.3M)
+[05/04 15:56:40     81s] Reading placement file - /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/top.place.gz.
+[05/04 15:56:40     81s] ** Reading stdCellPlacement_binary (Created by Innovus v23.30-p003_1 on Mon May  4 15:54:48 2026, version# 2) ...
+[05/04 15:56:40     81s] Read Views for adaptive view pruning ...
+[05/04 15:56:40     81s] Read 0 views from Binary DB for adaptive view pruning
+[05/04 15:56:40     81s] *** applyConnectGlobalNets disabled.
+[05/04 15:56:40     81s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2524.7M) ***
+[05/04 15:56:40     81s] Total net length = 3.085e+02 (2.017e+02 1.069e+02) (ext = 1.384e+02)
+[05/04 15:56:40     81s] % End Load placement data ... (date=05/04 15:56:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=2340.1M, current mem=2340.1M)
+[05/04 15:56:40     81s] Reading PG file /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/top.pg.gz, version#2, (Created by Innovus v23.30-p003_1 on       Mon May  4 15:54:48 2026)
+[05/04 15:56:40     81s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2521.7M) ***
+[05/04 15:56:40     81s] % Begin Load routing data ... (date=05/04 15:56:40, mem=2340.3M)
+[05/04 15:56:40     81s] Reading routing file - /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/top.route.gz.
+[05/04 15:56:40     81s] Reading Innovus routing data (Created by Innovus v23.30-p003_1 on Mon May  4 15:54:48 2026 Format: 23.1) ...
+[05/04 15:56:40     81s] *** Total 83 nets are successfully restored.
+[05/04 15:56:40     81s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2521.7M) ***
+[05/04 15:56:40     81s] % End Load routing data ... (date=05/04 15:56:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=2340.8M, current mem=2340.8M)
+[05/04 15:56:40     81s] TAT_INFO: ::restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[05/04 15:56:40     81s] Reading property file /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/top.prop
+[05/04 15:56:40     81s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2524.7M) ***
+[05/04 15:56:42     82s] Loading preRoute extraction data from directory '/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/extraction/' ...
+[05/04 15:56:42     82s] eee: Design meta data check started
+[05/04 15:56:42     82s] eee: Design meta data check completed
+[05/04 15:56:42     82s] Extraction setup Started for TopCell top 
+[05/04 15:56:42     82s] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[05/04 15:56:42     82s] eee: __QRC_SADV_USE_LE__ is set 0
+[05/04 15:56:42     83s] Generating auto layer map file.
+[05/04 15:56:42     83s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[05/04 15:56:42     83s] eee:        1	      M1	       20	         m1	Metal          
+[05/04 15:56:42     83s] eee:       34	    VIA1	       21	       via1	Via            
+[05/04 15:56:42     83s] eee:        2	      M2	       22	         m2	Metal          
+[05/04 15:56:42     83s] eee:       35	    VIA2	       23	       via2	Via            
+[05/04 15:56:42     83s] eee:        3	      M3	       24	         m3	Metal          
+[05/04 15:56:42     83s] eee:       36	    VIA3	       25	       via3	Via            
+[05/04 15:56:42     83s] eee:        4	      M4	       26	         m4	Metal          
+[05/04 15:56:42     83s] eee:       37	    VIA4	       27	       via4	Via            
+[05/04 15:56:42     83s] eee:        5	      M5	       28	         m5	Metal          
+[05/04 15:56:42     83s] eee:       38	    VIA5	       29	       via5	Via            
+[05/04 15:56:42     83s] eee:        6	      M6	       30	         m6	Metal          
+[05/04 15:56:42     83s] eee:       39	    VIA6	       31	       via6	Via            
+[05/04 15:56:42     83s] eee:        7	      M7	       32	         m7	Metal          
+[05/04 15:56:42     83s] eee:       40	    VIA7	       33	       via7	Via            
+[05/04 15:56:42     83s] eee:        8	      M8	       34	         m8	Metal          
+[05/04 15:56:42     83s] eee:       41	    VIA8	       35	       via8	Via            
+[05/04 15:56:42     83s] eee:        9	      M9	       36	         m9	Metal          
+[05/04 15:56:42     83s] eee:       42	    VIA9	       37	       via9	Via            
+[05/04 15:56:42     83s] eee:       10	     M10	       38	        m10	Metal          
+[05/04 15:56:42     83s] eee:       43	   VIA10	       39	      via10	Via            
+[05/04 15:56:42     83s] eee:       11	     M11	       40	        m11	Metal          
+[05/04 15:56:42     83s] eee:       44	      RV	       41	         rv	Via            
+[05/04 15:56:42     83s] eee:       12	      AP	       42	         ap	Metal          
+[05/04 15:56:43     83s] eee: TechFile: /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/libs/mmmc/rc_worst_m40c/qrcTechFile
+[05/04 15:56:43     83s] eee: HoWee  : 1 1 1 1 1 1 1 0 0 0 0 0 
+[05/04 15:56:43     83s] eee: Erosn  : 1 1 1 1 1 1 1 1 1 1 1 0 
+[05/04 15:56:43     83s] eee: nrColor: 0 0 0 0 0 0 0 0 0 0 0 0 
+[05/04 15:56:43     83s] eee: TechFile: /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/libs/mmmc/rc_typ_25c/qrcTechFile
+[05/04 15:56:43     83s] eee: HoWee  : 1 1 1 1 1 1 1 0 0 0 0 0 
+[05/04 15:56:43     83s] eee: Erosn  : 1 1 1 1 1 1 1 1 1 1 1 0 
+[05/04 15:56:43     83s] eee: nrColor: 0 0 0 0 0 0 0 0 0 0 0 0 
+[05/04 15:56:43     83s] eee: Save / Restore of RC patterns enabled 
+[05/04 15:56:43     83s] eee: Pattern meta data check started
+[05/04 15:56:43     83s] eee: Pattern meta data check completed
+[05/04 15:56:43     83s] eee: Pattern data restore started
+[05/04 15:56:43     83s] Loading preRoute extracted patterns from file '/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/top.techData.gz' ...
+[05/04 15:56:43     83s] eee: Pattern data restore completed
+[05/04 15:56:43     83s] Completed (cpu: 0:00:01.0 real: 0:00:01.0)
+[05/04 15:56:43     83s] Set Shrink Factor to 1.00000
+[05/04 15:56:43     83s] Summary of Active RC-Corners : 
+[05/04 15:56:43     83s]  
+[05/04 15:56:43     83s]  Analysis View: normWC
+[05/04 15:56:43     83s]     RC-Corner Name        : rc_worst_m40c
+[05/04 15:56:43     83s]     RC-Corner Index       : 0
+[05/04 15:56:43     83s]     RC-Corner Temperature : -40 Celsius
+[05/04 15:56:43     83s]     RC-Corner Cap Table   : ''
+[05/04 15:56:43     83s]     RC-Corner PreRoute Res Factor         : 1
+[05/04 15:56:43     83s]     RC-Corner PreRoute Cap Factor         : 1
+[05/04 15:56:43     83s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/04 15:56:43     83s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/04 15:56:43     83s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/04 15:56:43     83s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[05/04 15:56:43     83s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[05/04 15:56:43     83s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/04 15:56:43     83s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/04 15:56:43     83s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[05/04 15:56:43     83s]     RC-Corner Technology file: '/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/libs/mmmc/rc_worst_m40c/qrcTechFile'
+[05/04 15:56:43     83s]  
+[05/04 15:56:43     83s]  Analysis View: normBC
+[05/04 15:56:43     83s]     RC-Corner Name        : rc_best_125c
+[05/04 15:56:43     83s]     RC-Corner Index       : 1
+[05/04 15:56:43     83s]     RC-Corner Temperature : 125 Celsius
+[05/04 15:56:43     83s]     RC-Corner Cap Table   : ''
+[05/04 15:56:43     83s]     RC-Corner PreRoute Res Factor         : 1
+[05/04 15:56:43     83s]     RC-Corner PreRoute Cap Factor         : 1
+[05/04 15:56:43     83s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/04 15:56:43     83s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/04 15:56:43     83s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/04 15:56:43     83s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[05/04 15:56:43     83s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[05/04 15:56:43     83s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/04 15:56:43     83s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/04 15:56:43     83s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[05/04 15:56:43     83s]     RC-Corner Technology file: '/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/libs/mmmc/rc_typ_25c/qrcTechFile'
+[05/04 15:56:43     83s] Technology file '/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/libs/mmmc/rc_worst_m40c/qrcTechFile' associated with first view 'normWC' will be used as the primary corner for the multi-corner extraction.
+[05/04 15:56:43     83s] eee: RC Grid memory allocated = 19008 (11 X 12 X 12 X 12b)
+[05/04 15:56:43     83s] eee: Grid density data restore started
+[05/04 15:56:43     83s] eee: Grid density data restore completed
+[05/04 15:56:43     83s] Restored Grid density data
+[05/04 15:56:43     83s] eee: pegSigSF=0.990000
+[05/04 15:56:43     83s] Initializing multi-corner resistance tables ...
+[05/04 15:56:43     83s] eee: Blockage data restore started... completed.
+[05/04 15:56:43     83s] eee: Grid unit RC data restore started
+[05/04 15:56:44     83s] eee:     Restore started for corner rc_worst_m40c
+[05/04 15:56:44     83s] eee:         Current session: rc_worst_m40c Tech: /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/libs/mmmc/rc_worst_m40c/qrcTechFile -40.000000 1.000000 1.000000 
+[05/04 15:56:44     83s] eee:         Saved   session: rc_worst_m40c Tech: /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.design_planning.enc.dat/libs/mmmc/rc_worst_m40c/qrcTechFile -40.000000 1.000000 1.000000 
+[05/04 15:56:44     83s] eee:     Restore completed for corner rc_worst_m40c
+[05/04 15:56:45     83s] eee:     Restore started for corner rc_best_125c
+[05/04 15:56:45     83s] eee:         Current session: rc_best_125c Tech: /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat/libs/mmmc/rc_typ_25c/qrcTechFile 125.000000 1.000000 1.000000 
+[05/04 15:56:45     83s] eee:         Saved   session: rc_best_125c Tech: /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.design_planning.enc.dat/libs/mmmc/rc_typ_25c/qrcTechFile 125.000000 1.000000 1.000000 
+[05/04 15:56:45     83s] eee:     Restore completed for corner rc_best_125c
+[05/04 15:56:45     83s] eee: Grid unit RC data restore completed
+[05/04 15:56:45     83s] eee: l=1 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/04 15:56:45     83s] eee: l=2 avDens=0.140287 usedTrk=75.755034 availTrk=540.000000 sigTrk=18.177083
+[05/04 15:56:45     83s] eee: l=3 avDens=0.088373 usedTrk=55.675001 availTrk=630.000000 sigTrk=21.103559
+[05/04 15:56:45     83s] eee: l=4 avDens=0.085130 usedTrk=79.682118 availTrk=936.000000 sigTrk=14.682118
+[05/04 15:56:45     83s] eee: l=5 avDens=0.078665 usedTrk=16.991667 availTrk=216.000000 sigTrk=1.991667
+[05/04 15:56:45     83s] eee: l=6 avDens=0.080359 usedTrk=52.072657 availTrk=648.000000 sigTrk=7.072656
+[05/04 15:56:45     83s] eee: l=7 avDens=0.066595 usedTrk=9.589670 availTrk=144.000000 sigTrk=0.018229
+[05/04 15:56:45     83s] eee: l=8 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/04 15:56:45     83s] eee: l=9 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/04 15:56:45     83s] eee: l=10 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/04 15:56:45     83s] eee: l=11 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/04 15:56:45     83s] eee: l=12 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/04 15:56:45     83s] {RT rc_best_125c 0 2 9  {4 1} {5 1} {8 0} 3}
+[05/04 15:56:45     83s] eee: LAM-FP: thresh=1 ; dimX=888.750000 ; dimY=900.000000 ; multX=1.000000 ; multY=1.000000 ; minP=128 ; fpMult=1.000000 ;
+[05/04 15:56:45     83s] eee: LAM: n=16 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.374500 aWlH=0.000000 lMod=18 pMax=0.852600 pMod=81 pModAss=50 wcR=0.678200 crit=0.000000 siPrev=0 newSi=0.001600 wHLS=1.695500 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[05/04 15:56:45     83s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(56.880000, 57.600000)], Layers = [f(12) b(0)], Grid size = 5.760000 um, Grid Dim = (10 X 11)
+[05/04 15:56:45     83s] eee: Metal Layers Info:
+[05/04 15:56:45     83s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/04 15:56:45     83s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[05/04 15:56:45     83s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/04 15:56:45     83s] eee: |       M1 |   1 |   0.032 |   0.030 |   0.090 |  0.142 |  23.55 | V | 0 |  1 |
+[05/04 15:56:45     83s] eee: |       M2 |   2 |   0.032 |   0.032 |   0.064 |  0.210 |  21.12 | H | 0 |  1 |
+[05/04 15:56:45     83s] eee: |       M3 |   3 |   0.032 |   0.032 |   0.064 |  0.219 |  21.12 | V | 0 |  1 |
+[05/04 15:56:45     83s] eee: |       M4 |   4 |   0.040 |   0.040 |   0.080 |  0.210 |  11.50 | H | 0 |  1 |
+[05/04 15:56:45     83s] eee: |       M5 |   5 |   0.040 |   0.040 |   0.080 |  0.220 |   9.51 | V | 0 |  1 |
+[05/04 15:56:45     83s] eee: |       M6 |   6 |   0.040 |   0.040 |   0.080 |  0.219 |   9.51 | H | 0 |  1 |
+[05/04 15:56:45     83s] eee: |       M7 |   7 |   0.040 |   0.040 |   0.080 |  0.220 |   9.51 | V | 0 |  1 |
+[05/04 15:56:45     83s] eee: |       M8 |   8 |   0.062 |   0.064 |   0.126 |  0.232 |   3.14 | H | 0 |  1 |
+[05/04 15:56:45     83s] eee: |       M9 |   9 |   0.062 |   0.064 |   0.126 |  0.229 |   3.14 | V | 0 |  1 |
+[05/04 15:56:45     83s] eee: |      M10 |  10 |   0.450 |   0.450 |   0.900 |  0.384 |   0.02 | H | 0 |  1 |
+[05/04 15:56:45     83s] eee: |      M11 |  11 |   0.450 |   0.450 |   0.900 |  0.381 |   0.02 | V | 0 |  1 |
+[05/04 15:56:45     83s] eee: |       AP |  12 |   1.800 |   1.800 |   3.600 |  0.305 |   0.00 | H | 0 |  1 |
+[05/04 15:56:45     83s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/04 15:56:45     83s] eee: uC/uR for corner rc_worst_m40c, min-width/min-spacing, 30 perc over/under densities.
+[05/04 15:56:45     83s] Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+[05/04 15:56:45     83s] Restore PreRoute all RC Grid data successful.Start generating vias ..
+[05/04 15:56:45     83s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 inst_orient=1 via=2132390606 routing_via=1 timing=1 sns=1
+[05/04 15:56:45     83s] Extracting standard cell pins and blockage ...... 
+[05/04 15:56:45     83s] Pin and blockage extraction finished
+[05/04 15:56:45     83s] Via generation completed successfully.
+[05/04 15:56:45     83s] eee: __QRC_SADV_USE_LE__ is set 0
+[05/04 15:56:46     84s] Generating auto layer map file.
+[05/04 15:56:46     84s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[05/04 15:56:46     84s] eee:        1	      M1	       20	         m1	Metal          
+[05/04 15:56:46     84s] eee:       34	    VIA1	       21	       via1	Via            
+[05/04 15:56:46     84s] eee:        2	      M2	       22	         m2	Metal          
+[05/04 15:56:46     84s] eee:       35	    VIA2	       23	       via2	Via            
+[05/04 15:56:46     84s] eee:        3	      M3	       24	         m3	Metal          
+[05/04 15:56:46     84s] eee:       36	    VIA3	       25	       via3	Via            
+[05/04 15:56:46     84s] eee:        4	      M4	       26	         m4	Metal          
+[05/04 15:56:46     84s] eee:       37	    VIA4	       27	       via4	Via            
+[05/04 15:56:46     84s] eee:        5	      M5	       28	         m5	Metal          
+[05/04 15:56:46     84s] eee:       38	    VIA5	       29	       via5	Via            
+[05/04 15:56:46     84s] eee:        6	      M6	       30	         m6	Metal          
+[05/04 15:56:46     84s] eee:       39	    VIA6	       31	       via6	Via            
+[05/04 15:56:46     84s] eee:        7	      M7	       32	         m7	Metal          
+[05/04 15:56:46     84s] eee:       40	    VIA7	       33	       via7	Via            
+[05/04 15:56:46     84s] eee:        8	      M8	       34	         m8	Metal          
+[05/04 15:56:46     84s] eee:       41	    VIA8	       35	       via8	Via            
+[05/04 15:56:46     84s] eee:        9	      M9	       36	         m9	Metal          
+[05/04 15:56:46     84s] eee:       42	    VIA9	       37	       via9	Via            
+[05/04 15:56:46     84s] eee:       10	     M10	       38	        m10	Metal          
+[05/04 15:56:46     84s] eee:       43	   VIA10	       39	      via10	Via            
+[05/04 15:56:46     84s] eee:       11	     M11	       40	        m11	Metal          
+[05/04 15:56:46     84s] eee:       44	      RV	       41	         rv	Via            
+[05/04 15:56:46     84s] eee:       12	      AP	       42	         ap	Metal          
+[05/04 15:56:46     84s] eee: Save / Restore of RC patterns enabled 
+[05/04 15:56:46     84s] eee: Pattern meta data file doesn't exist
+[05/04 15:56:46     84s] eee: Pattern extraction for vias started
+[05/04 15:56:46     84s] Initializing preRoute extraction patterns for new vias...
+[05/04 15:56:47     85s] Generating auto layer map file.
+[05/04 15:56:47     85s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[05/04 15:56:47     85s] eee:        1	      M1	       20	         m1	Metal          
+[05/04 15:56:47     85s] eee:       34	    VIA1	       21	       via1	Via            
+[05/04 15:56:47     85s] eee:        2	      M2	       22	         m2	Metal          
+[05/04 15:56:47     85s] eee:       35	    VIA2	       23	       via2	Via            
+[05/04 15:56:47     85s] eee:        3	      M3	       24	         m3	Metal          
+[05/04 15:56:47     85s] eee:       36	    VIA3	       25	       via3	Via            
+[05/04 15:56:47     85s] eee:        4	      M4	       26	         m4	Metal          
+[05/04 15:56:47     85s] eee:       37	    VIA4	       27	       via4	Via            
+[05/04 15:56:47     85s] eee:        5	      M5	       28	         m5	Metal          
+[05/04 15:56:47     85s] eee:       38	    VIA5	       29	       via5	Via            
+[05/04 15:56:47     85s] eee:        6	      M6	       30	         m6	Metal          
+[05/04 15:56:47     85s] eee:       39	    VIA6	       31	       via6	Via            
+[05/04 15:56:47     85s] eee:        7	      M7	       32	         m7	Metal          
+[05/04 15:56:47     85s] eee:       40	    VIA7	       33	       via7	Via            
+[05/04 15:56:47     85s] eee:        8	      M8	       34	         m8	Metal          
+[05/04 15:56:47     85s] eee:       41	    VIA8	       35	       via8	Via            
+[05/04 15:56:47     85s] eee:        9	      M9	       36	         m9	Metal          
+[05/04 15:56:47     85s] eee:       42	    VIA9	       37	       via9	Via            
+[05/04 15:56:47     85s] eee:       10	     M10	       38	        m10	Metal          
+[05/04 15:56:47     85s] eee:       43	   VIA10	       39	      via10	Via            
+[05/04 15:56:47     85s] eee:       11	     M11	       40	        m11	Metal          
+[05/04 15:56:47     85s] eee:       44	      RV	       41	         rv	Via            
+[05/04 15:56:47     85s] eee:       12	      AP	       42	         ap	Metal          
+[05/04 15:56:49     87s] Generating auto layer map file.
+[05/04 15:56:49     87s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[05/04 15:56:49     87s] eee:        1	      M1	       20	         m1	Metal          
+[05/04 15:56:49     87s] eee:       34	    VIA1	       21	       via1	Via            
+[05/04 15:56:49     87s] eee:        2	      M2	       22	         m2	Metal          
+[05/04 15:56:49     87s] eee:       35	    VIA2	       23	       via2	Via            
+[05/04 15:56:49     87s] eee:        3	      M3	       24	         m3	Metal          
+[05/04 15:56:49     87s] eee:       36	    VIA3	       25	       via3	Via            
+[05/04 15:56:49     87s] eee:        4	      M4	       26	         m4	Metal          
+[05/04 15:56:49     87s] eee:       37	    VIA4	       27	       via4	Via            
+[05/04 15:56:49     87s] eee:        5	      M5	       28	         m5	Metal          
+[05/04 15:56:49     87s] eee:       38	    VIA5	       29	       via5	Via            
+[05/04 15:56:49     87s] eee:        6	      M6	       30	         m6	Metal          
+[05/04 15:56:49     87s] eee:       39	    VIA6	       31	       via6	Via            
+[05/04 15:56:49     87s] eee:        7	      M7	       32	         m7	Metal          
+[05/04 15:56:49     87s] eee:       40	    VIA7	       33	       via7	Via            
+[05/04 15:56:49     87s] eee:        8	      M8	       34	         m8	Metal          
+[05/04 15:56:49     87s] eee:       41	    VIA8	       35	       via8	Via            
+[05/04 15:56:49     87s] eee:        9	      M9	       36	         m9	Metal          
+[05/04 15:56:49     87s] eee:       42	    VIA9	       37	       via9	Via            
+[05/04 15:56:49     87s] eee:       10	     M10	       38	        m10	Metal          
+[05/04 15:56:49     87s] eee:       43	   VIA10	       39	      via10	Via            
+[05/04 15:56:49     87s] eee:       11	     M11	       40	        m11	Metal          
+[05/04 15:56:49     87s] eee:       44	      RV	       41	         rv	Via            
+[05/04 15:56:49     87s] eee:       12	      AP	       42	         ap	Metal          
+[05/04 15:56:50     88s] eee: Pattern extraction for vias completed
+[05/04 15:56:50     88s] Completed (cpu: 0:00:04.6 real: 0:00:05.0)
+[05/04 15:56:50     88s] % Begin Load power constraints ... (date=05/04 15:56:50, mem=2551.3M)
+[05/04 15:56:50     88s] % End Load power constraints ... (date=05/04 15:56:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=2558.1M, current mem=2558.1M)
+[05/04 15:56:50     88s] % Begin load AAE data ... (date=05/04 15:56:50, mem=2602.1M)
+[05/04 15:56:51     89s] **WARN: (IMPESI-3388):	Glitch propagation was enabled without enabling the glitch reporting.  Enabling the glitch reporting because it is required when glitch propagation is enabled.  Fix the TCL by setting 'set_si_mode -enable_glitch_report true' to avoid this message.  To disable both, use 'set_si_mode -enable_glitch_propagation false -enable_glitch_report false'.
+[05/04 15:56:51     89s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[05/04 15:56:51     89s] AAE DB initialization (MEM=2824.35 CPU=0:00:00.0 REAL=0:00:00.0) 
+[05/04 15:56:51     89s] % End load AAE data ... (date=05/04 15:56:51, total cpu=0:00:00.7, real=0:00:01.0, peak res=2608.3M, current mem=2608.3M)
+[05/04 15:56:51     89s] Restoring CCOpt config...
+[05/04 15:56:51     89s] 
+[05/04 15:56:51     89s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[05/04 15:56:51     89s] Summary for sequential cells identification: 
+[05/04 15:56:51     89s]   Identified SBFF number: 80
+[05/04 15:56:51     89s]   Identified MBFF number: 0
+[05/04 15:56:51     89s]   Identified SB Latch number: 16
+[05/04 15:56:51     89s]   Identified MB Latch number: 0
+[05/04 15:56:51     89s]   Not identified SBFF number: 0
+[05/04 15:56:51     89s]   Not identified MBFF number: 0
+[05/04 15:56:51     89s]   Not identified SB Latch number: 0
+[05/04 15:56:51     89s]   Not identified MB Latch number: 0
+[05/04 15:56:51     89s]   Number of sequential cells which are not FFs: 20
+[05/04 15:56:51     89s]  Visiting view : normWC
+[05/04 15:56:51     89s]    : PowerDomain = none : Weighted F : unweighted  = 4.10 (1.000) with rcCorner = 0
+[05/04 15:56:51     89s]    : PowerDomain = none : Weighted F : unweighted  = 3.60 (1.000) with rcCorner = -1
+[05/04 15:56:51     89s]  Visiting view : normBC
+[05/04 15:56:51     89s]    : PowerDomain = none : Weighted F : unweighted  = 3.40 (1.000) with rcCorner = 1
+[05/04 15:56:51     89s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = -1
+[05/04 15:56:51     89s] 
+[05/04 15:56:51     89s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[05/04 15:56:51     89s] Restoring CCOpt config done.
+[05/04 15:56:51     89s] 
+[05/04 15:56:51     89s] TimeStamp Deleting Cell Server Begin ...
+[05/04 15:56:51     89s] 
+[05/04 15:56:51     89s] TimeStamp Deleting Cell Server End ...
+[05/04 15:56:51     89s] 
+[05/04 15:56:51     89s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/04 15:56:51     89s] Summary for sequential cells identification: 
+[05/04 15:56:51     89s]   Identified SBFF number: 80
+[05/04 15:56:51     89s]   Identified MBFF number: 0
+[05/04 15:56:51     89s]   Identified SB Latch number: 16
+[05/04 15:56:51     89s]   Identified MB Latch number: 0
+[05/04 15:56:51     89s]   Not identified SBFF number: 0
+[05/04 15:56:51     89s]   Not identified MBFF number: 0
+[05/04 15:56:51     89s]   Not identified SB Latch number: 0
+[05/04 15:56:51     89s]   Not identified MB Latch number: 0
+[05/04 15:56:51     89s]   Number of sequential cells which are not FFs: 20
+[05/04 15:56:51     89s] Total number of combinational cells: 1136
+[05/04 15:56:51     89s] Total number of sequential cells: 116
+[05/04 15:56:51     89s] Total number of tristate cells: 0
+[05/04 15:56:51     89s] Total number of level shifter cells: 0
+[05/04 15:56:51     89s] Total number of power gating cells: 0
+[05/04 15:56:51     89s] Total number of isolation cells: 2
+[05/04 15:56:51     89s] Total number of power switch cells: 2
+[05/04 15:56:51     89s] Total number of pulse generator cells: 0
+[05/04 15:56:51     89s] Total number of always on buffers: 0
+[05/04 15:56:51     89s] Total number of retention cells: 0
+[05/04 15:56:51     89s] Total number of physical cells: 224
+[05/04 15:56:51     89s] List of usable buffers: BUFFD12BWP16P90 BUFFD12BWP16P90LVT BUFFD12BWP20P90LVT BUFFD12BWP20P90 BUFFD16BWP16P90 BUFFD16BWP16P90LVT BUFFD16BWP20P90 BUFFD16BWP20P90LVT BUFFD1BWP16P90 BUFFD1BWP16P90LVT BUFFD1BWP20P90LVT BUFFD1BWP20P90 BUFFD2BWP16P90 BUFFD2BWP16P90LVT BUFFD2BWP20P90LVT BUFFD2BWP20P90 BUFFD4BWP16P90 BUFFD4BWP16P90LVT BUFFD4BWP20P90LVT BUFFD4BWP20P90 BUFFD8BWP16P90 BUFFD8BWP16P90LVT BUFFD8BWP20P90LVT BUFFD8BWP20P90 CKBD12BWP16P90 CKBD12BWP16P90LVT CKBD12BWP20P90LVT CKBD12BWP20P90 CKBD16BWP16P90 CKBD16BWP16P90LVT CKBD16BWP20P90 CKBD16BWP20P90LVT CKBD1BWP16P90 CKBD1BWP16P90LVT CKBD1BWP20P90LVT CKBD1BWP20P90 CKBD2BWP16P90 CKBD2BWP16P90LVT CKBD2BWP20P90LVT CKBD2BWP20P90 CKBD4BWP16P90 CKBD4BWP16P90LVT CKBD4BWP20P90LVT CKBD4BWP20P90 CKBD8BWP16P90 CKBD8BWP16P90LVT CKBD8BWP20P90 CKBD8BWP20P90LVT DEL025D1BWP16P90LVT DEL025D1BWP20P90LVT
+[05/04 15:56:51     89s] Total number of usable buffers: 50
+[05/04 15:56:51     89s] List of unusable buffers: GBUFFMCOD1BWP16P90 GBUFFMCOD1BWP16P90LVT GBUFFMCOD1BWP20P90LVT GBUFFMCOD1BWP20P90 GBUFFMCOD2BWP16P90 GBUFFMCOD2BWP16P90LVT GBUFFMCOD2BWP20P90LVT GBUFFMCOD2BWP20P90 GBUFFMCOD4BWP16P90 GBUFFMCOD4BWP16P90LVT GBUFFMCOD4BWP20P90LVT GBUFFMCOD4BWP20P90 GBUFFMCOD8BWP16P90 GBUFFMCOD8BWP16P90LVT GBUFFMCOD8BWP20P90LVT GBUFFMCOD8BWP20P90
+[05/04 15:56:51     89s] Total number of unusable buffers: 16
+[05/04 15:56:51     89s] List of usable inverters: CKND12BWP16P90 CKND12BWP16P90LVT CKND12BWP20P90LVT CKND12BWP20P90 CKND16BWP16P90 CKND16BWP16P90LVT CKND16BWP20P90 CKND16BWP20P90LVT CKND1BWP16P90 CKND1BWP16P90LVT CKND1BWP20P90LVT CKND1BWP20P90 CKND2BWP16P90 CKND2BWP16P90LVT CKND2BWP20P90LVT CKND2BWP20P90 CKND4BWP16P90 CKND4BWP16P90LVT CKND4BWP20P90LVT CKND4BWP20P90 CKND8BWP16P90 CKND8BWP16P90LVT CKND8BWP20P90 CKND8BWP20P90LVT INVD12BWP16P90 INVD12BWP16P90LVT INVD12BWP20P90LVT INVD12BWP20P90 INVD16BWP16P90 INVD16BWP16P90LVT INVD16BWP20P90 INVD16BWP20P90LVT INVD1BWP16P90 INVD1BWP16P90LVT INVD1BWP20P90LVT INVD1BWP20P90 INVD2BWP16P90 INVD2BWP16P90LVT INVD2BWP20P90LVT INVD2BWP20P90 INVD4BWP16P90 INVD4BWP16P90LVT INVD4BWP20P90LVT INVD4BWP20P90 INVD8BWP16P90 INVD8BWP16P90LVT INVD8BWP20P90LVT INVD8BWP20P90
+[05/04 15:56:51     89s] Total number of usable inverters: 48
+[05/04 15:56:51     89s] List of unusable inverters: GINVMCOD1BWP16P90 GINVMCOD1BWP16P90LVT GINVMCOD1BWP20P90 GINVMCOD1BWP20P90LVT GINVMCOD2BWP16P90 GINVMCOD2BWP16P90LVT GINVMCOD2BWP20P90LVT GINVMCOD2BWP20P90 GINVMCOD4BWP16P90 GINVMCOD4BWP16P90LVT GINVMCOD4BWP20P90LVT GINVMCOD4BWP20P90 GINVMCOD8BWP16P90 GINVMCOD8BWP16P90LVT GINVMCOD8BWP20P90 GINVMCOD8BWP20P90LVT
+[05/04 15:56:51     89s] Total number of unusable inverters: 16
+[05/04 15:56:51     89s] List of identified usable delay cells: DEL025D1BWP16P90 DEL025D1BWP20P90 DEL050D1BWP16P90 DEL050D1BWP16P90LVT DEL050D1BWP20P90LVT DEL050D1BWP20P90 DEL075D1BWP16P90 DEL075D1BWP16P90LVT DEL075D1BWP20P90 DEL075D1BWP20P90LVT
+[05/04 15:56:51     89s] Total number of identified usable delay cells: 10
+[05/04 15:56:51     89s] List of identified unusable delay cells:
+[05/04 15:56:51     89s] Total number of identified unusable delay cells: 0
+[05/04 15:56:51     89s] 
+[05/04 15:56:51     89s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[05/04 15:56:51     89s] 
+[05/04 15:56:51     89s] TimeStamp Deleting Cell Server Begin ...
+[05/04 15:56:51     89s] 
+[05/04 15:56:51     89s] TimeStamp Deleting Cell Server End ...
+[05/04 15:56:51     89s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+[05/04 15:56:51     89s] timing_aocv_enable_gba_combine_launch_capture
+[05/04 15:56:51     89s] timing_enable_backward_compatible_latch_thru_mt_mode
+[05/04 15:56:51     89s] timing_enable_separate_device_slew_effect_sensitivities
+[05/04 15:56:51     89s] #% End load design ... (date=05/04 15:56:51, total cpu=0:01:09, real=0:01:11, peak res=2758.9M, current mem=2612.0M)
+[05/04 15:56:51     89s] 
+[05/04 15:56:51     89s] *** Summary of all messages that are not suppressed in this session:
+[05/04 15:56:51     89s] Severity  ID               Count  Summary                                  
+[05/04 15:56:51     89s] WARNING   IMPLF-200         1500  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/04 15:56:51     89s] WARNING   IMPLF-201          655  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/04 15:56:51     89s] WARNING   IMPFP-3961           6  The techSite '%s' has no related standar...
+[05/04 15:56:51     89s] WARNING   IMPESI-3388          1  Glitch propagation was enabled without e...
+[05/04 15:56:51     89s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[05/04 15:56:51     89s] WARNING   IMPOPT-3602          5  The specified path group name %s is not ...
+[05/04 15:56:51     89s] WARNING   NRIF-95              1  Option setNanoRouteMode -routeTopRouting...
+[05/04 15:56:51     89s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[05/04 15:56:51     89s] WARNING   IMPMODE-2            1  Option "-equivalent_waveform_model_propa...
+[05/04 15:56:51     89s] WARNING   IMPMODE-3            1  Option "-equivalent_waveform_model_type"...
+[05/04 15:56:51     89s] WARNING   TECHLIB-302        272  No function defined for cell '%s'. The c...
+[05/04 15:56:51     89s] WARNING   TECHLIB-905         20  Found a function attribute specified on ...
+[05/04 15:56:51     89s] WARNING   TECHLIB-1277         8  The %s '%s' has been defined for %s %s '...
+[05/04 15:56:51     89s] *** Message Summary: 2472 warning(s), 0 error(s)
+[05/04 15:56:51     89s] 
+[05/04 15:56:51     89s] <CMD> setDrawView fplan
+[05/04 15:56:51     89s] <CMD> encMessage warning 1
+[05/04 15:56:51     89s] <CMD> encMessage debug 0
+[05/04 16:01:54     96s] <CMD> setDrawView place
+[05/04 16:01:57     96s] <CMD> setLayerPreference node_layer -isVisible 0
+[05/04 16:01:59     96s] <CMD> zoomBox -42.79050 -34.92500 72.45750 68.24650
+[05/04 16:02:00     96s] <CMD> zoomBox 8.71400 11.21100 59.85100 56.98950
+[05/04 16:02:00     96s] <CMD> zoomBox 24.73250 25.51650 56.13700 53.63000
+[05/04 16:02:01     96s] <CMD> zoomBox 34.18550 34.51500 53.47200 51.78050
+[05/04 16:02:02     96s] <CMD> zoomBox 31.50400 31.98300 54.19400 52.29550
+[05/04 16:02:02     96s] <CMD> zoomBox 36.48050 36.68250 52.87450 51.35850
+[05/04 16:02:03     96s] <CMD> zoomBox 28.48450 28.71400 55.17950 52.61150
+[05/04 16:02:03     96s] <CMD> zoomBox 24.82800 25.05100 56.23400 53.16600
+[05/04 16:02:03     96s] <CMD> zoomBox 20.52600 20.74150 57.47450 53.81850
+[05/04 16:02:04     96s] <CMD> zoomBox 9.51050 9.70800 60.65050 55.48900
+[05/04 16:02:04     96s] <CMD> zoomBox -5.73600 -5.56400 65.04650 57.80150
+[05/04 16:02:04     96s] <CMD> zoomBox -15.43150 -15.27550 67.84200 59.27200
+[05/04 16:02:05     97s] <CMD> zoomBox 8.56950 10.78350 59.71050 56.56550
+[05/04 16:02:06     97s] <CMD> zoomBox 19.16200 22.23900 56.11200 55.31700
+[05/04 16:02:06     97s] <CMD> zoomBox 29.85950 33.65600 52.55200 53.97050
+[05/04 16:02:06     97s] <CMD> zoomBox 32.41350 36.38150 51.70200 53.64900
+[05/04 16:02:07     97s] <CMD> zoomBox 14.17300 17.03000 57.64700 55.94850
+[05/04 16:02:08     97s] <CMD> zoomBox -15.85150 -14.72900 67.43150 59.82700
+[05/04 16:02:16     97s] <CMD> setLayerPreference power -isVisible 0
+[05/04 16:02:16     97s] <CMD> setLayerPreference pgPower -isVisible 0
+[05/04 16:02:17     97s] <CMD> setLayerPreference pgGround -isVisible 0
+[05/04 16:02:18     97s] <CMD> setLayerPreference node_layer -isVisible 1
+[05/04 16:02:19     97s] <CMD> zoomBox -26.30850 -25.62350 71.67150 62.08950
+[05/04 16:02:20     97s] <CMD> zoomBox -6.85800 -5.46900 63.93300 57.90400
+[05/04 16:02:20     97s] <CMD> zoomBox 13.35550 15.38050 56.83000 54.29950
+[05/04 16:02:21     97s] <CMD> zoomBox 22.53200 24.69750 53.94300 52.81700
+[05/04 16:02:24     97s] <CMD> pan 0.77200 3.75050
+[05/04 16:02:25     97s] <CMD> zoomBox 26.90000 29.69550 53.59950 53.59750
+[05/04 16:02:25     97s] <CMD> zoomBox 34.67000 37.11850 51.06750 51.79800
+[05/04 16:02:25     97s] <CMD> zoomBox 29.91950 32.58000 52.61600 52.89800
+[05/04 16:02:25     97s] <CMD> zoomBox 32.48700 35.03300 51.77900 52.30350
+[05/04 16:02:26     97s] <CMD> zoomBox 34.66900 37.11800 51.06750 51.79800
+[05/04 16:02:26     98s] <CMD> zoomBox 36.52400 38.89000 50.46300 51.36850
+[05/04 16:02:30     98s] <CMD> pan 1.10000 4.65650
+[05/04 16:02:31     98s] <CMD> zoomBox 31.38000 36.05850 54.07850 56.37850
+[05/04 16:02:31     98s] <CMD> zoomBox 25.16600 30.97200 56.58250 59.09650
+[05/04 16:02:32     98s] <CMD> zoomBox 35.69700 39.69950 52.09750 54.38150
+[05/04 16:02:32     98s] <CMD> zoomBox 37.41850 41.12850 51.35900 53.60800
+[05/04 16:02:36     98s] <CMD> pan -0.07250 2.68250
+[05/04 16:02:36     98s] <CMD> zoomBox 42.82250 44.42400 49.00950 49.96250
+[05/04 16:02:36     98s] <CMD> zoomBox 44.91100 46.07250 48.14100 48.96400
+[05/04 16:02:37     98s] <CMD> zoomBox 42.05250 43.81650 49.33300 50.33400
+[05/04 16:02:37     98s] <CMD> zoomBox 38.82650 41.26550 50.68250 51.87900
+[05/04 16:02:38     98s] <CMD> zoomBox 33.57450 37.11200 52.87950 54.39400
+[05/04 16:02:46     99s] <CMD> zoomBox 29.80950 32.87250 56.52950 56.79250
+[05/04 16:02:47     99s] <CMD> zoomBox 33.49250 36.97750 52.79800 54.26000
+[05/04 16:02:48     99s] <CMD> zoomBox 29.78050 32.86200 56.50100 56.78250
+[05/04 16:02:48     99s] <CMD> zoomBox 27.41950 30.24500 58.85550 58.38700
+[05/04 16:02:49     99s] <CMD> zoomBox 21.37400 23.54400 64.88450 62.49500
+[05/04 16:02:50     99s] <CMD> pan -13.50900 -5.37250
+[05/04 16:02:50     99s] <CMD> zoomBox -3.70100 4.91100 56.52100 58.82250
+[05/04 16:02:51     99s] <CMD> zoomBox -11.05650 -2.14200 59.79300 61.28350
+[05/04 16:02:52     99s] <CMD> pan 8.61550 9.55600
+[05/04 16:02:53     99s] <CMD> zoomBox 25.25850 25.68500 56.69500 53.82750
+[05/04 16:02:53     99s] <CMD> zoomBox 35.81400 36.06500 52.22450 50.75600
+[05/04 16:02:54     99s] <CMD> pan 0.63700 3.01050
+[05/04 16:02:58     99s] <CMD> pan 0.08500 2.96800
+[05/04 16:04:25    101s] <CMD> zoomBox 41.82250 43.31550 50.38900 50.98450
+[05/04 16:04:26    101s] <CMD> zoomBox 39.57450 41.67250 51.43150 52.28700
+[05/04 16:04:26    101s] <CMD> zoomBox 32.15700 36.25050 54.87250 56.58550
+[05/04 16:04:45    102s] <CMD> zoomBox 34.11850 37.74450 53.42650 55.02950
+[05/04 16:04:52    102s] <CMD> zoomBox 39.35900 42.26850 49.43950 51.29250
+[05/04 16:04:52    102s] <CMD> zoomBox 40.21750 43.00950 48.78600 50.68000
+[05/04 16:04:52    102s] <CMD> zoomBox 34.11550 37.74150 53.42800 55.03050
+[05/04 16:04:53    102s] <CMD> zoomBox 27.22300 31.79150 58.67100 59.94400
+[05/04 16:04:58    102s] <CMD> pan -9.88600 -2.59200
+[05/04 16:04:58    102s] <CMD> zoomBox 27.32050 31.19250 46.63450 48.48250
+[05/04 16:04:59    103s] <CMD> zoomBox 16.78600 24.15900 48.23550 52.31300
+[05/04 16:04:59    103s] <CMD> zoomBox -0.36750 12.70600 50.84300 58.55050
+[05/04 16:05:00    103s] <CMD> pan 11.92500 14.59700
+[05/04 16:05:01    103s] <CMD> zoomBox 5.32600 8.52400 65.57400 62.45900
+[05/04 16:05:01    103s] <CMD> zoomBox -10.63000 -6.08450 72.75850 68.56600
+[05/04 16:05:01    103s] <CMD> zoomBox -20.71950 -14.91750 77.38450 72.90650
+[05/04 16:05:02    103s] <CMD> zoomBox 11.67350 15.71700 62.88550 61.56250
+[05/04 16:05:03    103s] <CMD> zoomBox 31.35350 34.32800 54.07700 54.67050
+[05/04 16:05:03    103s] <CMD> zoomBox 38.85650 41.42400 50.71850 52.04300
+[05/04 16:05:04    103s] <CMD> pan 0.85950 3.88750
+[05/04 16:05:34    104s] <CMD> pan 0.99750 2.30700
+[05/04 16:05:34    104s] <CMD> zoomBox 41.58800 42.85800 51.67100 51.88450
+[05/04 16:05:35    104s] <CMD> zoomBox 40.71300 42.02250 52.57550 52.64200
+[05/04 16:05:36    105s] <CMD> pan -1.22750 2.18400
+[05/04 16:05:36    105s] <CMD> zoomBox 38.18300 41.79750 52.13900 54.29100
+[05/04 16:05:37    105s] <CMD> zoomBox 34.84750 38.98150 54.16400 56.27400
+[05/04 16:05:38    105s] <CMD> zoomBox 26.36850 32.99900 57.82250 61.15700
+[05/04 16:05:38    105s] <CMD> zoomBox 12.59200 23.21950 63.80950 69.07000
+[05/04 16:05:39    105s] <CMD> pan -6.36100 -0.50400
+[05/04 16:05:39    105s] <CMD> zoomBox -24.46950 -11.66050 73.64800 76.17550
+[05/04 16:05:46    105s] <CMD> zoomBox -52.50200 -34.81800 83.30100 86.75450
+[05/04 16:05:46    105s] <CMD> zoomBox -70.32850 -49.54450 89.43950 93.48200
+[05/04 16:05:47    105s] <CMD> zoomBox -13.52150 -2.61700 69.87850 72.04400
+[05/04 16:05:47    105s] <CMD> zoomBox 20.98950 25.89200 57.99500 59.02000
+[05/04 16:05:48    105s] <CMD> zoomBox 28.62800 32.20200 55.36450 56.13700
+[05/04 16:05:54    105s] <CMD> setLayerPreference clock -isVisible 0
+[05/04 16:05:55    105s] <CMD> setLayerPreference net -isVisible 0
+[05/04 16:05:56    105s] <CMD> setLayerPreference clock -isVisible 1
+[05/04 16:05:58    105s] <CMD> pan 3.77000 6.99800
+[05/04 16:05:58    105s] <CMD> zoomBox 37.82050 38.59150 57.13800 55.88500
+[05/04 16:05:59    105s] <CMD> zoomBox 28.94850 33.73950 60.40400 61.89900
+[05/04 16:06:01    106s] <CMD> pan -2.44150 3.12300
+[05/04 16:06:01    106s] <CMD> zoomBox 29.99200 34.95850 56.73000 58.89450
+[05/04 16:06:01    106s] <CMD> zoomBox 35.51250 39.53400 54.83100 56.82800
+[05/04 16:06:02    106s] <CMD> zoomBox 37.70900 41.35900 54.13000 56.05950
+[05/04 16:06:02    106s] <CMD> zoomBox 39.57600 42.91100 53.53400 55.40650
+[05/04 16:06:03    106s] <CMD> selectInst pfd_uut_Q_UP_reg
+[05/04 16:06:05    106s] <CMD> zoomBox 37.80100 41.93900 54.22200 56.63950
+[05/04 16:06:05    106s] <CMD> zoomBox 33.28050 39.50750 56.00900 59.85450
+[05/04 16:06:06    106s] <CMD> pan -0.79400 2.40450
+[05/04 16:06:08    106s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon May  4 16:06:08 2026
+  Total CPU time:     0:01:49
+  Total real time:    0:11:07
+  Peak memory (main): 2620.10MB
+
+[05/04 16:06:08    106s] 
+[05/04 16:06:08    106s] *** Memory Usage v#2 (Current mem = 2830.449M, initial mem = 820.586M) ***
+[05/04 16:06:08    106s] 
+[05/04 16:06:08    106s] *** Summary of all messages that are not suppressed in this session:
+[05/04 16:06:08    106s] Severity  ID               Count  Summary                                  
+[05/04 16:06:08    106s] WARNING   IMPLF-200         1500  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/04 16:06:08    106s] WARNING   IMPLF-201          655  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/04 16:06:08    106s] WARNING   IMPFP-3961           6  The techSite '%s' has no related standar...
+[05/04 16:06:08    106s] WARNING   IMPESI-3388          1  Glitch propagation was enabled without e...
+[05/04 16:06:08    106s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[05/04 16:06:08    106s] WARNING   IMPOPT-3602          5  The specified path group name %s is not ...
+[05/04 16:06:08    106s] WARNING   NRIF-95              1  Option setNanoRouteMode -routeTopRouting...
+[05/04 16:06:08    106s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[05/04 16:06:08    106s] WARNING   IMPMODE-2            1  Option "-equivalent_waveform_model_propa...
+[05/04 16:06:08    106s] WARNING   IMPMODE-3            1  Option "-equivalent_waveform_model_type"...
+[05/04 16:06:08    106s] WARNING   TECHLIB-302        272  No function defined for cell '%s'. The c...
+[05/04 16:06:08    106s] WARNING   TECHLIB-905         20  Found a function attribute specified on ...
+[05/04 16:06:08    106s] WARNING   TECHLIB-1277         8  The %s '%s' has been defined for %s %s '...
+[05/04 16:06:08    106s] *** Message Summary: 2472 warning(s), 0 error(s)
+[05/04 16:06:08    106s] 
+[05/04 16:06:08    106s] --- Ending "Innovus" (totcpu=0:01:47, real=0:11:06, mem=2830.4M) ---

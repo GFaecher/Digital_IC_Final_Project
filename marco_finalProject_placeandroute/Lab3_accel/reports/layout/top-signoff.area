@@ -1,0 +1,4 @@
+    Hinst Name       Module Name          Inst Count           Total Area
+----------------------------------------------------------------------
+top                                               29               12.493
+  dco_uut            ro_netlist                    0                0.000

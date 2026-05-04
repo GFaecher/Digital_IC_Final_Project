@@ -1,0 +1,45 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon May  4 17:12:25 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v23.30-p003_1 (64bit) 02/01/2024 14:17 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.30-p003_1 NR240109-1512/23_10-UB (database version 18.20.618_1) {superthreading v2.20}
+#@(#)CDS: AAE 23.10-p002 (64bit) 02/01/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.10-p003_1 () Dec  5 2023 19:42:23 ( )
+#@(#)CDS: SYNTECH 23.10-p002_1 () Nov 29 2023 02:17:21 ( )
+#@(#)CDS: CPE v23.10-p004
+#@(#)CDS: IQuantus/TQuantus 22.1.1-s215 (64bit) Mon Nov 20 10:05:08 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.design_planning.enc.dat top
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+zoomBox -4.59950 -2.42250 26.20900 25.15750
+zoomBox -0.92750 1.32650 21.33150 21.25300
+zoomBox -7.12900 -4.73550 29.11650 27.71200
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+zoomBox -14.09900 -11.03850 36.06800 33.87150
+zoomBox -7.09300 -5.22150 29.15250 27.22600
+zoomBox -4.35700 -2.94950 26.45150 24.63050
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_track -isVisible 1
+setLayerPreference node_track -isVisible 0
+setLayerPreference node_layer -isVisible 1

@@ -1,0 +1,48 @@
+[05/04 14:30:31      0s] 
+[05/04 14:30:31      0s] Cadence Innovus(TM) Implementation System.
+[05/04 14:30:31      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/04 14:30:31      0s] 
+[05/04 14:30:31      0s] Version:	v23.30-p003_1, built Thu Feb 1 14:17:36 PST 2024
+[05/04 14:30:31      0s] Options:	-nowin -overwrite -log client_log/dell52.eecs.tufts.edu_4024049.client_1.log2 -init .nr_client.4024049.1.tcl -noMultiCpuLicCheckout -DP -x 0001B027D7... 
+[05/04 14:30:31      0s] Date:		Mon May  4 14:30:31 2026
+[05/04 14:30:31      0s] Host:		dell52 (x86_64 w/Linux 4.18.0-553.71.1.el8_10.x86_64) (32cores*128cpus*Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz 49152KB)
+[05/04 14:30:31      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[05/04 14:30:31      0s] 
+[05/04 14:30:31      0s] License:
+[05/04 14:30:31      0s] 		[14:30:31.253794] Configured Lic search path (23.02-s003): 5280@vm-license1:27000@vm-license1
+
+[05/04 14:30:31      0s] 		Running innovus (-x) with Innovus_Impl_System capability.
+[05/04 14:30:31      0s] 		Extra license Innovus_20nm_Opt
+[05/04 14:30:31      0s] 		Extra license Tempus_Timing_Signoff_L
+[05/04 14:30:32      1s] {{{ isCertus 0,  isCertusOrDistOptClient = 0, isInnovusCertusClient = 0}}}
+[05/04 14:30:48     15s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v23.30-p003_1 (64bit) 02/01/2024 14:17 (Linux 3.10.0-693.el7.x86_64)
+[05/04 14:30:51     17s] @(#)CDS: NanoRoute 23.30-p003_1 NR240109-1512/23_10-UB (database version 18.20.618_1) {superthreading v2.20}
+[05/04 14:30:51     17s] @(#)CDS: AAE 23.10-p002 (64bit) 02/01/2024 (Linux 3.10.0-693.el7.x86_64)
+[05/04 14:30:51     17s] @(#)CDS: CTE 23.10-p003_1 () Dec  5 2023 19:42:23 ( )
+[05/04 14:30:51     17s] @(#)CDS: SYNTECH 23.10-p002_1 () Nov 29 2023 02:17:21 ( )
+[05/04 14:30:51     17s] @(#)CDS: CPE v23.10-p004
+[05/04 14:30:51     17s] @(#)CDS: IQuantus/TQuantus 22.1.1-s215 (64bit) Mon Nov 20 10:05:08 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+[05/04 14:30:51     17s] @(#)CDS: OA 22.61-p007 Wed Sep 27 19:40:10 2023
+[05/04 14:30:51     17s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[05/04 14:30:51     17s] @(#)CDS: RCDB 11.15.0
+[05/04 14:30:51     17s] @(#)CDS: STYLUS 23.10-a001_1 (12/04/2023 04:39 PST)
+[05/04 14:30:51     17s] @(#)CDS: IntegrityPlanner-23.10-12651 (23.10) (2023-09-06 08:32:42+0800)
+[05/04 14:30:51     17s] @(#)CDS: SYNTHESIS_ENGINE 23.10-b027
+[05/04 14:30:51     17s] Create and set the environment variable TMPDIR to /data/qvu01/innovus_temp_4044258_dell52_qvu01_ZjiAFC.
+
+[05/04 14:30:51     17s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[05/04 14:30:52     18s] 
+[05/04 14:30:52     18s] **INFO:  MMMC transition support version v31-84 
+[05/04 14:30:52     18s] 
+[05/04 14:30:52     18s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/04 14:30:52     18s] <CMD> suppressMessage ENCEXT-2799
+[05/04 14:30:52     19s] **ERROR: (IMPSYT-6696):	Initfile (.nr_client.4024049.1.tcl) does not exist.
+[05/04 14:30:52     19s] 
+[05/04 14:30:52     19s] *** Memory Usage v#2 (Current mem = 7670.488M, initial mem = 2862.586M) ***
+[05/04 14:30:52     19s] 
+[05/04 14:30:52     19s] *** Summary of all messages that are not suppressed in this session:
+[05/04 14:30:52     19s] Severity  ID               Count  Summary                                  
+[05/04 14:30:52     19s] ERROR     IMPSYT-6696          1  Initfile (%s) does not exist.            
+[05/04 14:30:52     19s] *** Message Summary: 0 warning(s), 1 error(s)
+[05/04 14:30:52     19s] 
+[05/04 14:30:52     19s] --- Ending "Innovus" (totcpu=0:00:19.0, real=0:00:21.0, mem=7670.5M) ---

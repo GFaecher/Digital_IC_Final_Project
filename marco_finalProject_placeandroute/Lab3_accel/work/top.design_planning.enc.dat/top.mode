@@ -1,0 +1,108 @@
+catch { setDesignMode -flowEffort standard }
+catch { setDesignMode -powerEffort low }
+catch { setDesignMode -process 16 }
+catch { setAnalysisMode -analysisType onChipVariation }
+catch { setAnalysisMode -aocv false }
+catch { setAnalysisMode -cppr both }
+catch { setAnalysisMode -usefulSkew true }
+catch { setOptMode -opt_all_end_points true }
+catch { setOptMode -opt_fix_fanout_load true }
+catch { setOptMode -opt_hold_on_excluded_clock_nets true }
+catch { setOptMode -opt_post_route_fix_si_transitions true }
+catch { setOptMode -opt_hold_cells {BUFFD2BWP16P90 BUFFD4BWP16P90 BUFFD8BWP16P90 BUFFD16BWP16P90} }
+catch { setOptMode -opt_honor_fences true }
+catch { setOptMode -opt_max_density 0.75 }
+catch { setOptMode -opt_post_route_area_reclaim holdAndSetupAware }
+catch { setOptMode -opt_time_design_num_paths 200 }
+catch { setOptMode -opt_skew true }
+catch { setOptMode -opt_skew_ccopt extreme }
+catch { setOptMode -opt_skew_post_route true }
+catch { setOptMode -opt_skew_pre_cts true }
+catch { setOptMode -opt_verbose true }
+catch { setPathGroupOptions FromMems -effortLevel high }
+catch { setPathGroupOptions FromMems -late -slackAdjustment -0 }
+catch { setPathGroupOptions ToMems -effortLevel high }
+catch { setPathGroupOptions ToMems -late -slackAdjustment -0 }
+catch { setPathGroupOptions ToRegs -effortLevel high }
+catch { setPathGroupOptions ToRegs -late -slackAdjustment -0 }
+catch { setPathGroupOptions Outputs -late -slackAdjustment -0 }
+catch { setPathGroupOptions Inputs -late -slackAdjustment -0 }
+catch { setPathGroupOptions FromRegs -effortLevel high }
+catch { setPathGroupOptions FromRegs -late -slackAdjustment -0 }
+catch { setPathGroupOptions Feedthrough -late -slackAdjustment -0 }
+catch { setExtractRCMode  -engine preRoute -total_c_th 0 -relative_c_th 1 -coupling_c_th 0.1 -defViaCap true }
+catch {setNanoRouteMode -quiet -route_extract_third_party_compatible false}
+
+catch { setPlaceMode -place_detail_check_cut_spacing true }
+catch { setPlaceMode -place_detail_preroute_as_obs {} }
+catch { setPlaceMode -place_detail_use_check_drc true }
+catch { setPlaceMode -place_global_clock_power_driven true }
+catch { setPlaceMode -place_global_cong_effort high }
+catch { setPlaceMode -place_global_fast_cts false }
+catch { setPlaceMode -place_global_max_density 0.75 }
+catch { setPlaceMode -place_global_place_io_pins true }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { setUsefulSkewMode -opt_skew_max_allowed_delay 0.3 }
+catch { setUsefulSkewMode -opt_skew_cells {BUFFD16BWP16P90 BUFFD8BWP16P90 BUFFD4BWP16P90 BUFFD2BWP16P90} }
+catch { setViaGenMode -allow_via_expansion false }
+catch { setViaGenMode -allow_wire_shape_change false }
+catch { setViaGenMode -disable_via_merging true }
+catch { setViaGenMode -extend_out_wire_end true }
+catch { setViaGenMode -ignore_DRC false }
+catch { setViaGenMode -inherit_wire_status true }
+catch { setViaGenMode -keep_existing_via 2 }
+catch { setViaGenMode -keep_fixed_via true }
+catch { setViaGenMode -optimize_cross_via true }
+catch { setViaGenMode -partial_overlap_threshold 1 }
+catch { setViaGenMode -use_cce true }
+catch { setViaGenMode -use_fgc 1 }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -equivalent_waveform_model_propagation true }
+catch { setDelayCalMode -equivalent_waveform_model_type none }
+catch { setDelayCalMode -SIAware true }
+catch { setPinAssignMode -pinEditInBatch true }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setSIMode -enable_double_clocking_check true }
+catch { setSIMode -enable_glitch_propagation true }
+catch { setSIMode -enable_logical_correlation true }
+catch { setSIMode -individual_attacker_simulation_filtering true }
+catch { setAddStripeMode -break_at selected_block }
+catch { setAddStripeMode -ignore_DRC false }
+catch { setAddStripeMode -ignore_nondefault_domains true }
+catch { setAddStripeMode -keep_pitch_after_snap false }
+catch { setAddStripeMode -remove_floating_stapling true }
+catch { setAddStripeMode -remove_floating_stripe_over_block false }
+catch { setAddStripeMode -skip_via_on_pin {pad block cover standardcell physicalpin} }
+catch { setAddStripeMode -stacked_via_bottom_layer M2 }
+catch { setAddStripeMode -stacked_via_top_layer M4 }
+catch { setAddStripeMode -stapling_nets_style end_to_end }
+catch { setAddStripeMode -use_exact_spacing true }
+catch { setAddStripeMode -use_fgc true }
+catch { setAddStripeMode -via_using_exact_crossover_size false }
+catch { setEndCapMode -bottomEdge {BOUNDARY_NROW3BWP20P90 BOUNDARY_NROW2BWP20P90} }
+catch { setEndCapMode -boundary_tap true }
+catch { setEndCapMode -fitGap true }
+catch { setEndCapMode -leftBottomCorner BOUNDARY_NCORNERBWP20P90 }
+catch { setEndCapMode -leftEdge BOUNDARY_RIGHTBWP20P90 }
+catch { setEndCapMode -leftTopCorner BOUNDARY_PCORNERBWP20P90 }
+catch { setEndCapMode -rightBottomEdge FILL3BWP20P90 }
+catch { setEndCapMode -rightEdge BOUNDARY_LEFTBWP20P90 }
+catch { setEndCapMode -rightTopEdge FILL3BWP20P90 }
+catch { setEndCapMode -topEdge {BOUNDARY_PROW3BWP20P90 BOUNDARY_PROW2BWP20P90} }
+catch { setFPlanMode -cellsForExtraSites {} }
+catch { setFPlanMode -defaultRowPatternSite {} }
+catch { setFPlanMode -defaultTechSite core }
+catch { setFPlanMode -disableEolBlockageOnEdges {} }
+catch { setFPlanMode -extraSites {} }
+catch { setFPlanMode -firstRowSiteIndex 0 }
+catch { setFPlanMode -lastRowSiteIndex -1 }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -place_check_ignore_fixed_cell_list {} }
+catch { setFPlanMode -powerRailLayer {} }
+catch { setFPlanMode -skipViolations {} }
+catch { setFPlanMode -snapBlockGrid finfetManufacturing }
+catch { setFPlanMode -snapConstraintGrid finfetInst }
+catch { setFPlanMode -snapCoreGrid finfetPlacement }
+catch { setFPlanMode -snapDieGrid finfetPlacement }
+catch { setFPlanMode -snapIoGrid finfetManufacturing }

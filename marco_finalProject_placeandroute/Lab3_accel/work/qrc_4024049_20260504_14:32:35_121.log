@@ -1,0 +1,887 @@
+
+
+  Cadence Quantus Extraction - 64-bit Parasitic Extractor - Version
+22.1.1-s215 Mon Nov 20 10:19:54 PST 2023
+---------------------------------------------------------------------------------------------------------------
+                                  Copyright 2023 Cadence Design Systems,
+Inc.
+
+
+
+INFO (EXTQRCXLOG-128) : Quantus command line:
+ Started at: 2026-May-04 14:32:36 (2026-May-04 18:32:36 GMT)
+ Executable:
+/usr/cots/cadence/DDIEXPORT23/INNOVUS231/tools.lnx86/extraction/bin/64bit/qrc
+ Options:     -cmd
+/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/qrc.cmd
+/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/qrc.def.gz
+ Current working directory:
+/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work
+
+
+INFO (EXTQRCXLOG-103) : The Command File Options for the current Quantus run are as follows:
+
+distributed_processing \
+	 -multi_cpu 16
+extract \
+	 -selection "all" \
+	 -type "rc_coupled"
+extraction_setup \
+	 -max_fracture_length 50 \
+	 -promote_pin_pad "LOGICAL"
+filter_coupling_cap \
+	 -cap_filtering_mode "absolute_and_relative" \
+	 -coupling_cap_threshold_absolute 0.1 \
+	 -coupling_cap_threshold_relative 1.0 \
+	 -total_cap_threshold 0.0
+input_db -type def \
+	 -lef_file_list_file "/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/qrc.leflist"
+log_file \
+	 -dump_options true \
+	 -file_name "qrc_4024049_20260504_14:32:35_121.log"
+output_db -type spef \
+	 -short_incomplete_net_pins true \
+	 -subtype "STANDARD"
+output_setup \
+	 -compressed true \
+	 -directory_name "/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM" \
+	 -file_name "top" \
+	 -temporary_directory_name "/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM"
+process_technology \
+	 -technology_corner \
+		"rc_worst_m40c" \
+		"rc_typ_25c" \
+		"rc_typ_25c" \
+	 -technology_library_file "/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/_qrc_techlib.defs" \
+	 -technology_name "_qrc_tech_" \
+	 -temperature \
+		"-40" \
+		"25" \
+		"125"
+
+
+
+
+INFO (EXTGRMP-102) : Starting at 2026-May-04 14:32:36 (2026-May-04 18:32:36 GMT) on host dell52
+with pid 4064887.
+Running binary as: 
+ /usr/cots/cadence/DDIEXPORT23/INNOVUS231/tools.lnx86/extraction/bin/64bit/qrc
+-cmd
+/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/__qrc.qrc.cmd
+-multi_cpu 16
+/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/qrc.def.gz
+ 
+
+WARNING (EXTGRMP-414) : No GDSII/OASIS file is specified. Setting graybox type as LEF_OBSTRUCTION.
+
+WARNING (EXTGRMP-635) : The option extraction_setup -density_bounding_box is ignored. For advanced nodes, the tool uses diearea as the only value, any other value if set, will be ignored. Please refer to user manual for more information.
+
+INFO (EXTGRMP-142) : Command line arguments:
+"-cmd"
+"/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/__qrc.qrc.cmd"
+"-multi_cpu"
+"16"
+"/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/qrc.def.gz"
+
+INFO (EXTGRMP-143) : Option extraction_setup -copy_port_to_obs = "true"
+
+INFO (EXTGRMP-143) : Option log_file = "qrc_4024049_20260504_14:32:35_121.log"
+
+INFO (EXTGRMP-143) : Option log_file -message_config_file = ""
+
+INFO (EXTGRMP-143) : Option log_file -max_error_messages = "100"
+
+INFO (EXTGRMP-143) : Option log_file -max_warning_messages = "10"
+
+INFO (EXTGRMP-143) : Option log_file -max_info_messages = "1000"
+
+INFO (EXTGRMP-143) : Option process_technology -technology_name = ""
+
+INFO (EXTGRMP-143) : Option EM_techname = ""
+
+INFO (EXTGRMP-143) : Option process_technology -EM_WEE_clamping_factor = "0.7"
+
+INFO (EXTGRMP-143) : Option input_db -libgen_library_name = ""
+
+INFO (EXTGRMP-143) : Option oa_default_rule_name = ""
+
+INFO (EXTGRMP-143) : Option graybox -type = "obs"
+
+INFO (EXTGRMP-143) : Option graybox -use_macro_density = "false"
+
+INFO (EXTGRMP-143) : Option comp_prealloc = "0"
+
+INFO (EXTGRMP-143) : Option net_prealloc = "0"
+
+INFO (EXTGRMP-143) : Option output_setup -directory_name =
+"/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM"
+
+INFO (EXTGRMP-143) : Option output_db -units = "micron"
+
+INFO (EXTGRMP-143) : Option user_comment = ""
+
+INFO (EXTGRMP-143) : Option output_cache_directory_name =
+"/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/.qrctemp"
+
+INFO (EXTGRMP-143) : Option keep_temporary_files = "false"
+
+INFO (EXTGRMP-143) : Option output_density_tiles = "false"
+
+INFO (EXTGRMP-143) : Option output_setup -file_name = "top"
+
+INFO (EXTGRMP-143) : Option output_db -type spef -predefined_spef_cells_file = ""
+
+INFO (EXTGRMP-143) : Option parasitic_reduction -enable_reduction = "false"
+
+INFO (EXTGRMP-143) : Option debug_log = "false"
+
+INFO (EXTGRMP-143) : Option output_db -type spef -subtype = "generic"
+
+INFO (EXTGRMP-143) : Option output_db -type dspf -subtype = "none"
+
+INFO (EXTGRMP-143) : Option output_sstorm_db_name = ""
+
+INFO (EXTGRMP-143) : Option netlist_output = "none"
+
+INFO (EXTGRMP-143) : Option output_db -type coupling_cap_reports = "false"
+
+INFO (EXTGRMP-143) : Option output_db -type rcdb = "false"
+
+INFO (EXTGRMP-143) : Option output_db -hierarchy_delimiter = "/"
+
+INFO (EXTGRMP-143) : Option output_db -busbit_delimiter = "[]"
+
+INFO (EXTGRMP-143) : Option output_db -pin_delimiter = ":"
+
+INFO (EXTGRMP-143) : Option output_db -output_incomplete_nets_type = "no_pin one_pin
+disconnected_pin multiple_partitions floating_resistors"
+
+INFO (EXTGRMP-143) : Option truncate_regular_wires = "false"
+
+INFO (EXTGRMP-143) : Option extraction_setup -layout_scale = "1.0"
+
+INFO (EXTGRMP-143) : Option output_setup -file_max_size = "9223372036854775807"
+
+INFO (EXTGRMP-143) : Option log_file -dump_options = "true"
+
+INFO (EXTGRMP-143) : Option short_incomplete_net_pins = "true"
+
+INFO (EXTGRMP-143) : Option promote_incomplete_net_pins = "true"
+
+INFO (EXTGRMP-143) : Option output_db -output_incomplete_nets = "true"
+
+INFO (EXTGRMP-143) : Option output_db -output_unrouted_nets = "false"
+
+INFO (EXTGRMP-143) : Option output_db -escape_special_characters = "true"
+
+INFO (EXTGRMP-143) : Option lumped_cc_threshold = "0.0"
+
+INFO (EXTGRMP-143) : Option parasitic_reduction -max_frequency = "1.0e+08"
+
+INFO (EXTGRMP-143) : Option output_setup -compressed = "true"
+
+INFO (EXTGRMP-143) : Option max_resistor_length = "50"
+
+INFO (EXTGRMP-143) : Option promote_feedthru_ports = "none"
+
+INFO (EXTGRMP-143) : Option promote_instance_ports = "none"
+
+INFO (EXTGRMP-143) : Option output_promoted_feedthrus = "false"
+
+INFO (EXTGRMP-143) : Option output_unconnected_pins = "false"
+
+INFO (EXTGRMP-143) : Option remove_floating_metals = "false"
+
+INFO (EXTGRMP-143) : Option promote_pin_pad = "logical"
+
+INFO (EXTGRMP-143) : Option eco_compatible_mode = "false"
+
+INFO (EXTGRMP-143) : Option output setup   -max_message_in_shorts_file = "100"
+
+INFO (EXTGRMP-143) : Option cap_mode_2915 = "true"
+
+INFO (EXTGRMP-143) : Option quickcap_file = "false"
+
+INFO (EXTGRMP-143) : Option ict_file = "process.ict"
+
+INFO (EXTGRMP-143) : Option quickcap_netfile = "qapi.net"
+
+INFO (EXTGRMP-143) : Option lefcap_output = "false"
+
+INFO (EXTGRMP-143) : Option lefcap_scale = "1.25"
+
+INFO (EXTGRMP-143) : Option lefres_output = "false"
+
+INFO (EXTGRMP-143) : Option kfactor_file = ""
+
+INFO (EXTGRMP-143) : Option total_c_threshold = "0"
+
+INFO (EXTGRMP-143) : Option relative_c_threshold = "1"
+
+INFO (EXTGRMP-143) : Option output_cap_filtering_mode = "relative_and_coupling"
+
+INFO (EXTGRMP-143) : Option cap_mode = "default"
+
+INFO (EXTGRMP-143) : Option parallel_options = ""
+
+INFO (EXTGRMP-143) : Option load_optimized_views = "true"
+
+INFO (EXTGRMP-143) : Option enable_metal_fill_effects = "true"
+
+INFO (EXTGRMP-143) : Option metal_fill -enable_advanced_virtual_fill = "false"
+
+INFO (EXTGRMP-143) : Option metal_fill -type = "floating"
+
+INFO (EXTGRMP-143) : Option vmf_metal_scheme_file = ""
+
+INFO (EXTGRMP-143) : Option vmf_rule_file = ""
+
+INFO (EXTGRMP-143) : Option extraction_setup -ignore_conn_to_bump = "true"
+
+INFO (EXTGRMP-143) : Option extraction_setup -lic_queue = "0"
+
+INFO (EXTGRMP-143) : Option extraction_setup -cerebrus_license_only = "false"
+
+INFO (EXTGRMP-143) : Option input_db -type metal_fill -gds_file = ""
+
+INFO (EXTGRMP-143) : Option density_check_method = "diearea"
+
+INFO (EXTGRMP-143) : Option process_technology -technology_corner = "rc_worst_m40c rc_typ_25c
+rc_typ_25c"
+
+INFO (EXTGRMP-143) : Option process_technology -EM_technology_corner = ""
+
+INFO (EXTGRMP-143) : Option process_technology -temperature = "-40 25 125"
+
+INFO (EXTGRMP-143) : Option promote_gray_data_pins = "false"
+
+INFO (EXTGRMP-143) : Option extraction_setup -enable_layer_bias = "false"
+
+INFO (EXTGRMP-143) : Option output_db -map_eeq_to_master = "false"
+
+INFO (EXTGRMP-143) : Option output_db -match_res_cap = "false"
+
+INFO (EXTGRMP-143) : Option merge_tile_boundary_data = "true"
+
+INFO (EXTGRMP-143) : Option coupling_c_threshold = "0.1"
+
+INFO (EXTGRMP-143) : Option use_icecaps_models_only = "false"
+
+INFO (EXTGRMP-143) : Option output_db -type spef -use_name_map = "true"
+
+INFO (EXTGRMP-143) : Option output_db -type spef -name_map_start_index = "0"
+
+INFO (EXTGRMP-143) : Option distributed_processing -timeout = "300"
+
+INFO (EXTGRMP-143) : Option distributed_processing -num_of_trials = "0"
+
+INFO (EXTGRMP-143) : Option output_db -type dspf -add_cap_prefix = "false"
+
+INFO (EXTGRMP-143) : Option output_db -type oa = "false"
+
+INFO (EXTGRMP-143) : Option oa_analysis_point = "default"
+
+INFO (EXTGRMP-143) : Option extraction_setup -enable_sensitivity_extraction = "false"
+
+INFO (EXTGRMP-143) : Option report_details = "false"
+
+INFO (EXTGRMP-143) : Option input_db -type metal_fill -offset_x = "0.0"
+
+INFO (EXTGRMP-143) : Option input_db -type metal_fill -offset_y = "0.0"
+
+INFO (EXTGRMP-143) : Option extraction_setup -ignore_pushdown_blockages = "false"
+
+INFO (EXTGRMP-143) : Option output_setup -compress_temporary_files = "true"
+
+INFO (EXTGRMP-143) : Option strong_gray_debug = "false"
+
+INFO (EXTGRMP-143) : Option output_db -disable_instances = "true"
+
+INFO (EXTGRMP-143) : Option output_db -disable_subnodes = "true"
+
+INFO (EXTGRMP-143) : Option output_db -type coupling_cap_reports -dump_erosion_info = ""
+
+INFO (EXTGRMP-143) : Option output_db -include_parasitic_res_width_drawn = "true"
+
+INFO (EXTGRMP-143) : Option output_db -include_parasitic_res_parameters_unscaled = "false"
+
+INFO (EXTGRMP-143) : Option enable_active_fill_via_processing = "false"
+
+INFO (EXTGRMP-143) : Option output_db -add_explicit_vias = "false"
+
+INFO (EXTGRMP-143) : Option output_db -include_parasitic_cap_layers = "false"
+
+INFO (EXTGRMP-143) : Option capacitance -ground_net = "0"
+
+INFO (EXTGRMP-143) : Option output_db -include_parasitic_res_temp_coeff = "false"
+
+INFO (EXTGRMP-143) : Option output_setup -write_coupled_decoupled_files = "false"
+
+INFO (EXTGRMP-143) : Option capacitance_coupling = "default"
+
+INFO (EXTGRMP-143) : Option extraction_setup -gds_top_cell = ""
+
+INFO (EXTGRMP-143) : Option input_db -directory_name = ""
+
+INFO (EXTGRMP-143) : Option binary_input = "false"
+
+INFO (EXTGRMP-143) : Option binary_output = "false"
+
+INFO (EXTGRMP-143) : Option output_setup -enable_ieee_sensitivity = "false"
+
+INFO (EXTGRMP-143) : Option input_db -bump_map_file = ""
+
+INFO (EXTGRMP-143) : Option extraction_setup -enable_bump_instance = "false"
+
+INFO (EXTGRMP-143) : Option extraction_setup -enable_tsv_instance = "false"
+
+INFO (EXTGRMP-143) : Option extraction_setup -enable_TSV_STA_Cc_model = "false"
+
+INFO (EXTGRMP-143) : Option extraction_setup -stitch_bump_model = "false"
+
+INFO (EXTGRMP-143) : Option extraction_setup -stitch_tsv_model = "none"
+
+INFO (EXTGRMP-143) : Option enable_eco_mode = "false"
+
+INFO (EXTGRMP-143) : Option eco_file = ""
+
+INFO (EXTGRMP-143) : Option override_eco_reference = "true"
+
+INFO (EXTGRMP-143) : Option analysis_mode = "timing"
+
+INFO (EXTGRMP-143) : Option use_lef_for_hierarchical_def = "false"
+
+INFO (EXTGRMP-143) : Option enable_ws_r_scaling = "false"
+
+INFO (EXTGRMP-143) : Option include_gate_forming_layers = "false"
+
+INFO (EXTGRMP-143) : Option log_file -strict_error_reporting = "false"
+
+INFO (EXTGRMP-143) : Option log_file -report_outside_die_area_object = "false"
+
+INFO (EXTGRMP-143) : Option report_outside_diearea_object_error_limit = "1"
+
+INFO (EXTGRMP-143) : Option change_overhang_direction = "false"
+
+INFO (EXTGRMP-143) : Option ubump_subckt_file = ""
+
+INFO (EXTGRMP-143) : Option tsv_subckt_file = ""
+
+INFO (EXTGRMP-143) : Option output_setup -write_drc_violations = "false"
+
+INFO (EXTGRMP-143) : Option log_file -max_drc_messages = "1000"
+
+INFO (EXTGRMP-143) : Option keep_ftv_terms = "false"
+
+INFO (EXTGRMP-143) : Option write_ftv_nets = "false"
+
+INFO (EXTGRMP-143) : Option LEF files =
+"/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_APR_Innovus_11M.10a.tlef
+/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_StdCell.lef
+/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_SRAM_100a.lef"
+
+INFO (EXTGRMP-143) : Option DEF files =
+"/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/qrc.def.gz"
+
+INFO (EXTGRMP-143) : Option GDSII files = ""
+
+INFO (EXTGRMP-143) : Option GDSII/RDL files = ""
+
+INFO (EXTGRMP-143) : Option SPICE files = ""
+
+INFO (EXTGRMP-143) : Option DENSITY cells = ""
+
+INFO (EXTGRMP-143) : Option stitch bump cells = ""
+
+INFO (EXTGRMP-143) : Option ignored macros = ""
+
+INFO (EXTGRMP-143) : Option black macros = ""
+
+INFO (EXTGRMP-155) : Layer mappings were not specified.
+
+INFO (EXTGRMP-276) : Gds/Oasis Layer Map settings were not specified.
+
+INFO (EXTGRMP-548) : Gds/Oasis Fill layer Map settings were not specified.
+
+INFO (EXTGRMP-550) : Gds/Oasis Active Fill layer Map settings were not specified.
+
+INFO (EXTGRMP-562) : HPB layer settings were not specified.
+
+INFO (EXTGRMP-828) : Gds/Oasis InfoGds layer Map settings were not specified.
+
+INFO (EXTGRMP-623) : Background density layer mappings were not specified.
+
+INFO (EXTGRMP-144) : There were no layer bias commands for R values.
+
+INFO (EXTGRMP-147) : Layer bias settings for C values were not specified.
+
+INFO (EXTGRMP-149) : Lefcap area scale settings were not specified.
+
+INFO (EXTGRMP-153) : Lefcap edge scale settings were not specified.
+
+INFO (EXTGRMP-151) : Parameter name settings were not specified.
+
+INFO (EXTGRMP-260) : Layer cluster settings were not specified.
+
+INFO (EXTHPY-253) : Extraction started at Mon May  4 14:32:36 2026.
+
+INFO (EXTHPY-232) : Preprocessing stage started at Mon May  4 14:32:36 2026.
+
+INFO (EXTGRMP-103) : Local job on dell52 obtained for resource 0 with 16 cores at 2026-May-04
+14:32:36 (2026-May-04 18:32:36 GMT); 
+
+WARNING (EXTGRMP-103) : Maximum size of the process stack (stacksize) on host dell52 is 1078984704 bytes. Set it to a large value, preferably unlimited, to avoid any unexpected issues.
+
+
+INFO (EXTGRMP-336) : Reading technology data and cell definitions from LEF file:
+
+INFO (EXTGRMP-338) : /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_APR_Innovus_11M.10a.tlef
+
+WARNING (EXTGRMP-330) : LEF layer "PO" is not mapped with any tech file layer. Ignoring its definition. 
+An error will be issued if its definition is required.
+
+WARNING (EXTGRMP-605) : Layer "PO" will not be extracted and will be ignored.
+
+WARNING (EXTGRMP-330) : LEF layer "OD" is not mapped with any tech file layer. Ignoring its definition. 
+An error will be issued if its definition is required.
+
+WARNING (EXTGRMP-605) : Layer "OD" will not be extracted and will be ignored.
+
+WARNING (EXTGRMP-330) : LEF layer "M0" is not mapped with any tech file layer. Ignoring its definition. 
+An error will be issued if its definition is required.
+
+WARNING (EXTGRMP-605) : Layer "M0" will not be extracted and will be ignored.
+
+INFO (EXTGRMP-338) : /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_StdCell.lef
+
+INFO (EXTGRMP-205) : Reading DEF file: /data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/qrc.def.gz
+
+WARNING (EXTGRMP-330) : LEF layer "NW" is not mapped with any tech file layer. Ignoring its definition. 
+An error will be issued if its definition is required.
+
+WARNING (EXTGRMP-605) : Layer "NW" will not be extracted and will be ignored.
+
+WARNING (EXTGRMP-330) : LEF layer "PW" is not mapped with any tech file layer. Ignoring its definition. 
+An error will be issued if its definition is required.
+
+WARNING (EXTGRMP-605) : Layer "PW" will not be extracted and will be ignored.
+
+WARNING (EXTGRMP-330) : LEF layer "VIA0" is not mapped with any tech file layer. Ignoring its definition. 
+An error will be issued if its definition is required.
+
+WARNING (EXTGRMP-768) : BUSBITCHARS missing in /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_StdCell.lef file, therefore taking default value [] for BUSBITCHARS.
+
+INFO (EXTGRMP-338) : /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_SRAM_100a.lef
+
+INFO (EXTGRMP-195) : Reading VIAS section.
+
+INFO (EXTGRMP-195) : Reading COMPONENTS section.
+
+INFO (EXTGRMP-195) : Reading PINS section.
+
+WARNING (EXTGRMP-769) : DIVIDECHAR missing in /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_StdCell.lef file, therefore taking default value / for DIVIDECHAR.
+
+WARNING (EXTGRMP-728) : Different version number exists for tech lef "/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_APR_Innovus_11M.10a.tlef" with version 5.8 and macro lef "/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_SRAM_100a.lef" with version 5.7. 
+Check for all macro lefs.
+
+WARNING (EXTGRMP-546) : Macro BOUNDARY_NTAPBWP20P90_VPP_VSS is incomplete because layer VIA0 is not defined in the technology file. Please check its definition.
+
+WARNING (EXTGRMP-546) : Macro TAPCELLBWP20P90_VPP_VSS is incomplete because layer VIA0 is not defined in the technology file. Please check its definition.
+
+INFO (EXTGRMP-195) : Reading NETS section.
+
+INFO (EXTGRMP-195) : Reading SPECIALNETS section.
+
+INFO (EXTSNZDEF-6) : Extraction analysis of structures started.
+
+INFO (EXTGRMP-248) : METAL FILL data is not available in DEF file.
+
+INFO (EXTGRMP-637) : Technology file does not contain color information. Color mask information from the design will not be used .
+
+INFO (EXTGRMP-292) : Checking Command/Tech/License Files.
+
+INFO (EXTGRMP-281) : Manufacturing Data Information :- 
+  DEF/GDS/OASIS/LEF file 
+    does NOT contain MetalFill data. 
+  Techfile  
+    does     contain WEE data.     
+    does     contain Erosion data t=f( density ,width) 
+    does     contain R(w) data.    
+    does     contain R(w, s) data.  
+    does     contain TC(w) data.    
+    does     contain T/B enlargement data. 
+    does     contain Floating Metal Fill models. 
+    does NOT contain WBE data.
+
+INFO (EXTGRMP-613) : Turbo Reduction is now turned on by default.
+
+INFO (EXTGRMP-802) : Summary of license(s) checkout :
+	8 of QTS300, 1 of QTS310, 1 of QTS320, 1 of QTS530
+
+INFO (EXTGRMP-294) : RCs effects computed for this session include :- 
+ MetalFill        : OFF 
+ WEE Effects      : rc 
+ Erosion Effects  : Rule-Based Erosion Table: rc t=f(density,width) 
+ T/B Enlargements : ON 
+ R(w) Effects     : ON 
+ R(w,s) Effects   : ON 
+ TC(w) Effects    : ON 
+Some effects indicate n/a because of non-availability of relevant input data (or) requested to be off.
+
+INFO (EXTSNZ-223) : Extraction analysis of structures started now.
+
+INFO (EXTGRMP-207) : Reading DEF file completed successfully.
+
+INFO (EXTGRMP-368) : The extracted temperature is -40, the reference temperature is 25 for the process rc_worst_m40c!
+
+INFO (EXTGRMP-368) : The extracted temperature is 25, the reference temperature is 25 for the process rc_typ_25c!
+
+INFO (EXTGRMP-368) : The extracted temperature is 125, the reference temperature is 25 for the process rc_typ_25c!
+
+INFO (EXTSNZ-156) :    1%
+
+INFO (EXTSNZ-156) :    2%
+
+INFO (EXTSNZ-156) :    3%
+
+INFO (EXTSNZ-156) :    4%
+
+INFO (EXTSNZ-156) :    5%
+
+INFO (EXTSNZ-156) :    6%
+
+INFO (EXTSNZ-156) :    7%
+
+INFO (EXTSNZ-156) :    8%
+
+INFO (EXTSNZ-156) :    9%
+
+INFO (EXTSNZ-156) :    10%
+
+INFO (EXTSNZ-156) :    11%
+
+INFO (EXTSNZ-156) :    12%
+
+INFO (EXTSNZ-156) :    13%
+
+INFO (EXTSNZ-156) :    14%
+
+INFO (EXTSNZ-156) :    15%
+
+INFO (EXTSNZ-156) :    16%
+
+INFO (EXTSNZ-156) :    17%
+
+INFO (EXTSNZ-156) :    18%
+
+INFO (EXTSNZ-156) :    19%
+
+INFO (EXTSNZ-156) :    20%
+
+INFO (EXTSNZ-156) :    21%
+
+INFO (EXTSNZ-156) :    22%
+
+INFO (EXTSNZ-156) :    23%
+
+INFO (EXTSNZ-156) :    24%
+
+INFO (EXTSNZ-156) :    25%
+
+INFO (EXTSNZ-156) :    26%
+
+INFO (EXTSNZ-156) :    27%
+
+INFO (EXTSNZ-156) :    28%
+
+INFO (EXTSNZ-156) :    29%
+
+INFO (EXTSNZ-156) :    30%
+
+INFO (EXTSNZ-156) :    31%
+
+INFO (EXTSNZ-156) :    32%
+
+INFO (EXTSNZ-156) :    33%
+
+INFO (EXTSNZ-156) :    34%
+
+INFO (EXTSNZ-156) :    35%
+
+INFO (EXTSNZ-156) :    36%
+
+INFO (EXTSNZ-156) :    37%
+
+INFO (EXTSNZ-156) :    38%
+
+INFO (EXTSNZ-156) :    39%
+
+INFO (EXTSNZ-156) :    40%
+
+INFO (EXTSNZ-156) :    41%
+
+INFO (EXTSNZ-156) :    42%
+
+INFO (EXTSNZ-156) :    43%
+
+INFO (EXTSNZ-156) :    44%
+
+INFO (EXTSNZ-156) :    45%
+
+INFO (EXTSNZ-156) :    46%
+
+INFO (EXTSNZ-156) :    47%
+
+INFO (EXTSNZ-156) :    48%
+
+INFO (EXTSNZ-156) :    49%
+
+INFO (EXTSNZ-156) :    50%
+
+INFO (EXTSNZ-156) :    51%
+
+INFO (EXTSNZ-156) :    52%
+
+INFO (EXTSNZ-156) :    53%
+
+INFO (EXTSNZ-156) :    54%
+
+INFO (EXTSNZ-156) :    55%
+
+INFO (EXTSNZ-156) :    56%
+
+INFO (EXTSNZ-156) :    57%
+
+INFO (EXTSNZ-156) :    58%
+
+INFO (EXTSNZ-156) :    59%
+
+INFO (EXTSNZ-156) :    60%
+
+INFO (EXTSNZ-156) :    61%
+
+INFO (EXTSNZ-156) :    62%
+
+INFO (EXTSNZ-156) :    63%
+
+INFO (EXTSNZ-156) :    64%
+
+INFO (EXTSNZ-156) :    65%
+
+INFO (EXTSNZ-156) :    66%
+
+INFO (EXTSNZ-156) :    67%
+
+INFO (EXTSNZ-156) :    68%
+
+INFO (EXTSNZ-156) :    69%
+
+INFO (EXTSNZ-156) :    70%
+
+INFO (EXTSNZ-156) :    71%
+
+INFO (EXTSNZ-156) :    72%
+
+INFO (EXTSNZ-156) :    73%
+
+INFO (EXTSNZ-156) :    74%
+
+INFO (EXTSNZ-156) :    75%
+
+INFO (EXTSNZ-156) :    76%
+
+INFO (EXTSNZ-156) :    77%
+
+INFO (EXTSNZ-156) :    78%
+
+INFO (EXTSNZ-156) :    79%
+
+INFO (EXTSNZ-156) :    80%
+
+INFO (EXTSNZ-156) :    81%
+
+INFO (EXTSNZ-156) :    82%
+
+INFO (EXTSNZ-156) :    83%
+
+INFO (EXTSNZ-156) :    84%
+
+INFO (EXTSNZ-156) :    85%
+
+INFO (EXTSNZ-156) :    86%
+
+INFO (EXTSNZ-156) :    87%
+
+INFO (EXTSNZ-156) :    88%
+
+INFO (EXTSNZ-156) :    89%
+
+INFO (EXTSNZ-156) :    90%
+
+INFO (EXTSNZ-156) :    91%
+
+INFO (EXTSNZ-156) :    92%
+
+INFO (EXTSNZ-156) :    93%
+
+INFO (EXTSNZ-156) :    94%
+
+INFO (EXTSNZ-156) :    95%
+
+INFO (EXTSNZ-156) :    96%
+
+INFO (EXTSNZ-156) :    97%
+
+INFO (EXTSNZ-156) :    98%
+
+INFO (EXTSNZ-156) :    99%
+
+INFO (EXTHPY-101) : Initializing gray data from all cell instances for capacitance extraction.
+
+INFO (EXTHPY-102) : Processing of gray data completed successfully.
+
+INFO (EXTHPY-156) : Gray pins that are touching or overlapping extracted nets will be treated as gray data during extraction.
+
+INFO (EXTHPY-233) : Preprocessing stage completed successfully at Mon May  4 14:32:41 2026 with 16 CPU(s).
+
+INFO (EXTHPY-247) : Preprocessing stage:
+ Duration: 00:00:05, Max (Total) memory: 3056 MB
+ Max (CPU) memory: 589 MB, Max (CPU) time: 00:00:02
+
+INFO (EXTHPY-173) : Capacitance extraction started at Mon May  4 14:32:41 2026.
+
+INFO (EXTHPY-262) : Techfile optimized loading enabled.
+
+INFO (EXTHPY-103) : Extracting capacitance values.
+
+INFO (EXTHPY-267) :  
+ DESIGN                       : top
+ DEF/OA DIEAREA BBOX          : 0 0 432000 364032
+ DEF/OA UNITS                 : 2000
+ FINAL SCALE FACTOR           : 1
+ 
+ ESTIMATED COMPRESSED DEF SIZE: 570791
+ TILE SIZE                    : 216x182 squm
+ TILE COUNT                   : 1
+ CLUSTER SIZE                 : 257
+ CAPDB PARTITIONS             : 64
+
+INFO (EXTHPY-104) :    0%
+
+INFO (EXTHPY-104) :    100%
+
+INFO (EXTHPY-174) : Capacitance extraction completed successfully at Mon May  4 14:32:57 2026 with 16 CPU(s).
+
+INFO (EXTHPY-248) : Capacitance extraction:
+ Duration: 00:00:16, Max (Total) memory: 4290 MB
+ Max (CPU) memory: 975 MB, Max (CPU) time: 00:00:02
+
+INFO (EXTHPY-175) : Output generation started at Mon May  4 14:32:57 2026.
+
+INFO (EXTSNZ-156) :    0%
+
+WARNING (EXTGRMP-574) : There are 1 unrouted nets. 
+Please check file *.incompletenets in your output directory for details.
+
+INFO (EXTHPY-176) : Output generation completed successfully at Mon May  4 14:32:57 2026 with 16 CPU(s).
+
+INFO (EXTHPY-249) : Output generation:
+ Duration: 00:00:00, Max (Total) memory: 4287 MB
+ Max (CPU) memory: 975 MB, Max (CPU) time: 00:00:00
+
+INFO (EXTHPY-143) : ---Summary of Stage Duration
+ Preprocessing stage:
+ Duration: 00:00:05, Max (Total) memory: 3056 MB
+ Max (CPU) memory: 589 MB, Max (CPU) time: 00:00:02
+ Capacitance extraction:
+ Duration: 00:00:16, Max (Total) memory: 4290 MB
+ Max (CPU) memory: 975 MB, Max (CPU) time: 00:00:02
+ Output generation:
+ Duration: 00:00:00, Max (Total) memory: 4287 MB
+ Max (CPU) memory: 975 MB, Max (CPU) time: 00:00:00
+
+INFO (EXTGRMP-103) : NOTE: Using advanced paramter1: 1013
+
+INFO (EXTGRMP-103) : NOTE: Using advanced paramter2: 1.3
+
+INFO (EXTHPY-254) : Extraction completed successfully at Mon May  4 14:32:59 2026.
+
+
+Warning message summary: 
+
+Message Code(ID)   Count     Message
+=================|=========|=======================================================================================================================
+EXTGRMP-103       1          Maximum size of the process stack (stacksize) on host dell52 is 1078984704 bytes. Set it to a large value, preferably unlimited, to avoid any unexpected issues.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+EXTGRMP-330       6          LEF layer "PO" is not mapped with any tech file layer. Ignoring its definition. 
+An error will be issued if its definition is required.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+EXTGRMP-414       1          No GDSII/OASIS file is specified. Setting graybox type as LEF_OBSTRUCTION.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+EXTGRMP-546       2          Macro BOUNDARY_NTAPBWP20P90_VPP_VSS is incomplete because layer VIA0 is not defined in the technology file. Please check its definition.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+EXTGRMP-574       1          There are 1 unrouted nets. 
+Please check file *.incompletenets in your output directory for details.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+EXTGRMP-605       5          Layer "PO" will not be extracted and will be ignored.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+EXTGRMP-635       1          The option extraction_setup -density_bounding_box is ignored. For advanced nodes, the tool uses diearea as the only value, any other value if set, will be ignored. Please refer to user manual for more information.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+EXTGRMP-728       1          Different version number exists for tech lef "/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_APR_Innovus_11M.10a.tlef" with version 5.8 and macro lef "/h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_SRAM_100a.lef" with version 5.7. 
+Check for all macro lefs.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+EXTGRMP-768       1          BUSBITCHARS missing in /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_StdCell.lef file, therefore taking default value [] for BUSBITCHARS.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+EXTGRMP-769       1          DIVIDECHAR missing in /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.route_opt.enc.dat/libs/lef/N16ADFP_StdCell.lef file, therefore taking default value / for DIVIDECHAR.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+
+TOTAL WARNINGS: 20 
+TOTAL ERRORS: 0 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+----
+
+Ending at 2026-May-04 14:33:01 (2026-May-04 18:33:01 GMT).
+
+ Tool:                    Cadence Quantus Extraction 64-bit
+ Version:                 22.1.1-s215 Mon Nov 20 10:19:54 PST 2023
+ IR Build No:             215 
+ Techfile:                
+    rc_worst_m40c
+/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/_qrc_techdir/rc_worst_m40c/qrcTechFile
+; version: s12.1.1736hideprocess
+    rc_typ_25c
+/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/_qrc_techdir/rc_typ_25c/qrcTechFile
+; version: s12.1.1736hideprocess
+    rc_typ_25c
+/data/qvu01/innovus_temp_4024049_dell52_qvu01_1mmfHe/tmp_qrc_XtbGQM/_qrc_techdir/rc_typ_25c/qrcTechFile
+; version: s12.1.1736hideprocess 
+ License(s) used:         8 of QTS300, 1 of QTS310, 1 of QTS320, 1 of
+QTS530 
+ User Name:               qvu01
+ Host Name:               dell52
+ Host OS Release:         Linux 4.18.0-553.71.1.el8_10.x86_64
+ Host OS Version:         #1 SMP Fri Aug 15 18:19:39 EDT 2025
+ CPU Model Name:          Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz
+ L1d Cache:               48K
+ L1i Cache:               32K
+ L2 Cache:                1280K
+ L3 Cache:                49152K
+ Memory:                  502 GB
+ Run duration:            00:00:04 CPU time, 00:00:25 clock time
+ Max (Total) memory used: 4290 MB
+ Max (CPU) memory used:   975 MB
+ Max Temp-Directory used: 18 MB
+ Nets/hour:               28K nets/CPU-hr, 4K nets/clock-hr
+ Design data:
+    Components:           16784
+    Phy components:       16755
+    Nets:                 32
+    Unconnected pins:     1
+ Warning messages:        20
+ Error messages:          0
+
+Exit code 0.
+Cadence Quantus Extraction completed successfully at 2026-May-04 14:33:01
+(2026-May-04 18:33:01 GMT).

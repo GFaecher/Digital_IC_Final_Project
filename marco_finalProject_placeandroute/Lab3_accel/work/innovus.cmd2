@@ -1,0 +1,62 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon May  4 16:20:20 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v23.30-p003_1 (64bit) 02/01/2024 14:17 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.30-p003_1 NR240109-1512/23_10-UB (database version 18.20.618_1) {superthreading v2.20}
+#@(#)CDS: AAE 23.10-p002 (64bit) 02/01/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.10-p003_1 () Dec  5 2023 19:42:23 ( )
+#@(#)CDS: SYNTECH 23.10-p002_1 () Nov 29 2023 02:17:21 ( )
+#@(#)CDS: CPE v23.10-p004
+#@(#)CDS: IQuantus/TQuantus 22.1.1-s215 (64bit) Mon Nov 20 10:05:08 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat top
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+setDrawView place
+setLayerPreference node_layer -isVisible 0
+zoomBox -7.91750 -5.22900 28.32750 27.21800
+zoomBox 1.22650 1.94200 20.14700 18.88000
+zoomBox -3.55100 -4.74250 27.25850 22.83850
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+zoomBox -8.81750 -10.13100 33.82550 28.04350
+zoomBox -3.52100 -4.72700 27.28850 22.85400
+zoomBox -1.45250 -2.61650 24.73550 20.82750
+zoomBox 0.30550 -0.82250 22.56550 19.10500
+zoomBox 1.80000 0.70200 20.72100 17.64050
+zoomBox 5.14300 4.16750 16.76350 14.57050
+zoomBox 6.49850 6.01100 14.89500 13.52750
+zoomBox 4.26400 2.98300 17.93750 15.22350
+zoomBox 1.83850 -0.25100 20.76350 16.69100
+setDrawView fplan
+setDrawView fplan
+setDrawView place
+setLayerPreference node_layer -isVisible 1
+zoomBox -3.36150 -6.20150 27.45550 21.38650
+zoomBox -5.78900 -9.05800 30.46650 23.39850
+pan -0.09350 2.64050
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+zoomBox -11.42850 -9.05600 38.75200 35.86650
+zoomBox -3.35000 -0.46500 27.46700 27.12300
+pan -0.59800 -0.38450
+zoomBox -8.41800 -11.61600 34.23600 26.56850
+zoomBox -6.21650 -8.48750 30.03950 23.96950
+zoomBox -4.19050 -5.70150 26.62750 21.88700
+zoomBox -6.59650 -8.77650 29.66000 23.68100
+zoomBox -3.83200 -4.71000 26.98650 22.87900

@@ -1,0 +1,84 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 23.30-p003_1 (64bit) 02/01/2024 14:17 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2026-May-04 14:11:23 (2026-May-04 18:11:23 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: top
+*
+*	Liberty Libraries used: 
+*	        normWC: /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.clock_opt.enc.dat/libs/mmmc/N16ADFP_StdCellss0p72vm40c_ccs.lib
+*	        normWC: /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.clock_opt.enc.dat/libs/mmmc/N16ADFP_SRAM_ss0p72v0p72vm40c_100a.lib
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:       0.72 
+*
+*       Power View : normWC
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile ./timingReports/top_postRoute.power -leakage
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Leakage Power:         0.00000024 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Leakage       Percentage 
+                                Power         (%)        
+-----------------------------------------------------------------------------------------
+Sequential                     7.914e-08       33.14 
+Macro                                  0           0 
+IO                                     0           0 
+Combinational                  1.596e-07       66.86 
+Clock (Combinational)                  0           0 
+Clock (Sequential)                     0           0 
+-----------------------------------------------------------------------------------------
+Total                          2.388e-07         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Leakage       Percentage 
+                                Power         (%)        
+-----------------------------------------------------------------------------------------
+VDD                      0.72  2.388e-07         100 
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power: divide_uut_eighth_freq_reg (DFCNQD1BWP20P90):        1.588e-08 
+*                Highest Leakage Power: divide_uut_eighth_freq_reg (DFCNQD1BWP20P90):        1.588e-08 
+*          Total Cap:      6.13569e-14 F
+*          Total instances in design:    29
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+
+Total leakage power = 2.38786e-07 mW
+Cell usage statistics:  
+Library N16ADFP_StdCellss0p72vm40c_ccs , 29 cells ( 100.000000%) , 2.38786e-07 mW ( 100.000000%  ) 

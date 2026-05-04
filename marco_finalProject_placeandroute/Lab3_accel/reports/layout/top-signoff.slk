@@ -1,0 +1,3 @@
+# Format: clock  timeReq  slackR/slackF  setupR/setupF  instName/pinName   # cycle(s)
+VCLK(R)->CLK(R)	0.955    0.482/*         0.025/*         pfd_uut_Q_UP_reg/D    1
+VCLK(R)->CLK(R)	0.997    0.502/*         -0.017/*        pfd_uut_Q_UP_reg/CDN    1

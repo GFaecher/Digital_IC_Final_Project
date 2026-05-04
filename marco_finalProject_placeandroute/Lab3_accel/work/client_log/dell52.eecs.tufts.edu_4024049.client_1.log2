@@ -1,0 +1,28 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.30-p003_1, built Thu Feb 1 14:17:36 PST 2024
+Options:	-nowin -overwrite -log client_log/dell52.eecs.tufts.edu_4024049.client_1.log2 -init .nr_client.4024049.1.tcl -noMultiCpuLicCheckout -DP -x 0001B027D7... 
+Date:		Mon May  4 14:30:31 2026
+Host:		dell52 (x86_64 w/Linux 4.18.0-553.71.1.el8_10.x86_64) (32cores*128cpus*Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz 49152KB)
+OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+
+License:
+		[14:30:31.253794] Configured Lic search path (23.02-s003): 5280@vm-license1:27000@vm-license1
+
+		Running innovus (-x) with Innovus_Impl_System capability.
+		Extra license Innovus_20nm_Opt
+		Extra license Tempus_Timing_Signoff_L
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+**ERROR: (IMPSYT-6696):	Initfile (.nr_client.4024049.1.tcl) does not exist.
+
+*** Memory Usage v#2 (Current mem = 7670.488M, initial mem = 2862.586M) ***
+*** Message Summary: 0 warning(s), 1 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:19.0, real=0:00:21.0, mem=7670.5M) ---

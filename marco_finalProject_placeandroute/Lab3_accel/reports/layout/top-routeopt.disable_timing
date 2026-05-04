@@ -1,0 +1,24 @@
+     +-----------------------------------------------------------------------------------------------------------------------------------------------+ 
+     | From                            | To                            | ArcType | Sense          | Reason                                  |  View  | 
+     |---------------------------------+-------------------------------+---------+----------------+-----------------------------------------+--------| 
+     | pfd_uut_Q_UP_reg/CDN            | pfd_uut_Q_UP_reg/Q            | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | pfd_uut_Q_UP_reg/CDN            | pfd_uut_Q_UP_reg/Q            | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | pfd_uut_Q_UP_reg/CDN            | pfd_uut_Q_UP_reg/Q            | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | pfd_uut_Q_UP_reg/CDN            | pfd_uut_Q_UP_reg/Q            | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | divide_uut_eighth_freq_reg/CDN  | divide_uut_eighth_freq_reg/Q  | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | divide_uut_eighth_freq_reg/CDN  | divide_uut_eighth_freq_reg/Q  | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | divide_uut_eighth_freq_reg/CDN  | divide_uut_eighth_freq_reg/Q  | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | divide_uut_eighth_freq_reg/CDN  | divide_uut_eighth_freq_reg/Q  | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | pfd_uut_Q_DOWN_reg/CDN          | pfd_uut_Q_DOWN_reg/Q          | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | pfd_uut_Q_DOWN_reg/CDN          | pfd_uut_Q_DOWN_reg/Q          | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | pfd_uut_Q_DOWN_reg/CDN          | pfd_uut_Q_DOWN_reg/Q          | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | pfd_uut_Q_DOWN_reg/CDN          | pfd_uut_Q_DOWN_reg/Q          | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | divide_uut_half_freq_reg/CDN    | divide_uut_half_freq_reg/Q    | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | divide_uut_half_freq_reg/CDN    | divide_uut_half_freq_reg/Q    | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | divide_uut_half_freq_reg/CDN    | divide_uut_half_freq_reg/Q    | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | divide_uut_half_freq_reg/CDN    | divide_uut_half_freq_reg/Q    | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | divide_uut_quarter_freq_reg/CDN | divide_uut_quarter_freq_reg/Q | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | divide_uut_quarter_freq_reg/CDN | divide_uut_quarter_freq_reg/Q | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | divide_uut_quarter_freq_reg/CDN | divide_uut_quarter_freq_reg/Q | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     | divide_uut_quarter_freq_reg/CDN | divide_uut_quarter_freq_reg/Q | clear   | positive_unate | timing_enable_preset_clear_arcs = false | normWC | 
+     +-----------------------------------------------------------------------------------------------------------------------------------------------+ 

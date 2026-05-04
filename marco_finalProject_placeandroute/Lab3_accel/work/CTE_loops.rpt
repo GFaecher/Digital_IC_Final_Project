@@ -1,0 +1,20 @@
+--> WARNING: A timing loop was found in the design. The arc from 'g855__2398/
+             A2' to 'g855__2398/ZN' has been cut . A description of the timing 
+             loop follows <TA-112>.
+     +----------------------------------+ 
+     |      Pin      |       Cell       | 
+     |---------------+------------------| 
+     |       g538/ZN |    CKND1BWP16P90 | 
+     | g863__1617/C2 | AOI222D1BWP16P90 | 
+     | g863__1617/ZN | AOI222D1BWP16P90 | 
+     |  g860__5526/B |  IOA21D1BWP16P90 | 
+     | g860__5526/ZN |  IOA21D1BWP16P90 | 
+     | g857__6260/A1 |    ND3D1BWP16P90 | 
+     | g857__6260/ZN |    ND3D1BWP16P90 | 
+     |  g856__5107/C | OAI221D1BWP16P90 | 
+     | g856__5107/ZN | OAI221D1BWP16P90 | 
+     | g855__2398/A2 |    ND2D1BWP16P90 | 
+     | g855__2398/ZN |    ND2D1BWP16P90 | 
+     |        g538/I |    CKND1BWP16P90 | 
+     |       g538/ZN |    CKND1BWP16P90 | 
+     +----------------------------------+ 

@@ -1,0 +1,52 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon May  4 17:01:01 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v23.30-p003_1 (64bit) 02/01/2024 14:17 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.30-p003_1 NR240109-1512/23_10-UB (database version 18.20.618_1) {superthreading v2.20}
+#@(#)CDS: AAE 23.10-p002 (64bit) 02/01/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.10-p003_1 () Dec  5 2023 19:42:23 ( )
+#@(#)CDS: SYNTECH 23.10-p002_1 () Nov 29 2023 02:17:21 ( )
+#@(#)CDS: CPE v23.10-p004
+#@(#)CDS: IQuantus/TQuantus 22.1.1-s215 (64bit) Mon Nov 20 10:05:08 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /h/qvu01/EE166/1finalProject_placeandroute/Lab3_accel/work/top.place_opt.enc.dat top
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+fit
+setLayerPreference node_power -isVisible 1
+setLayerPreference node_power -isVisible 0
+setLayerPreference node_power -isVisible 1
+zoomBox -32.29650 -12.67750 56.29700 32.23200
+zoomBox -12.35800 -0.98950 33.88850 22.45350
+zoomBox -1.85700 5.23150 22.28400 17.46900
+zoomBox -3.88350 4.01450 24.51800 18.41150
+zoomBox -6.26750 2.58250 27.14600 19.52050
+zoomBox -9.07250 0.89850 30.23800 20.82550
+zoomBox -12.37200 -1.08300 33.87550 22.36050
+zoomBox -20.82100 -6.40250 43.18950 26.04550
+zoomBox -16.21350 -3.40000 38.19550 24.18050
+setDrawView place
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setDrawView place
+setDrawView fplan
+setDrawView place
+setLayerPreference node_layer -isVisible 0
+zoomBox -27.27200 -6.93100 48.03450 31.24300
+zoomBox -11.82500 -1.86400 34.42250 21.57950
+zoomBox -5.00300 0.38150 28.41100 17.31950
+zoomBox -2.33900 1.25850 26.06300 15.65600
+zoomBox -7.69200 -3.58950 31.61900 16.33800
+zoomBox -11.10500 -6.70200 35.14400 16.74250
+setLayerPreference node_layer -isVisible 1
