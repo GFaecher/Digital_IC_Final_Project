@@ -1,23 +1,23 @@
-02:23:36:2336 [important] [FelixStartLevel] WARN  - InfoSource version is empty in getMajorMinorVersion()
-02:23:36:2336 [important] [FelixStartLevel] WARN  - InfoSource version not found!! skipping relevant version checks
-02:23:36:2336 [important] [FelixStartLevel] INFO  - xmsim gcc version is 9.3.0
-02:23:36:2336 [important] [FelixStartLevel] INFO  - indago gcc version is 9.3.0
-02:23:37:2337 [important] [TangoTaskManager-3] WARN  - An Indago Snapshot/LWD was not loaded. Scripting API functionality may be impacted.
-02:23:38:2338 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-5] INFO  - query: 
-02:23:57:2357 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
+19:09:20:920 [important] [FelixStartLevel] WARN  - InfoSource version is empty in getMajorMinorVersion()
+19:09:20:920 [important] [FelixStartLevel] WARN  - InfoSource version not found!! skipping relevant version checks
+19:09:21:921 [important] [FelixStartLevel] INFO  - xmsim gcc version is 9.3.0
+19:09:21:921 [important] [FelixStartLevel] INFO  - indago gcc version is 9.3.0
+19:09:21:921 [important] [TangoTaskManager-3] WARN  - An Indago Snapshot/LWD was not loaded. Scripting API functionality may be impacted.
+19:09:22:922 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-5] INFO  - query: 
+19:09:38:938 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
 
-02:23:58:2358 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+19:09:38:938 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
 
-02:23:58:2358 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+19:09:39:939 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
 
-02:23:58:2358 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+19:09:39:939 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
 
-02:24:01:241 [important] [TangoTaskManager-3] INFO  - ScriptingActivator while loop has finished
-02:24:13:2413 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
+19:09:40:940 [important] [TangoTaskManager-3] INFO  - ScriptingActivator while loop has finished
+19:09:49:949 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
 
-02:24:17:2417 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
+19:09:52:952 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
 
-02:24:17:2417 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+19:09:52:952 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
 
-02:24:17:2417 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+19:09:52:952 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
 

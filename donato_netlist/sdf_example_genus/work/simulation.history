@@ -1,4 +1,0 @@
-s1(03May2026:12:38:08):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top tb_netlist -f ../rtl/sdf_sim.vc -l ./simulation.log 
-s2(03May2026:12:53:09):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top tb_netlist -f ../rtl/sdf_sim.vc -l ./simulation.log 
-s3(03May2026:12:55:21):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top tb_netlist -f ../rtl/sdf_sim.vc -l ./simulation.log 
-s4(03May2026:12:58:54):  xrun -sv -gui -64bit -lwdgen -access rwc -verisium +incdir+../rtl -top tb_netlist -f ../rtl/sdf_sim.vc -l ./simulation.log 

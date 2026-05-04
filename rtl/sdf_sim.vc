@@ -12,6 +12,6 @@
 //../rtl/RTL.svh
 //../rtl/top.sv
 
-../data/top-compile.v
+../data/emmett-netlist.v
 
 ../rtl/top_tb.sv

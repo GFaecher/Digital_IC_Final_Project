@@ -46,15 +46,7 @@ module top_tb;
         RSTN = 1'b1;
         #50;
         EN = 1'b1;
-        generate_wave(0.0875, 200.0);
-        #10;
-        generate_wave(0.1, 200.0);
-        #10;
-        generate_wave(0.15, 200.0);
-        #10;
-        generate_wave(0.2, 200.0);
-        #10;
-        generate_wave(0.275, 200.0);
+        generate_wave(0.1825, 1000.0);
         #10;
         $finish;
     end
